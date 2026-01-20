@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="vi" class="scroll-smooth">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,13 +8,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <style>
-        .tooltip { position: relative; display: inline-block; }
+        /* Interactive Tooltip Style */
+        .tooltip { position: relative; display: inline-block; cursor: help; }
         .tooltip .tooltiptext {
-            visibility: hidden; width: 240px; background-color: #0f172a; color: #fff;
+            visibility: hidden; width: 260px; background-color: #0f172a; color: #fff;
             text-align: left; border-radius: 8px; padding: 12px; position: absolute;
-            z-index: 10; bottom: 125%; left: 50%; margin-left: -120px; opacity: 0;
-            transition: opacity 0.3s; font-size: 0.7rem; border: 1px solid #334155;
-            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+            z-index: 50; bottom: 130%; left: 50%; margin-left: -130px; opacity: 0;
+            transition: opacity 0.3s; font-size: 0.75rem; border: 1px solid #334155;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3); pointer-events: none;
+            line-height: 1.4;
         }
         .tooltip:hover .tooltiptext { visibility: visible; opacity: 1; }
     </style>
@@ -23,102 +25,177 @@
 
     <nav class="fixed w-full z-50 bg-white/80 backdrop-blur-md border-b border-slate-200">
         <div class="max-w-6xl mx-auto px-6 h-16 flex justify-between items-center">
-            <a href="#" class="font-bold text-xl tracking-tighter text-blue-600">NM.KHANG</a>
+            <a href="#" class="font-bold text-xl tracking-tighter text-blue-600">KHANG.NGO</a>
             <div class="space-x-6 hidden md:flex font-medium text-xs uppercase tracking-wider">
-                <a href="#about" class="hover:text-blue-600 transition text-slate-600">Giới thiệu</a>
-                <a href="#experience" class="hover:text-blue-600 transition text-slate-600">Kinh nghiệm</a>
-                <a href="#journals" class="hover:text-blue-600 transition text-slate-600">Tạp chí</a>
-                <a href="#conferences" class="hover:text-blue-600 transition text-slate-600">Hội nghị</a>
+                <a href="#about" class="hover:text-blue-600 transition text-slate-600">About</a>
+                <a href="#experience" class="hover:text-blue-600 transition text-slate-600">Experience</a>
+                <a href="#education" class="hover:text-blue-600 transition text-slate-600">Education</a>
+                <a href="#publications" class="hover:text-blue-600 transition text-slate-600">Journals</a>
+                <a href="#conferences" class="hover:text-blue-600 transition text-slate-600">Conferences</a>
             </div>
             <a href="CV.pdf" target="_blank" class="bg-blue-600 text-white px-5 py-2 rounded-full text-sm font-semibold hover:bg-blue-700 transition shadow-md">
-                Xem CV Full
+                Full CV
             </a>
         </div>
     </nav>
 
-    <section id="about" class="pt-32 pb-20 px-6">
+    <section id="about" class="pt-32 pb-20 px-6 bg-gradient-to-b from-blue-50 to-white">
         <div class="max-w-4xl mx-auto text-center" data-aos="fade-up">
-            <h1 class="text-5xl md:text-6xl font-extrabold mb-6 text-slate-900">Ngo Minh Khang</h1>
+            <h1 class="text-5xl md:text-6xl font-extrabold mb-6 text-slate-900 italic">Ngo Minh Khang</h1>
             <p class="text-xl text-slate-600 leading-relaxed mb-8">
-                Ph.D. Candidate @ <span class="font-bold text-blue-600">Hanyang University</span>
+                Ph.D. Candidate [cite: 6, 9] @ 
+                <span class="font-bold text-blue-600 tooltip">Hanyang University
+                    <span class="tooltiptext">GPA: 4.31/4.5. [cite: 10] Researcher at CHAMP's lab under Prof. Jonghun Yoon. [cite: 9, 89]</span>
+                </span>
             </p>
             <div class="flex justify-center gap-6 text-2xl text-slate-400">
-                <a href="https://www.linkedin.com/in/ngominhkhang20032002/" target="_blank" class="hover:text-blue-600 transition"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="mailto:ngominhkhang20032002@gmail.com" class="hover:text-blue-600 transition"><i class="fa-solid fa-envelope"></i></a>
-                <a href="https://github.com/kangwuing" target="_blank" class="hover:text-blue-600 transition"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/ngominhkhang20032002/" target="_blank" class="hover:text-blue-600 transition" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="mailto:ngominhkhang20032002@gmail.com" class="hover:text-blue-600 transition" title="Email"><i class="fa-solid fa-envelope"></i></a>
+                <a href="https://github.com/kangwuing" target="_blank" class="hover:text-blue-600 transition" title="GitHub"><i class="fa-brands fa-github"></i></a>
             </div>
         </div>
     </section>
 
-    <section id="journals" class="py-20 bg-white border-y border-slate-100 px-6">
+    <section id="experience" class="py-24 max-w-6xl mx-auto px-6">
+        <h2 class="text-3xl font-bold mb-16 text-center" data-aos="fade-up">Professional Experience</h2>
+        <div class="space-y-12">
+            <div class="relative pl-8 border-l-2 border-blue-600" data-aos="fade-left">
+                <div class="absolute -left-[9px] top-0 w-4 h-4 bg-blue-600 rounded-full"></div>
+                <h3 class="text-2xl font-bold">CHAMP's lab</h3>
+                <p class="text-blue-600 font-semibold mb-4 text-sm uppercase tracking-wider">Full-time Researcher | Mar 2025 – Present [cite: 56, 57]</p>
+                <ul class="list-disc list-outside ml-4 space-y-3 text-slate-600 text-sm">
+                    <li>Developed vision-guided robotic gripping systems for fabric materials using FEM and sequential optimization in collaboration with <strong>KITECH</strong>. [cite: 58]</li>
+                    <li>Engineered AI-driven image segmentation models and GUIs for automated powder particle analysis in partnership with <strong>POSCO</strong>. [cite: 59]</li>
+                    <li>Implemented hand gesture and facial recognition algorithms for the <strong>SoulCube</strong> intelligent interaction platform. [cite: 60]</li>
+                </ul>
+            </div>
+            <div class="relative pl-8 border-l-2 border-slate-200" data-aos="fade-left" data-aos-delay="100">
+                <div class="absolute -left-[9px] top-0 w-4 h-4 bg-slate-300 rounded-full"></div>
+                <h3 class="text-2xl font-bold italic text-slate-800 uppercase">IDEA Technology Corp.</h3>
+                <p class="text-slate-500 font-semibold mb-4 text-sm uppercase tracking-wider">Mechanical Design Intern | Jun 2023 – Aug 2023 [cite: 70, 76]</p>
+                <p class="text-slate-600 text-sm">Designed a 174-component sheet forming machine based on MISUMI standards and created JIS-compliant 2D documentation. [cite: 71] Internship score: <strong>9/10</strong>. [cite: 73]</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="education" class="py-20 bg-white border-y border-slate-100">
+        <div class="max-w-5xl mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-12 text-center" data-aos="fade-up">Education</h2>
+            <div class="space-y-6">
+                <div class="p-8 bg-slate-50 rounded-3xl border border-slate-100 flex flex-col md:flex-row gap-4" data-aos="fade-up">
+                    <div class="md:w-1/4 font-bold text-blue-600">2025 — Present</div>
+                    <div class="md:w-3/4">
+                        <h3 class="text-xl font-bold">Ph.D. Candidate in Mechanical Engineering</h3>
+                        <p class="text-slate-600 font-medium italic">Hanyang University, Korea [cite: 8, 9]</p>
+                        <p class="text-xs text-slate-500 mt-2">Department of Mechanical Design Engineering. [cite: 1, 9]</p>
+                    </div>
+                </div>
+                <div class="p-8 bg-slate-50 rounded-3xl border border-slate-100 flex flex-col md:flex-row gap-4" data-aos="fade-up">
+                    <div class="md:w-1/4 font-bold text-slate-400">2020 — 2024</div>
+                    <div class="md:w-3/4">
+                        <h3 class="text-xl font-bold">Bachelor of Mechanical Engineering</h3>
+                        <p class="text-slate-600 font-medium italic">HCMUT - Vietnam National University [cite: 11, 12]</p>
+                        <p class="text-xs text-slate-500 mt-2">Faculty of Mechanical Engineering. [cite: 15]</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="publications" class="py-24 max-w-5xl mx-auto px-6">
+        <h2 class="text-3xl font-bold mb-12 flex items-center gap-3" data-aos="fade-right">
+            <i class="fa-solid fa-book-open text-blue-600"></i> Journal Publications [cite: 30]
+        </h2>
+        <div class="space-y-8">
+            <div class="group p-6 bg-white rounded-2xl border border-slate-200 shadow-sm hover:border-blue-300 transition" data-aos="fade-up">
+                <div class="flex justify-between items-start mb-2">
+                    <span class="text-blue-600 font-bold text-sm tracking-widest uppercase">April 2026 [cite: 33]</span>
+                    <span class="bg-blue-100 text-blue-700 text-[10px] px-2 py-1 rounded font-bold uppercase">Q1 Journal [cite: 61]</span>
+                </div>
+                <h3 class="text-xl font-bold mb-2 italic cursor-help tooltip">
+                    "Vision-guided gripping process with minimizing folding for flexible fabric materials..." [cite: 32]
+                    <span class="tooltiptext">Integrates sequential optimization and FEM analysis to solve folding issues in soft material handling. [cite: 32]</span>
+                </h3>
+                <p class="text-slate-600 text-sm italic underline underline-offset-4 decoration-slate-200">Robotics and Autonomous Systems, Vol. 198. [cite: 33]</p>
+            </div>
+            <div class="group p-6 bg-white rounded-2xl border border-slate-200 shadow-sm hover:border-blue-300 transition" data-aos="fade-up">
+                <span class="text-slate-500 font-bold text-sm tracking-widest uppercase">2025 </span>
+                <h3 class="text-xl font-bold mb-2 italic">"Investigation of factors affecting the channel sealing processing mode of microfluidic chips..." [cite: 36]</h3>
+                <p class="text-slate-600 text-sm underline underline-offset-4 decoration-slate-200">VNUHCM Journal of Engineering and Technology, 8(2). [cite: 37]</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="conferences" class="py-20 bg-slate-900 text-white px-6">
         <div class="max-w-5xl mx-auto">
-            <h2 class="text-3xl font-bold mb-12 flex items-center gap-3" data-aos="fade-right">
-                <i class="fa-solid fa-book-open text-blue-600"></i> Journal Publications
+            <h2 class="text-3xl font-bold mb-12 flex items-center gap-3 text-white" data-aos="fade-right">
+                <i class="fa-solid fa-users-rectangle text-indigo-400"></i> Conference Proceedings [cite: 38]
             </h2>
             <div class="space-y-8">
-                <div class="group p-6 bg-slate-50 rounded-2xl border border-slate-100 hover:border-blue-200 transition" data-aos="fade-up">
-                    <div class="flex justify-between items-start mb-2">
-                        <span class="text-blue-600 font-bold text-sm tracking-widest">APRIL 2026</span>
-                        <span class="bg-blue-100 text-blue-700 text-[10px] px-2 py-1 rounded font-bold">Q1 JOURNAL</span>
-                    </div>
-                    <h3 class="text-xl font-bold mb-2 italic cursor-help tooltip">
-                        "Vision-guided gripping process with minimizing folding for flexible fabric materials..."
-                        <span class="tooltiptext">Tối ưu hóa quy trình gắp vải linh hoạt bằng cách tích hợp thuật toán tuần tự và phân tích FEM. DOI: 10.1016/j.robot.2026.105349</span>
+                <div class="group p-6 bg-slate-800 rounded-2xl border border-slate-700 hover:border-indigo-400 transition" data-aos="fade-up">
+                    <span class="text-indigo-400 font-bold text-sm tracking-widest uppercase italic">2025 [cite: 39]</span>
+                    <h3 class="text-xl font-bold mb-2 italic tooltip cursor-help">
+                        "Data-driven vision and FEM-based sequential optimization for fold-minimized robotic fabric gripping" [cite: 39]
+                        <span class="tooltiptext">Poster presentation focusing on data-driven vision for soft robotics at IEEE Big Data. [cite: 39, 40]</span>
                     </h3>
-                    <p class="text-slate-600 text-sm">Robotics and Autonomous Systems, Volume 198.</p>
+                    <p class="text-slate-400 text-sm">2025 IEEE International Conference on Big Data. [cite: 40]</p>
                 </div>
-
-                <div class="group p-6 bg-slate-50 rounded-2xl border border-slate-100 hover:border-blue-200 transition" data-aos="fade-up" data-aos-delay="100">
+                <div class="group p-6 bg-slate-800 rounded-2xl border border-slate-700 hover:border-indigo-400 transition" data-aos="fade-up">
                     <div class="flex justify-between items-start mb-2">
-                        <span class="text-slate-500 font-bold text-sm tracking-widest">2025</span>
+                        <span class="text-slate-400 font-bold text-sm tracking-widest uppercase italic">2024 [cite: 41]</span>
+                        <span class="bg-amber-100/10 text-amber-400 text-[10px] px-2 py-1 border border-amber-400/20 rounded font-bold uppercase">Best Paper Award </span>
                     </div>
-                    <h3 class="text-xl font-bold mb-2 italic cursor-help tooltip">
-                        "Investigation of factors affecting the channel sealing processing mode of microfluidic chips..."
-                        <span class="tooltiptext">Nghiên cứu các yếu tố ảnh hưởng đến quá trình làm kín kênh dẫn của chip vi lưu bằng công nghệ spin coating.</span>
-                    </h3>
-                    <p class="text-slate-600 text-sm">VNUHCM Journal of Engineering and Technology, 8(2), 2540-2547.</p>
+                    <h3 class="text-xl font-bold mb-2 italic">"Structural Modifications for Vibration-Assisted Spin Coating..." [cite: 41]</h3>
+                    <p class="text-slate-400 text-sm italic">ICRESM 2024, Springer Nature. [cite: 42]</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="conferences" class="py-20 px-6">
-        <div class="max-w-5xl mx-auto">
-            <h2 class="text-3xl font-bold mb-12 flex items-center gap-3" data-aos="fade-right">
-                <i class="fa-solid fa-users-rectangle text-indigo-600"></i> Conference Proceedings
-            </h2>
-            <div class="space-y-8">
-                <div class="group p-6 bg-white rounded-2xl border border-slate-200 hover:shadow-lg transition" data-aos="fade-up">
-                    <div class="flex justify-between items-start mb-2">
-                        <span class="text-indigo-600 font-bold text-sm tracking-widest">2025</span>
-                    </div>
-                    <h3 class="text-xl font-bold mb-2 italic tooltip cursor-help">
-                        "Data-driven vision and FEM-based sequential optimization for fold-minimized robotic fabric gripping"
-                        <span class="tooltiptext">Trình bày tại IEEE International Conference on Big Data về giải pháp gắp vải giảm thiểu nếp gấp dựa trên dữ liệu.</span>
-                    </h3>
-                    <p class="text-slate-600 text-sm font-medium">2025 IEEE International Conference on Big Data.</p>
+    <section class="py-24 max-w-6xl mx-auto px-6">
+        <div class="grid md:grid-cols-2 gap-16">
+            <div data-aos="fade-right">
+                <h2 class="text-2xl font-bold mb-8 uppercase tracking-tighter italic">Technical Stack</h2>
+                <div class="flex flex-wrap gap-3">
+                    <span class="tooltip px-4 py-2 bg-slate-100 rounded-lg text-xs font-bold shadow-sm border border-slate-200">
+                        FEA & CFD [cite: 20]
+                        <span class="tooltiptext">Using ANSYS for 3D design, FEM, CFD, and DOE. [cite: 20]</span>
+                    </span>
+                    <span class="tooltip px-4 py-2 bg-slate-100 rounded-lg text-xs font-bold shadow-sm border border-slate-200">
+                        Python [cite: 18]
+                        <span class="tooltiptext">Certified by University of Michigan. [cite: 53] Applied in CV/ML tasks.</span>
+                    </span>
+                    <span class="tooltip px-4 py-2 bg-slate-100 rounded-lg text-xs font-bold shadow-sm border border-slate-200">
+                        MATLAB [cite: 18]
+                        <span class="tooltiptext">Certified by Vanderbilt University. [cite: 54]</span>
+                    </span>
+                    <span class="px-4 py-2 bg-slate-100 rounded-lg text-xs font-bold shadow-sm border border-slate-200 uppercase">AutoCAD & SolidWorks [cite: 18]</span>
                 </div>
-
-                <div class="group p-6 bg-white rounded-2xl border border-slate-200 hover:shadow-lg transition" data-aos="fade-up" data-aos-delay="100">
-                    <div class="flex justify-between items-start mb-2">
-                        <span class="text-slate-500 font-bold text-sm tracking-widest">2024</span>
-                        <span class="bg-amber-100 text-amber-700 text-[10px] px-2 py-1 rounded font-bold">BEST PAPER AWARD</span>
-                    </div>
-                    <h3 class="text-xl font-bold mb-2 italic tooltip cursor-help">
-                        "Structural Modifications for Vibration-Assisted Spin Coating: Enhancing Coating Thickness Uniformity"
-                        <span class="tooltiptext">Nghiên cứu cải tiến cấu trúc cho công nghệ spin coating hỗ trợ rung nhằm tăng độ đồng nhất của lớp phủ.</span>
-                    </h3>
-                    <p class="text-slate-600 text-sm font-medium">ICRESM 2024, Springer Nature.</p>
-                </div>
+            </div>
+            <div data-aos="fade-left">
+                <h2 class="text-2xl font-bold mb-8 uppercase tracking-tighter italic">Key Certifications [cite: 44]</h2>
+                <ul class="space-y-4 text-sm font-medium">
+                    <li class="flex items-center gap-3">
+                        <i class="fa-solid fa-certificate text-blue-600"></i>
+                        FEA and CFD Certificate endorsed by <strong>ANSYS</strong> (Cornell Univ). [cite: 46-51]
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <i class="fa-solid fa-graduation-cap text-indigo-600"></i>
+                        Hanyang University Tuition Scholarship (2025-2029). [cite: 84]
+                    </li>
+                </ul>
             </div>
         </div>
     </section>
 
-    <footer class="py-12 text-center bg-slate-900 text-slate-400">
-        <p class="text-sm">© 2026 - Ngo Minh Khang | Hanyang University</p>
+    <footer id="contact" class="py-12 border-t border-slate-200 text-center">
+        <p class="text-slate-400 text-xs mb-4 italic tracking-widest uppercase">Engineering the future through AI & Robotics</p>
+        <p class="text-slate-600 text-sm font-bold">© 2026 - Ngo Minh Khang | Hanyang University [cite: 8, 9]</p>
     </footer>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>AOS.init({ duration: 1000, once: true });</script>
+    <script>
+        AOS.init({ duration: 1000, once: true });
+    </script>
 </body>
 </html>
