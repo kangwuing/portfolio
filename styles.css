@@ -1,0 +1,36 @@
+/* Compatibility styles for the former cached TOEIC homepage. */
+html,
+body {
+  min-height: 100%;
+  margin: 0;
+  background: #f8fafc;
+  color: #0f172a;
+  font-family: Arial, sans-serif;
+}
+
+.loading-screen {
+  position: fixed;
+  inset: 0;
+  display: grid;
+  place-content: center;
+  gap: 14px;
+  text-align: center;
+}
+
+.loading-mark {
+  display: grid;
+  width: 56px;
+  height: 56px;
+  margin: auto;
+  place-items: center;
+  border-radius: 16px;
+  background: #2563eb;
+  color: #fff;
+  font-weight: 700;
+}
+
+.loading-screen p {
+  margin: 0;
+  color: #64748b;
+  font-size: 14px;
+}
