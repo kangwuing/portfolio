@@ -26,10 +26,11 @@
     <nav class="fixed w-full z-50 bg-white/80 backdrop-blur-md border-b border-slate-200">
         <div class="max-w-6xl mx-auto px-6 h-16 flex justify-between items-center">
             <a href="#" class="font-bold text-xl tracking-tighter text-blue-600 italic">KHANG.NGO</a>
-            <div class="space-x-6 hidden md:flex font-medium text-xs uppercase tracking-wider">
+            <div class="hidden lg:flex gap-5 font-medium text-[11px] uppercase tracking-wider">
                 <a href="#about" class="hover:text-blue-600 transition text-slate-600">About</a>
                 <a href="#experience" class="hover:text-blue-600 transition text-slate-600">Experience</a>
                 <a href="#education" class="hover:text-blue-600 transition text-slate-600">Education</a>
+                <a href="#certifications" class="hover:text-blue-600 transition text-slate-600">Certifications</a>
                 <a href="#projects" class="hover:text-blue-600 transition text-slate-600">Projects</a>
                 <a href="#publications" class="hover:text-blue-600 transition text-slate-600">Publications</a>
             </div>
@@ -113,6 +114,25 @@
         </div>
     </section>
 
+    <section id="certifications" class="py-24 bg-slate-50 px-6">
+        <div class="max-w-6xl mx-auto">
+            <div class="mx-auto mb-12 max-w-3xl text-center" data-aos="fade-up">
+                <p class="mb-3 text-xs font-bold uppercase tracking-[0.25em] text-blue-600">Professional Credentials</p>
+                <h2 class="text-3xl font-bold">Licenses &amp; Certifications</h2>
+                <p class="mt-4 text-sm leading-relaxed text-slate-500">Verified against official credential pages. Certificate PDFs supplied by the portfolio owner are available for viewing and download.</p>
+                <p id="certification-status" class="mt-3 text-[10px] font-bold uppercase tracking-widest text-slate-400" aria-live="polite">Loading credentials…</p>
+            </div>
+
+            <div id="certification-grid" class="grid gap-8 md:grid-cols-2" aria-busy="true">
+                <div class="h-[30rem] animate-pulse rounded-3xl bg-slate-200" aria-hidden="true"></div>
+                <div class="h-[30rem] animate-pulse rounded-3xl bg-slate-200" aria-hidden="true"></div>
+            </div>
+            <noscript>
+                <p class="mt-6 text-center text-sm text-slate-500">Enable JavaScript to view credential previews, or open the <a href="https://www.linkedin.com/in/ngominhkhang20032002/details/certifications/" class="font-bold text-blue-600">LinkedIn certifications profile</a>.</p>
+            </noscript>
+        </div>
+    </section>
+
     <section id="projects" class="py-24 bg-slate-900 text-white px-6">
         <div class="max-w-5xl mx-auto">
             <div class="text-center mb-12" data-aos="fade-up">
@@ -147,60 +167,24 @@
     </section>
 
     <section id="publications" class="py-24 max-w-5xl mx-auto px-6 font-sans">
-        <h2 class="text-3xl font-bold mb-12 text-center" data-aos="fade-up">Academic Publications</h2>
-        
-        <div class="mb-16">
-            <h3 class="text-sm font-bold text-blue-600 uppercase tracking-[0.2em] mb-8 border-l-4 border-blue-600 pl-4 italic">Journal Publications</h3>
-            <div class="space-y-8">
-                <div class="group p-6 bg-white rounded-2xl border border-slate-200 shadow-sm hover:border-blue-300 transition" data-aos="fade-up">
-                    <div class="flex justify-between items-start mb-2">
-                        <div class="flex items-center gap-2">
-                            <span class="text-blue-600 font-bold text-sm">APRIL 2026</span>
-                            <span class="bg-emerald-100 text-emerald-700 text-[10px] px-2 py-0.5 rounded-full font-bold uppercase tracking-wider">Q1 Journal</span>
-                        </div>
-                        <a href="https://doi.org/10.1016/j.robot.2026.105349" target="_blank" class="text-[10px] bg-blue-100 text-blue-700 px-3 py-1 rounded font-bold hover:bg-blue-600 hover:text-white transition uppercase"><i class="fa-solid fa-link"></i> DOI Link</a>
-                    </div>
-                    <h4 class="text-xl font-bold mb-2 italic">"Vision-guided gripping process with minimizing folding for flexible fabric materials by integrating a sequential optimization algorithm and FEM analysis."</h4>
-                    <p class="text-slate-600 text-sm">Robotics and Autonomous Systems, Vol. 198.</p>
-                </div>
-                <div class="group p-6 bg-white rounded-2xl border border-slate-200 shadow-sm" data-aos="fade-up">
-                    <div class="flex justify-between items-start mb-2">
-                        <span class="text-slate-500 font-bold text-sm">2025</span>
-                        <a href="https://doi.org/10.32508/stdjet.v8i2.1445" target="_blank" class="text-[10px] bg-slate-100 text-slate-700 px-3 py-1 rounded font-bold hover:bg-slate-600 hover:text-white transition uppercase"><i class="fa-solid fa-link"></i> DOI Link</a>
-                    </div>
-                    <h4 class="text-xl font-bold mb-2 italic">"Investigation of factors affecting the channel sealing processing mode of microfluidic chips using spin coating technology."</h4>
-                    <p class="text-slate-600 text-sm">VNUHCM Journal of Engineering and Technology, 8(2).</p>
-                </div>
-            </div>
+        <h2 class="text-3xl font-bold mb-4 text-center" data-aos="fade-up">Academic Publications</h2>
+        <div class="mb-12 text-center" data-aos="fade-up">
+            <p class="text-sm text-slate-500">
+                Automatically synchronized from
+                <a href="https://scholar.google.com/citations?user=6227iqYAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer" class="font-bold text-blue-600 hover:text-blue-800 transition">Google Scholar <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i></a>
+            </p>
+            <p id="publication-sync-status" class="mt-2 text-[10px] font-bold uppercase tracking-widest text-slate-400" aria-live="polite">Loading publications…</p>
         </div>
 
-        <div>
-            <h3 class="text-sm font-bold text-indigo-600 uppercase tracking-[0.2em] mb-8 border-l-4 border-indigo-600 pl-4 italic">Conference Proceedings</h3>
-            <div class="space-y-8">
-                <div class="group p-6 bg-slate-900 text-white rounded-2xl border border-slate-700 hover:border-indigo-400 transition" data-aos="fade-up">
-                    <div class="flex justify-between items-start mb-2">
-                        <div class="flex items-center gap-2">
-                            <span class="text-indigo-400 font-bold text-sm uppercase tracking-widest">2025</span>
-                            <span class="bg-indigo-500/20 text-indigo-300 text-[10px] px-2 py-0.5 rounded-full font-bold uppercase border border-indigo-500/30">CORE B Ranked</span>
-                        </div>
-                        <a href="https://doi.org/10.1109/BigData66926.2025.11400823" target="_blank" rel="noopener noreferrer" class="text-[10px] bg-white/10 text-white px-3 py-1 rounded font-bold hover:bg-white hover:text-slate-900 transition uppercase"><i class="fa-solid fa-link"></i> DOI Link</a>
-                    </div>
-                    <h4 class="text-xl font-bold mb-2 italic">"Data-driven vision and FEM-based sequential optimization for fold-minimized robotic fabric gripping"</h4>
-                    <p class="text-slate-400 text-sm uppercase text-xs font-bold font-sans tracking-wide">2025 IEEE International Conference on Big Data</p>
-                </div>
-                <div class="group p-6 bg-slate-900 text-white rounded-2xl border border-slate-700 hover:border-indigo-400 transition" data-aos="fade-up">
-                    <div class="flex justify-between items-start mb-2">
-                        <div class="flex items-center gap-2">
-                            <span class="text-slate-400 font-bold text-sm uppercase">2024</span>
-                            <span class="bg-amber-400 text-slate-900 text-[10px] px-2 py-0.5 rounded-full font-bold uppercase">Best Paper Award</span>
-                        </div>
-                        <a href="https://doi.org/10.1007/978-3-031-90629-9_37" target="_blank" class="text-[10px] bg-white/10 text-white px-3 py-1 rounded font-bold hover:bg-white hover:text-slate-900 transition uppercase"><i class="fa-solid fa-link"></i> DOI Link</a>
-                    </div>
-                    <h4 class="text-xl font-bold mb-2 italic">"Structural Modifications for Vibration-Assisted Spin Coating: Enhancing Coating Thickness Uniformity"</h4>
-                    <p class="text-slate-400 text-sm uppercase text-xs font-bold font-sans tracking-wide">ICRESM 2024, Springer Nature</p>
-                </div>
+        <div id="publication-groups" aria-busy="true">
+            <div class="space-y-4" aria-hidden="true">
+                <div class="h-36 animate-pulse rounded-2xl bg-slate-200"></div>
+                <div class="h-36 animate-pulse rounded-2xl bg-slate-200"></div>
             </div>
         </div>
+        <noscript>
+            <p class="mt-6 text-center text-sm text-slate-500">Enable JavaScript to load publications, or view them directly on <a href="https://scholar.google.com/citations?user=6227iqYAAAAJ&amp;hl=en" class="font-bold text-blue-600">Google Scholar</a>.</p>
+        </noscript>
     </section>
 
     <footer class="py-12 border-t border-slate-200 text-center bg-white">
@@ -216,5 +200,7 @@
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>AOS.init({ duration: 1000, once: true });</script>
+    <script src="certifications.js"></script>
+    <script src="publications.js"></script>
 </body>
 </html>

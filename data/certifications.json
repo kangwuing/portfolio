@@ -1,0 +1,53 @@
+{
+  "lastVerifiedAt": "2026-08-20",
+  "certifications": [
+    {
+      "id": "solidworks-cswa",
+      "title": "SOLIDWORKS Design Associate (CSWA)",
+      "issuer": "Dassault Systèmes",
+      "issued": "May 17, 2026",
+      "credentialId": "C-TKDFZMUG3S",
+      "credentialUrl": "https://cv.virtualtester.com/qr/?b=SLDWRKS&i=C-TKDFZMUG3S",
+      "pdfPath": "certificates/pdfs/solidworks-cswa.pdf",
+      "thumbnailPath": "certificates/thumbnails/solidworks-cswa-official.jpg",
+      "skills": ["SOLIDWORKS"],
+      "source": "LinkedIn · VirtualTester"
+    },
+    {
+      "id": "coursera-matlab",
+      "title": "Introduction to Programming with MATLAB",
+      "issuer": "Vanderbilt University",
+      "issued": "August 12, 2024",
+      "credentialId": "99MPFHHNJS5L",
+      "credentialUrl": "https://www.coursera.org/account/accomplishments/verify/99MPFHHNJS5L",
+      "pdfPath": "certificates/pdfs/coursera-matlab.pdf",
+      "thumbnailPath": "certificates/thumbnails/coursera-matlab-official.webp",
+      "skills": ["MATLAB"],
+      "source": "Coursera"
+    },
+    {
+      "id": "coursera-python",
+      "title": "Programming for Everybody (Getting Started with Python)",
+      "issuer": "University of Michigan",
+      "issued": "August 8, 2024",
+      "credentialId": "HPQHT3K5XNQU",
+      "credentialUrl": "https://www.coursera.org/account/accomplishments/verify/HPQHT3K5XNQU",
+      "pdfPath": "certificates/pdfs/coursera-python.pdf",
+      "thumbnailPath": "certificates/thumbnails/coursera-python-official.webp",
+      "skills": ["Python (Programming Language)"],
+      "source": "Coursera"
+    },
+    {
+      "id": "edx-engineering-simulations",
+      "title": "A Hands-on Introduction to Engineering Simulations",
+      "issuer": "CornellX · edX",
+      "issued": "July 17, 2024",
+      "credentialId": "ce9e8384a5c7442c99c2b281cbc316f4",
+      "credentialUrl": "https://courses.edx.org/certificates/ce9e8384a5c7442c99c2b281cbc316f4",
+      "pdfPath": "certificates/pdfs/edx-engineering-simulations.pdf",
+      "thumbnailPath": "certificates/thumbnails/edx-engineering-simulations-official.png",
+      "skills": ["Finite Element Analysis (FEA)"],
+      "source": "edX"
+    }
+  ]
+}

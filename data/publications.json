@@ -1,0 +1,41 @@
+{
+  "profileName": "Minh Khang Ngo",
+  "profileUrl": "https://scholar.google.com/citations?user=6227iqYAAAAJ&hl=en",
+  "lastSyncedAt": "2026-08-20T02:26:28.130443Z",
+  "publicationCount": 3,
+  "publications": [
+    {
+      "title": "Vision-guided gripping process with minimizing folding for flexible fabric materials by integrating a sequential optimization algorithm and FEM analysis",
+      "authors": "MK Ngo, C Won, HK Lim, DY Lim, TTK Dat, J Yoon",
+      "venue": "Robotics and Autonomous Systems, 198, 105349",
+      "year": 2026,
+      "citations": 2,
+      "kind": "journal",
+      "scholarUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=6227iqYAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=6227iqYAAAAJ:9yKSN-GCB0IC",
+      "doiUrl": "https://doi.org/10.1016/j.robot.2026.105349",
+      "badge": "Q1 Journal"
+    },
+    {
+      "title": "Data-Driven Vision and FEM-Based Sequential Optimization for Fold-Minimized Robotic Fabric Gripping",
+      "authors": "MK Ngo, CH Won, J Yoon",
+      "venue": "2025 IEEE International Conference on Big Data (BigData), 2616-2618",
+      "year": 2025,
+      "citations": 0,
+      "kind": "conference",
+      "scholarUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=6227iqYAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=6227iqYAAAAJ:2osOgNQ5qMEC",
+      "doiUrl": "https://doi.org/10.1109/BigData66926.2025.11400823",
+      "badge": "CORE B Ranked"
+    },
+    {
+      "title": "Structural Modifications for Vibration-Assisted Spin Coating: Enhancing Coating Thickness Uniformity",
+      "authors": "LH Duong, NH Tran, TC Vu, KM Ngo",
+      "venue": "EAI International Conference on Renewable Energy and Sustainable Manufacturing",
+      "year": 2024,
+      "citations": 0,
+      "kind": "conference",
+      "scholarUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=6227iqYAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=6227iqYAAAAJ:d1gkVwhDpl0C",
+      "doiUrl": "https://doi.org/10.1007/978-3-031-90629-9_37",
+      "badge": "Best Paper Award"
+    }
+  ]
+}
