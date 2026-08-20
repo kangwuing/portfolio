@@ -1,0 +1,8 @@
+__pycache__/
+*.py[cod]
+
+# Rejected mock certificate assets; only verified originals are published.
+certificates/thumbnails/coursera-matlab.webp
+certificates/thumbnails/coursera-python.webp
+certificates/thumbnails/edx-engineering-simulations.webp
+certificates/thumbnails/solidworks-cswa.webp
