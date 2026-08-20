@@ -50,6 +50,15 @@ KNOWN_METADATA = {
         ),
     },
     normalize_title(
+        "Investigation of factors affecting the channel sealing processing "
+        "mode of microfluidic chips using spin coating technology"
+    ): {
+        "doiUrl": "https://doi.org/10.32508/stdjet.v8i2.1445",
+        "venueOverride": (
+            "VNUHCM Journal of Engineering and Technology, 8(2), 2540-2547"
+        ),
+    },
+    normalize_title(
         "Structural Modifications for Vibration-Assisted Spin Coating: "
         "Enhancing Coating Thickness Uniformity"
     ): {

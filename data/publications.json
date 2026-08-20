@@ -1,8 +1,8 @@
 {
   "profileName": "Minh Khang Ngo",
   "profileUrl": "https://scholar.google.com/citations?user=6227iqYAAAAJ&hl=en",
-  "lastSyncedAt": "2026-08-20T02:26:28.130443Z",
-  "publicationCount": 3,
+  "lastSyncedAt": "2026-08-20T04:54:48.103626Z",
+  "publicationCount": 4,
   "publications": [
     {
       "title": "Vision-guided gripping process with minimizing folding for flexible fabric materials by integrating a sequential optimization algorithm and FEM analysis",
@@ -14,6 +14,16 @@
       "scholarUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=6227iqYAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=6227iqYAAAAJ:9yKSN-GCB0IC",
       "doiUrl": "https://doi.org/10.1016/j.robot.2026.105349",
       "badge": "Q1 Journal"
+    },
+    {
+      "title": "Investigation of factors affecting the channel sealing processing mode of microfluidic chips using spin coating technology",
+      "authors": "LH Duong, NH Tran, TC Vu, KM Ngo",
+      "venue": "VNUHCM Journal of Engineering and Technology, 8(2), 2540-2547",
+      "year": 2025,
+      "citations": 0,
+      "kind": "journal",
+      "scholarUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=6227iqYAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=6227iqYAAAAJ:qjMakFHDy7sC",
+      "doiUrl": "https://doi.org/10.32508/stdjet.v8i2.1445"
     },
     {
       "title": "Data-Driven Vision and FEM-Based Sequential Optimization for Fold-Minimized Robotic Fabric Gripping",
