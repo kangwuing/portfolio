@@ -150,7 +150,7 @@
                 </li>
                 <li>
                   <span>04</span>
-                  <div><strong>Kiểm tra nhanh</strong><small>10 câu, phản hồi tức thì</small></div>
+                  <div><strong>Kiểm tra tổng hợp</strong><small>50 câu, phản hồi tức thì</small></div>
                 </li>
               </ol>
             </section>
@@ -300,9 +300,9 @@
         <section id="quizView" class="view" data-view-panel="quiz">
           <div class="quiz-shell">
             <div id="quizSetup" class="quiz-setup">
-              <span class="section-kicker">KIỂM TRA 5 PHÚT</span>
+              <span class="section-kicker">KIỂM TRA 50 CÂU</span>
               <h2>Chọn một phiên kiểm tra</h2>
-              <p>Mỗi lượt gồm 10 câu trắc nghiệm. Kết quả được lưu vào tiến độ học.</p>
+              <p>Mỗi lượt gồm 50 câu trắc nghiệm. Nếu phạm vi có dưới 50 mục, hệ thống sẽ bổ sung cùng loại từ Test còn lại. Kết quả được lưu vào tiến độ học.</p>
               <div class="quiz-options">
                 <label>
                   <span>Nội dung</span>
@@ -328,12 +328,12 @@
                   </span>
                 </label>
               </div>
-              <button id="startQuiz" class="primary-button wide-button" type="button">Bắt đầu 10 câu</button>
+              <button id="startQuiz" class="primary-button wide-button" type="button">Bắt đầu 50 câu</button>
             </div>
 
             <div id="quizQuestion" class="quiz-question" hidden>
               <div class="quiz-header">
-                <span id="quizCounter">Câu 1 / 10</span>
+                <span id="quizCounter">Câu 1 / 50</span>
                 <span>Điểm: <strong id="quizScore">0</strong></span>
               </div>
               <div class="quiz-track"><i id="quizProgress"></i></div>
@@ -345,7 +345,7 @@
             </div>
 
             <div id="quizResult" class="quiz-result" hidden>
-              <div class="result-ring"><strong id="resultScore">0/10</strong></div>
+              <div class="result-ring"><strong id="resultScore">0/50</strong></div>
               <span class="section-kicker">HOÀN THÀNH</span>
               <h2 id="resultTitle">Một bước tiến tốt.</h2>
               <p id="resultMessage"></p>
