@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <style>
+        html, body { overflow-x: hidden; }
         .tooltip { position: relative; display: inline-block; cursor: help; }
         .tooltip .tooltiptext {
             visibility: hidden; width: 260px; background-color: #0f172a; color: #fff;
@@ -29,6 +30,7 @@
                 <a href="#about" class="hover:text-blue-600 transition text-slate-600">About</a>
                 <a href="#experience" class="hover:text-blue-600 transition text-slate-600">Experience</a>
                 <a href="#education" class="hover:text-blue-600 transition text-slate-600">Education</a>
+                <a href="#projects" class="hover:text-blue-600 transition text-slate-600">Projects</a>
                 <a href="#publications" class="hover:text-blue-600 transition text-slate-600">Publications</a>
             </div>
             <a href="CV.pdf" target="_blank" class="bg-blue-600 text-white px-5 py-2 rounded-full text-sm font-semibold hover:bg-blue-700 transition shadow-md">
@@ -106,6 +108,39 @@
                         <h3 class="text-xl font-bold">Bachelor of Mechanical Engineering</h3>
                         <p class="text-slate-600 italic">HCMUT - Vietnam National University</p>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-24 bg-slate-900 text-white px-6">
+        <div class="max-w-5xl mx-auto">
+            <div class="text-center mb-12" data-aos="fade-up">
+                <p class="text-xs font-bold text-blue-400 uppercase tracking-[0.25em] mb-3">Personal Projects &amp; Interests</p>
+                <h2 class="text-3xl font-bold">Learning Tools Beyond Research</h2>
+            </div>
+
+            <div class="group relative overflow-hidden rounded-3xl border border-slate-700 bg-slate-800 p-8 md:p-10 hover:border-blue-400 transition" data-aos="fade-up">
+                <div class="absolute -right-16 -top-16 h-56 w-56 rounded-full bg-blue-500/10 blur-2xl"></div>
+                <div class="relative flex flex-col md:flex-row md:items-center md:justify-between gap-8">
+                    <div class="max-w-2xl">
+                        <div class="flex flex-wrap gap-2 mb-5">
+                            <span class="rounded-full border border-amber-300/30 bg-amber-300/10 px-3 py-1 text-[10px] font-bold uppercase tracking-wider text-amber-300">Personal Project</span>
+                            <span class="rounded-full border border-blue-300/30 bg-blue-300/10 px-3 py-1 text-[10px] font-bold uppercase tracking-wider text-blue-300">English Learning</span>
+                        </div>
+                        <h3 class="text-2xl md:text-3xl font-bold mb-3">TOEIC Reading Lab</h3>
+                        <p class="text-slate-300 text-sm leading-relaxed">
+                            A responsive study workspace built from ETS 2026 Reading Test 1–2 materials, featuring grouped vocabulary and grammar, flashcards, quizzes, filters, and local progress tracking.
+                        </p>
+                        <div class="flex flex-wrap gap-4 mt-6 text-xs text-slate-400">
+                            <span><i class="fa-solid fa-layer-group mr-1 text-blue-400"></i> 435 study items</span>
+                            <span><i class="fa-solid fa-mobile-screen-button mr-1 text-blue-400"></i> Responsive web app</span>
+                            <span><i class="fa-solid fa-chart-line mr-1 text-blue-400"></i> Progress tracking</span>
+                        </div>
+                    </div>
+                    <a href="toeic-study/" class="shrink-0 inline-flex items-center justify-center gap-2 rounded-full bg-blue-600 px-6 py-3 text-sm font-bold text-white shadow-lg shadow-blue-950/30 hover:bg-blue-500 hover:-translate-y-0.5 transition">
+                        Open Study App <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
+                    </a>
                 </div>
             </div>
         </div>
