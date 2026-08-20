@@ -1,4 +1,5 @@
 const STORAGE_KEY = "toeic-reading-lab-v1";
+const QUIZ_SIZE = 50;
 const STATUS_LABELS = {
   new: "Chưa học",
   learning: "Đang học",
@@ -9,7 +10,7 @@ const VIEW_TITLES = {
   vocabulary: "Thư viện từ vựng",
   grammar: "Thư viện ngữ pháp",
   flashcards: "Flashcards",
-  quiz: "Kiểm tra nhanh",
+  quiz: "Kiểm tra 50 câu",
 };
 
 const state = {
@@ -168,7 +169,8 @@ function renderStats(summary) {
   const latestQuiz = (() => {
     try {
       const history = JSON.parse(localStorage.getItem(STORAGE_KEY) || "{}").quizHistory || [];
-      return history.at(-1)?.score;
+      const latest = history.at(-1);
+      return latest ? { score: latest.score, total: latest.total || 10 } : null;
     } catch {
       return null;
     }
@@ -177,7 +179,7 @@ function renderStats(summary) {
     ["TV", state.data.vocabulary.length, "Từ / cụm B1–C1"],
     ["NP", state.data.grammar.length, "Cấu trúc ngữ pháp"],
     ["ĐH", summary.mastered, "Mục đã thuộc"],
-    ["QZ", latestQuiz == null ? "—" : `${latestQuiz}/10`, "Điểm quiz gần nhất"],
+    ["QZ", latestQuiz == null ? "—" : `${latestQuiz.score}/${latestQuiz.total}`, "Điểm quiz gần nhất"],
   ];
   $("#statsGrid").innerHTML = cards
     .map(
@@ -440,19 +442,40 @@ function startQuiz() {
   const type = $("#quizType").value;
   const test = $("#quizTest").value;
   const weakOnly = $("#quizWeakOnly").checked;
-  let pool = state.allItems.filter(
+  const preferredPool = state.allItems.filter(
     (item) =>
       (type === "mixed" || item.type === type) &&
       (test === "all" || item.test === Number(test)) &&
       (!weakOnly || statusOf(item.id) !== "mastered"),
   );
-  if (pool.length < 10) pool = state.allItems.filter((item) => type === "mixed" || item.type === type);
-  const questions = shuffle(pool).slice(0, 10).map((item) => buildQuestion(item, pool));
+  const tiers = [
+    preferredPool,
+    state.allItems.filter(
+      (item) =>
+        (type === "mixed" || item.type === type) &&
+        (test === "all" || item.test === Number(test)),
+    ),
+    state.allItems.filter((item) => type === "mixed" || item.type === type),
+  ];
+  const pool = [];
+  const includedIds = new Set();
+  tiers.forEach((tier) => {
+    shuffle(tier).forEach((item) => {
+      if (pool.length < QUIZ_SIZE && !includedIds.has(item.id)) {
+        pool.push(item);
+        includedIds.add(item.id);
+      }
+    });
+  });
+  const questions = pool.map((item) => buildQuestion(item, pool));
   state.quiz = { questions, index: 0, score: 0, answered: false };
   $("#quizSetup").hidden = true;
   $("#quizQuestion").hidden = false;
   $("#quizResult").hidden = true;
   renderQuestion();
+  if (preferredPool.length < QUIZ_SIZE) {
+    showToast(`Bộ lọc có ${preferredPool.length} mục; đã bổ sung cùng loại để đủ ${questions.length} câu.`);
+  }
 }
 
 function buildQuestion(item, pool) {
@@ -532,18 +555,19 @@ function advanceQuiz() {
 function finishQuiz() {
   const quiz = state.quiz;
   const score = quiz.score;
+  const accuracy = quiz.questions.length ? score / quiz.questions.length : 0;
   $("#quizQuestion").hidden = true;
   $("#quizResult").hidden = false;
   $("#resultScore").textContent = `${score}/${quiz.questions.length}`;
-  $("#resultTitle").textContent = score >= 9 ? "Rất chắc kiến thức." : score >= 7 ? "Một bước tiến tốt." : "Đã tìm ra phần cần ôn.";
+  $("#resultTitle").textContent = accuracy >= 0.9 ? "Rất chắc kiến thức." : accuracy >= 0.7 ? "Một bước tiến tốt." : "Đã tìm ra phần cần ôn.";
   $("#resultMessage").textContent =
-    score >= 9
+    accuracy >= 0.9
       ? "Bạn có thể chuyển các mục còn phân vân sang flashcards để củng cố lần cuối."
-      : score >= 7
+      : accuracy >= 0.7
         ? "Hãy ôn lại những câu vừa sai rồi thử một lượt mới."
         : "Nên quay lại nhóm từ và cấu trúc ưu tiên trước khi làm lại quiz.";
   const saved = JSON.parse(localStorage.getItem(STORAGE_KEY) || "{}");
-  const quizHistory = [...(saved.quizHistory || []), { date: dateKey(new Date()), score }].slice(-20);
+  const quizHistory = [...(saved.quizHistory || []), { date: dateKey(new Date()), score, total: quiz.questions.length }].slice(-20);
   saveLocalState({ quizHistory });
   updateProgressUI();
 }
