@@ -191,6 +191,7 @@
               <select id="cefrFilter">
                 <option value="all">Tất cả</option>
                 <option value="B1">B1</option>
+                <option value="B1+">B1+</option>
                 <option value="B2">B2</option>
                 <option value="C1">C1</option>
               </select>
@@ -302,8 +303,8 @@
             <div id="quizSetup" class="quiz-setup">
               <span class="section-kicker">KIỂM TRA 50 CÂU</span>
               <h2>Chọn một phiên kiểm tra</h2>
-              <p>Mỗi lượt gồm 50 câu trắc nghiệm. Nếu phạm vi có dưới 50 mục, hệ thống sẽ bổ sung cùng loại từ Test còn lại. Kết quả được lưu vào tiến độ học.</p>
-              <div class="quiz-options">
+              <p>Mỗi lượt tối đa 50 câu trắc nghiệm. Lọc theo nội dung cần ôn và chọn có bổ sung ngoài bộ lọc hay không.</p>
+              <form class="quiz-options" id="quizFilterForm">
                 <label>
                   <span>Nội dung</span>
                   <select id="quizType">
@@ -320,14 +321,57 @@
                     <option value="2">Test 2</option>
                   </select>
                 </label>
+                <label>
+                  <span>Part</span>
+                  <select id="quizPart">
+                    <option value="all">Tất cả</option>
+                    <option value="5">Part 5</option>
+                    <option value="6">Part 6</option>
+                    <option value="7">Part 7</option>
+                  </select>
+                </label>
+                <label>
+                  <span>CEFR</span>
+                  <select id="quizCefr">
+                    <option value="all">Tất cả</option>
+                    <option value="B1">B1</option>
+                    <option value="B1+">B1+</option>
+                    <option value="B2">B2</option>
+                    <option value="C1">C1</option>
+                  </select>
+                </label>
+                <label>
+                  <span>Ưu tiên</span>
+                  <select id="quizPriority">
+                    <option value="all">Tất cả</option>
+                    <option value="Rất cao">Rất cao</option>
+                    <option value="Cao">Cao</option>
+                    <option value="Trung bình">Trung bình</option>
+                    <option value="Tiêu chuẩn">Tiêu chuẩn</option>
+                  </select>
+                </label>
+                <label>
+                  <span>Trạng thái</span>
+                  <select id="quizStatus">
+                    <option value="all">Tất cả</option>
+                    <option value="new">Chưa học</option>
+                    <option value="learning">Đang học</option>
+                    <option value="mastered">Đã thuộc</option>
+                  </select>
+                </label>
                 <label class="check-card">
-                  <input id="quizWeakOnly" type="checkbox" />
+                  <input id="quizFillToSize" type="checkbox" checked />
                   <span>
-                    <strong>Ưu tiên mục chưa thuộc</strong>
-                    <small>Giảm câu hỏi từ các mục đã nhớ tốt</small>
+                    <strong>Bổ sung để đủ 50 câu</strong>
+                    <small>Nới dần Part, CEFR, ưu tiên và Test nhưng luôn giữ loại nội dung</small>
                   </span>
                 </label>
+              </form>
+              <div class="results-summary quiz-filter-summary">
+                <p><strong id="quizMatchCount">0</strong> mục khớp bộ lọc</p>
+                <button id="clearQuizFilters" class="text-button" type="button">Xóa bộ lọc</button>
               </div>
+              <p id="quizFilterNote" class="quiz-filter-note" aria-live="polite"></p>
               <button id="startQuiz" class="primary-button wide-button" type="button">Bắt đầu 50 câu</button>
             </div>
 
