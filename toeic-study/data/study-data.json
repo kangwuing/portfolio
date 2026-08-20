@@ -3,7 +3,8 @@
     "title": "ETS 2026 TOEIC Reading Study",
     "tests": [
       1,
-      2
+      2,
+      3
     ],
     "parts": [
       5,
@@ -12,9 +13,9 @@
     ],
     "cefrNotice": "CEFR là mức ước lượng phục vụ ôn tập, không phải phân loại chính thức của ETS.",
     "counts": {
-      "vocabulary": 360,
-      "grammar": 75,
-      "quickReview": 52
+      "vocabulary": 563,
+      "grammar": 118,
+      "quickReview": 78
     }
   },
   "vocabulary": [
@@ -6875,6 +6876,3870 @@
         "7"
       ],
       "priority": "Cao"
+    },
+    {
+      "id": "t3-v-1",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S01",
+      "group": "Công việc / nhân sự",
+      "term": "promotion",
+      "meaning": "sự thăng chức",
+      "wordType": "N",
+      "cefr": "B1",
+      "synonyms": "advancement",
+      "example": "receive a promotion",
+      "wordFamily": "promote → promotion → promotional",
+      "source": "Part 5 Q104 / Part 6 Q135–138",
+      "parts": [
+        "5",
+        "6"
+      ],
+      "priority": "Rất cao"
+    },
+    {
+      "id": "t3-v-2",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S01",
+      "group": "Công việc / nhân sự",
+      "term": "vice president",
+      "meaning": "phó chủ tịch / phó giám đốc",
+      "wordType": "Cụm",
+      "cefr": "B2",
+      "synonyms": "senior executive",
+      "example": "company vice president",
+      "wordFamily": "",
+      "source": "Part 5 Q104",
+      "parts": [
+        "5"
+      ],
+      "priority": "Cao"
+    },
+    {
+      "id": "t3-v-3",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S01",
+      "group": "Công việc / nhân sự",
+      "term": "technician",
+      "meaning": "kỹ thuật viên",
+      "wordType": "N",
+      "cefr": "B1",
+      "synonyms": "specialist; repair worker",
+      "example": "contact a technician",
+      "wordFamily": "technical → technician",
+      "source": "Part 5 Q106",
+      "parts": [
+        "5"
+      ],
+      "priority": "Rất cao"
+    },
+    {
+      "id": "t3-v-4",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S01",
+      "group": "Công việc / nhân sự",
+      "term": "supplier",
+      "meaning": "nhà cung cấp",
+      "wordType": "N",
+      "cefr": "B1",
+      "synonyms": "vendor; provider",
+      "example": "chosen as the supplier",
+      "wordFamily": "supply → supplier",
+      "source": "Part 5 Q114",
+      "parts": [
+        "5"
+      ],
+      "priority": "Rất cao"
+    },
+    {
+      "id": "t3-v-5",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S01",
+      "group": "Công việc / nhân sự",
+      "term": "committee member",
+      "meaning": "thành viên ủy ban",
+      "wordType": "Cụm",
+      "cefr": "B1",
+      "synonyms": "panel member",
+      "example": "committee members who attended",
+      "wordFamily": "",
+      "source": "Part 5 Q116",
+      "parts": [
+        "5"
+      ],
+      "priority": "Cao"
+    },
+    {
+      "id": "t3-v-6",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S01",
+      "group": "Công việc / nhân sự",
+      "term": "action plan",
+      "meaning": "kế hoạch hành động",
+      "wordType": "Cụm",
+      "cefr": "B2",
+      "synonyms": "implementation plan",
+      "example": "develop an action plan",
+      "wordFamily": "",
+      "source": "Part 5 Q119",
+      "parts": [
+        "5"
+      ],
+      "priority": "Rất cao"
+    },
+    {
+      "id": "t3-v-7",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S01",
+      "group": "Công việc / nhân sự",
+      "term": "job seeker",
+      "meaning": "người tìm việc",
+      "wordType": "Cụm",
+      "cefr": "B1",
+      "synonyms": "job applicant",
+      "example": "improve job seekers' skills",
+      "wordFamily": "",
+      "source": "Part 5 Q120",
+      "parts": [
+        "5"
+      ],
+      "priority": "Cao"
+    },
+    {
+      "id": "t3-v-8",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S01",
+      "group": "Công việc / nhân sự",
+      "term": "team captain",
+      "meaning": "trưởng nhóm",
+      "wordType": "Cụm",
+      "cefr": "B1",
+      "synonyms": "team leader",
+      "example": "longtime team captain",
+      "wordFamily": "",
+      "source": "Part 6 Q135–138",
+      "parts": [
+        "6"
+      ],
+      "priority": "Cao"
+    },
+    {
+      "id": "t3-v-9",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S01",
+      "group": "Công việc / nhân sự",
+      "term": "regional distribution manager",
+      "meaning": "quản lý phân phối khu vực",
+      "wordType": "Cụm",
+      "cefr": "B2",
+      "synonyms": "regional logistics manager",
+      "example": "serve as regional distribution manager",
+      "wordFamily": "",
+      "source": "Part 6 Q135–138",
+      "parts": [
+        "6"
+      ],
+      "priority": "Rất cao"
+    },
+    {
+      "id": "t3-v-10",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S01",
+      "group": "Công việc / nhân sự",
+      "term": "potential investor",
+      "meaning": "nhà đầu tư tiềm năng",
+      "wordType": "Cụm",
+      "cefr": "B2",
+      "synonyms": "prospective investor",
+      "example": "pitch to a potential investor",
+      "wordFamily": "",
+      "source": "Part 6 Q139–142",
+      "parts": [
+        "6"
+      ],
+      "priority": "Rất cao"
+    },
+    {
+      "id": "t3-v-11",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S01",
+      "group": "Công việc / nhân sự",
+      "term": "investment professional",
+      "meaning": "chuyên gia đầu tư",
+      "wordType": "Cụm",
+      "cefr": "B2",
+      "synonyms": "investment specialist",
+      "example": "insights for investment professionals",
+      "wordFamily": "",
+      "source": "Part 5 Q117",
+      "parts": [
+        "5"
+      ],
+      "priority": "Cao"
+    },
+    {
+      "id": "t3-v-12",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S01",
+      "group": "Công việc / nhân sự",
+      "term": "human resources",
+      "meaning": "nhân sự",
+      "wordType": "N",
+      "cefr": "B1",
+      "synonyms": "HR; personnel",
+      "example": "human resources department",
+      "wordFamily": "",
+      "source": "Part 6 Q143–146 / Part 7 Q158–160",
+      "parts": [
+        "6",
+        "7"
+      ],
+      "priority": "Rất cao"
+    },
+    {
+      "id": "t3-v-13",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S01",
+      "group": "Công việc / nhân sự",
+      "term": "executive position",
+      "meaning": "vị trí điều hành cấp cao",
+      "wordType": "Cụm",
+      "cefr": "B2",
+      "synonyms": "senior role",
+      "example": "fill an executive position",
+      "wordFamily": "",
+      "source": "Part 7 Q158–160",
+      "parts": [
+        "7"
+      ],
+      "priority": "Cao"
+    },
+    {
+      "id": "t3-v-14",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S01",
+      "group": "Công việc / nhân sự",
+      "term": "chief financial officer",
+      "meaning": "giám đốc tài chính",
+      "wordType": "Cụm",
+      "cefr": "B2",
+      "synonyms": "CFO",
+      "example": "serve as chief financial officer",
+      "wordFamily": "",
+      "source": "Part 7 Q158–160",
+      "parts": [
+        "7"
+      ],
+      "priority": "Cao"
+    },
+    {
+      "id": "t3-v-15",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S01",
+      "group": "Công việc / nhân sự",
+      "term": "director of marketing",
+      "meaning": "giám đốc tiếp thị",
+      "wordType": "Cụm",
+      "cefr": "B1",
+      "synonyms": "marketing director",
+      "example": "appoint a director of marketing",
+      "wordFamily": "",
+      "source": "Part 7 Q158–160",
+      "parts": [
+        "7"
+      ],
+      "priority": "Cao"
+    },
+    {
+      "id": "t3-v-16",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S01",
+      "group": "Công việc / nhân sự",
+      "term": "oversee",
+      "meaning": "giám sát / phụ trách",
+      "wordType": "V",
+      "cefr": "B2",
+      "synonyms": "supervise; manage",
+      "example": "oversee a department",
+      "wordFamily": "oversight → oversee",
+      "source": "Part 7 Q158–160",
+      "parts": [
+        "7"
+      ],
+      "priority": "Rất cao"
+    },
+    {
+      "id": "t3-v-17",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S01",
+      "group": "Công việc / nhân sự",
+      "term": "retire",
+      "meaning": "nghỉ hưu",
+      "wordType": "V",
+      "cefr": "B1",
+      "synonyms": "leave employment",
+      "example": "decide to retire",
+      "wordFamily": "retirement → retired",
+      "source": "Part 7 Q158–160",
+      "parts": [
+        "7"
+      ],
+      "priority": "Cao"
+    },
+    {
+      "id": "t3-v-18",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S01",
+      "group": "Công việc / nhân sự",
+      "term": "assignment",
+      "meaning": "nhiệm vụ / sự bổ nhiệm",
+      "wordType": "N",
+      "cefr": "B1",
+      "synonyms": "task; appointment",
+      "example": "executive assignment",
+      "wordFamily": "assign → assignment",
+      "source": "Part 7 Q158–160",
+      "parts": [
+        "7"
+      ],
+      "priority": "Cao"
+    },
+    {
+      "id": "t3-v-19",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S01",
+      "group": "Công việc / nhân sự",
+      "term": "report reviewer",
+      "meaning": "người rà soát báo cáo",
+      "wordType": "Cụm",
+      "cefr": "B2",
+      "synonyms": "technical editor",
+      "example": "hire a report reviewer",
+      "wordFamily": "review → reviewer",
+      "source": "Part 7 Q164–167",
+      "parts": [
+        "7"
+      ],
+      "priority": "Cao"
+    },
+    {
+      "id": "t3-v-20",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S01",
+      "group": "Công việc / nhân sự",
+      "term": "work-from-home position",
+      "meaning": "vị trí làm việc tại nhà",
+      "wordType": "Cụm",
+      "cefr": "B1",
+      "synonyms": "remote position",
+      "example": "apply for a work-from-home position",
+      "wordFamily": "",
+      "source": "Part 7 Q164–167",
+      "parts": [
+        "7"
+      ],
+      "priority": "Rất cao"
+    },
+    {
+      "id": "t3-v-21",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S01",
+      "group": "Công việc / nhân sự",
+      "term": "full-time position",
+      "meaning": "vị trí toàn thời gian",
+      "wordType": "Cụm",
+      "cefr": "B1",
+      "synonyms": "full-time role",
+      "example": "regular hours for a full-time position",
+      "wordFamily": "",
+      "source": "Part 7 Q164–167",
+      "parts": [
+        "7"
+      ],
+      "priority": "Cao"
+    },
+    {
+      "id": "t3-v-22",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S01",
+      "group": "Công việc / nhân sự",
+      "term": "job requirement",
+      "meaning": "yêu cầu công việc",
+      "wordType": "Cụm",
+      "cefr": "B1",
+      "synonyms": "employment requirement",
+      "example": "listed as a job requirement",
+      "wordFamily": "",
+      "source": "Part 7 Q164–167",
+      "parts": [
+        "7"
+      ],
+      "priority": "Cao"
+    },
+    {
+      "id": "t3-v-23",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S01",
+      "group": "Công việc / nhân sự",
+      "term": "interpersonal skills",
+      "meaning": "kỹ năng giao tiếp giữa người với người",
+      "wordType": "Cụm",
+      "cefr": "B2",
+      "synonyms": "people skills",
+      "example": "strong interpersonal skills",
+      "wordFamily": "",
+      "source": "Part 7 Q164–167",
+      "parts": [
+        "7"
+      ],
+      "priority": "Rất cao"
+    },
+    {
+      "id": "t3-v-24",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S01",
+      "group": "Công việc / nhân sự",
+      "term": "cover letter",
+      "meaning": "thư xin việc",
+      "wordType": "Cụm",
+      "cefr": "B1",
+      "synonyms": "application letter",
+      "example": "send a cover letter and résumé",
+      "wordFamily": "",
+      "source": "Part 7 Q164–167",
+      "parts": [
+        "7"
+      ],
+      "priority": "Rất cao"
+    },
+    {
+      "id": "t3-v-25",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S01",
+      "group": "Công việc / nhân sự",
+      "term": "applicant",
+      "meaning": "ứng viên",
+      "wordType": "N",
+      "cefr": "B1",
+      "synonyms": "candidate",
+      "example": "interested applicants",
+      "wordFamily": "apply → applicant → application",
+      "source": "Part 7 Q164–167 / Q191–200",
+      "parts": [
+        "7"
+      ],
+      "priority": "Rất cao"
+    },
+    {
+      "id": "t3-v-26",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S01",
+      "group": "Công việc / nhân sự",
+      "term": "recruiter",
+      "meaning": "nhà tuyển dụng",
+      "wordType": "N",
+      "cefr": "B2",
+      "synonyms": "hiring manager",
+      "example": "job seekers and recruiters",
+      "wordFamily": "recruit → recruiter → recruitment",
+      "source": "Part 7 Q196–200",
+      "parts": [
+        "7"
+      ],
+      "priority": "Cao"
+    },
+    {
+      "id": "t3-v-27",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S01",
+      "group": "Công việc / nhân sự",
+      "term": "application deadline",
+      "meaning": "hạn nộp hồ sơ",
+      "wordType": "Cụm",
+      "cefr": "B1",
+      "synonyms": "submission deadline",
+      "example": "application deadline: 21 July",
+      "wordFamily": "",
+      "source": "Part 7 Q196–200",
+      "parts": [
+        "7"
+      ],
+      "priority": "Rất cao"
+    },
+    {
+      "id": "t3-v-28",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S01",
+      "group": "Công việc / nhân sự",
+      "term": "performance rehearsal",
+      "meaning": "buổi tập luyện biểu diễn",
+      "wordType": "Cụm",
+      "cefr": "B2",
+      "synonyms": "practice session",
+      "example": "autumn performance rehearsals",
+      "wordFamily": "rehearse → rehearsal",
+      "source": "Part 7 Q196–200",
+      "parts": [
+        "7"
+      ],
+      "priority": "Cao"
+    },
+    {
+      "id": "t3-v-29",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S02",
+      "group": "Kinh doanh / tài chính",
+      "term": "profitable",
+      "meaning": "có lợi nhuận",
+      "wordType": "Adj",
+      "cefr": "B1",
+      "synonyms": "lucrative; money-making",
+      "example": "a financially profitable quarter",
+      "wordFamily": "profit → profitable → profitability",
+      "source": "Part 5 Q113",
+      "parts": [
+        "5"
+      ],
+      "priority": "Rất cao"
+    },
+    {
+      "id": "t3-v-30",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S02",
+      "group": "Kinh doanh / tài chính",
+      "term": "lowest bid",
+      "meaning": "giá thầu thấp nhất",
+      "wordType": "Cụm",
+      "cefr": "B2",
+      "synonyms": "lowest offer",
+      "example": "submit the lowest bid",
+      "wordFamily": "",
+      "source": "Part 5 Q114",
+      "parts": [
+        "5"
+      ],
+      "priority": "Rất cao"
+    },
+    {
+      "id": "t3-v-31",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S02",
+      "group": "Kinh doanh / tài chính",
+      "term": "budget cut",
+      "meaning": "việc cắt giảm ngân sách",
+      "wordType": "Cụm",
+      "cefr": "B2",
+      "synonyms": "spending reduction",
+      "example": "in response to budget cuts",
+      "wordFamily": "",
+      "source": "Part 5 Q119",
+      "parts": [
+        "5"
+      ],
+      "priority": "Rất cao"
+    },
+    {
+      "id": "t3-v-32",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S02",
+      "group": "Kinh doanh / tài chính",
+      "term": "decline in revenue",
+      "meaning": "sự sụt giảm doanh thu",
+      "wordType": "Cụm",
+      "cefr": "B2",
+      "synonyms": "drop in revenue",
+      "example": "a slight decline in revenue",
+      "wordFamily": "decline → declining",
+      "source": "Part 5 Q125",
+      "parts": [
+        "5"
+      ],
+      "priority": "Rất cao"
+    },
+    {
+      "id": "t3-v-33",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S02",
+      "group": "Kinh doanh / tài chính",
+      "term": "expansion plan",
+      "meaning": "kế hoạch mở rộng",
+      "wordType": "Cụm",
+      "cefr": "B1",
+      "synonyms": "growth plan",
+      "example": "move forward with an expansion plan",
+      "wordFamily": "expand → expansion",
+      "source": "Part 5 Q125",
+      "parts": [
+        "5"
+      ],
+      "priority": "Rất cao"
+    },
+    {
+      "id": "t3-v-34",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S02",
+      "group": "Kinh doanh / tài chính",
+      "term": "cash back",
+      "meaning": "tiền hoàn lại",
+      "wordType": "Cụm",
+      "cefr": "B1",
+      "synonyms": "cashback reward",
+      "example": "earn cash back on a purchase",
+      "wordFamily": "",
+      "source": "Part 6 Q131–134",
+      "parts": [
+        "6"
+      ],
+      "priority": "Rất cao"
+    },
+    {
+      "id": "t3-v-35",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S02",
+      "group": "Kinh doanh / tài chính",
+      "term": "transaction",
+      "meaning": "giao dịch",
+      "wordType": "N",
+      "cefr": "B1",
+      "synonyms": "deal; payment",
+      "example": "a $50 transaction",
+      "wordFamily": "transact → transaction",
+      "source": "Part 6 Q131–134",
+      "parts": [
+        "6"
+      ],
+      "priority": "Rất cao"
+    },
+    {
+      "id": "t3-v-36",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S02",
+      "group": "Kinh doanh / tài chính",
+      "term": "annual interest rate",
+      "meaning": "lãi suất hằng năm",
+      "wordType": "Cụm",
+      "cefr": "B2",
+      "synonyms": "yearly rate",
+      "example": "earn a 3% annual interest rate",
+      "wordFamily": "",
+      "source": "Part 6 Q131–134",
+      "parts": [
+        "6"
+      ],
+      "priority": "Cao"
+    },
+    {
+      "id": "t3-v-37",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S02",
+      "group": "Kinh doanh / tài chính",
+      "term": "savings account",
+      "meaning": "tài khoản tiết kiệm",
+      "wordType": "Cụm",
+      "cefr": "B1",
+      "synonyms": "deposit account",
+      "example": "a separate savings account",
+      "wordFamily": "",
+      "source": "Part 6 Q131–134",
+      "parts": [
+        "6"
+      ],
+      "priority": "Cao"
+    },
+    {
+      "id": "t3-v-38",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S02",
+      "group": "Kinh doanh / tài chính",
+      "term": "double-rewards program",
+      "meaning": "chương trình nhân đôi phần thưởng",
+      "wordType": "Cụm",
+      "cefr": "B2",
+      "synonyms": "bonus rewards program",
+      "example": "enroll in a double-rewards program",
+      "wordFamily": "",
+      "source": "Part 6 Q131–134",
+      "parts": [
+        "6"
+      ],
+      "priority": "Cao"
+    },
+    {
+      "id": "t3-v-39",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S02",
+      "group": "Kinh doanh / tài chính",
+      "term": "funding",
+      "meaning": "nguồn vốn",
+      "wordType": "N",
+      "cefr": "B1",
+      "synonyms": "financing; capital",
+      "example": "acquire the funding you seek",
+      "wordFamily": "fund → funding",
+      "source": "Part 6 Q139–142",
+      "parts": [
+        "6"
+      ],
+      "priority": "Rất cao"
+    },
+    {
+      "id": "t3-v-40",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S02",
+      "group": "Kinh doanh / tài chính",
+      "term": "market share",
+      "meaning": "thị phần",
+      "wordType": "Cụm",
+      "cefr": "B2",
+      "synonyms": "share of the market",
+      "example": "regain significant market share",
+      "wordFamily": "",
+      "source": "Part 7 Q158–160",
+      "parts": [
+        "7"
+      ],
+      "priority": "Rất cao"
+    },
+    {
+      "id": "t3-v-41",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S02",
+      "group": "Kinh doanh / tài chính",
+      "term": "competitor",
+      "meaning": "đối thủ cạnh tranh",
+      "wordType": "N",
+      "cefr": "B1",
+      "synonyms": "rival",
+      "example": "market share from competitors",
+      "wordFamily": "compete → competition → competitor",
+      "source": "Part 7 Q158–160",
+      "parts": [
+        "7"
+      ],
+      "priority": "Cao"
+    },
+    {
+      "id": "t3-v-42",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S02",
+      "group": "Kinh doanh / tài chính",
+      "term": "sales downturn",
+      "meaning": "sự suy giảm doanh số",
+      "wordType": "Cụm",
+      "cefr": "B2",
+      "synonyms": "sales decline",
+      "example": "a recent sales downturn",
+      "wordFamily": "",
+      "source": "Part 7 Q172–175",
+      "parts": [
+        "7"
+      ],
+      "priority": "Rất cao"
+    },
+    {
+      "id": "t3-v-43",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S02",
+      "group": "Kinh doanh / tài chính",
+      "term": "marketing budget",
+      "meaning": "ngân sách tiếp thị",
+      "wordType": "Cụm",
+      "cefr": "B1",
+      "synonyms": "advertising budget",
+      "example": "increase the marketing budget",
+      "wordFamily": "",
+      "source": "Part 7 Q172–175",
+      "parts": [
+        "7"
+      ],
+      "priority": "Rất cao"
+    },
+    {
+      "id": "t3-v-44",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S02",
+      "group": "Kinh doanh / tài chính",
+      "term": "volume discount",
+      "meaning": "chiết khấu theo số lượng",
+      "wordType": "Cụm",
+      "cefr": "B2",
+      "synonyms": "bulk discount",
+      "example": "offer a substantial volume discount",
+      "wordFamily": "",
+      "source": "Part 7 Q155–157",
+      "parts": [
+        "7"
+      ],
+      "priority": "Rất cao"
+    },
+    {
+      "id": "t3-v-45",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S02",
+      "group": "Kinh doanh / tài chính",
+      "term": "price quote",
+      "meaning": "báo giá",
+      "wordType": "Cụm",
+      "cefr": "B1",
+      "synonyms": "cost estimate",
+      "example": "receive a free price quote",
+      "wordFamily": "",
+      "source": "Part 7 Q155–157",
+      "parts": [
+        "7"
+      ],
+      "priority": "Rất cao"
+    },
+    {
+      "id": "t3-v-46",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S02",
+      "group": "Kinh doanh / tài chính",
+      "term": "bulk order",
+      "meaning": "đơn hàng số lượng lớn",
+      "wordType": "Cụm",
+      "cefr": "B2",
+      "synonyms": "large order",
+      "example": "a price quote for a bulk order",
+      "wordFamily": "",
+      "source": "Part 7 Q155–157",
+      "parts": [
+        "7"
+      ],
+      "priority": "Rất cao"
+    },
+    {
+      "id": "t3-v-47",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S02",
+      "group": "Kinh doanh / tài chính",
+      "term": "account fee",
+      "meaning": "phí tài khoản",
+      "wordType": "Cụm",
+      "cefr": "B1",
+      "synonyms": "membership fee",
+      "example": "pay an initial account fee",
+      "wordFamily": "",
+      "source": "Part 7 Q196–200",
+      "parts": [
+        "7"
+      ],
+      "priority": "Cao"
+    },
+    {
+      "id": "t3-v-48",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S02",
+      "group": "Kinh doanh / tài chính",
+      "term": "annual charge",
+      "meaning": "phí thường niên",
+      "wordType": "Cụm",
+      "cefr": "B1",
+      "synonyms": "yearly fee",
+      "example": "be charged annually",
+      "wordFamily": "",
+      "source": "Part 7 Q196–200",
+      "parts": [
+        "7"
+      ],
+      "priority": "Cao"
+    },
+    {
+      "id": "t3-v-49",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S03",
+      "group": "Công nghệ / dữ liệu",
+      "term": "data-driven",
+      "meaning": "dựa trên dữ liệu",
+      "wordType": "Adj",
+      "cefr": "B2",
+      "synonyms": "evidence-based",
+      "example": "data-driven insights",
+      "wordFamily": "",
+      "source": "Part 5 Q117",
+      "parts": [
+        "5"
+      ],
+      "priority": "Rất cao"
+    },
+    {
+      "id": "t3-v-50",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S03",
+      "group": "Công nghệ / dữ liệu",
+      "term": "insight",
+      "meaning": "thông tin chuyên sâu",
+      "wordType": "N",
+      "cefr": "B2",
+      "synonyms": "understanding; finding",
+      "example": "provide data-driven insights",
+      "wordFamily": "",
+      "source": "Part 5 Q117 / Part 7 Q161–163",
+      "parts": [
+        "5",
+        "7"
+      ],
+      "priority": "Cao"
+    },
+    {
+      "id": "t3-v-51",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S03",
+      "group": "Công nghệ / dữ liệu",
+      "term": "computer memory",
+      "meaning": "bộ nhớ máy tính",
+      "wordType": "Cụm",
+      "cefr": "B1",
+      "synonyms": "system memory",
+      "example": "use computer memory efficiently",
+      "wordFamily": "",
+      "source": "Part 5 Q122",
+      "parts": [
+        "5"
+      ],
+      "priority": "Cao"
+    },
+    {
+      "id": "t3-v-52",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S03",
+      "group": "Công nghệ / dữ liệu",
+      "term": "simultaneously",
+      "meaning": "đồng thời",
+      "wordType": "Adv",
+      "cefr": "B2",
+      "synonyms": "at the same time",
+      "example": "open five files simultaneously",
+      "wordFamily": "simultaneous → simultaneously",
+      "source": "Part 5 Q122",
+      "parts": [
+        "5"
+      ],
+      "priority": "Rất cao"
+    },
+    {
+      "id": "t3-v-53",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S03",
+      "group": "Công nghệ / dữ liệu",
+      "term": "online payroll portal",
+      "meaning": "cổng thông tin lương trực tuyến",
+      "wordType": "Cụm",
+      "cefr": "B2",
+      "synonyms": "payroll system",
+      "example": "access the online payroll portal",
+      "wordFamily": "",
+      "source": "Part 6 Q143–146",
+      "parts": [
+        "6"
+      ],
+      "priority": "Rất cao"
+    },
+    {
+      "id": "t3-v-54",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S03",
+      "group": "Công nghệ / dữ liệu",
+      "term": "software upgrade",
+      "meaning": "bản nâng cấp phần mềm",
+      "wordType": "Cụm",
+      "cefr": "B1",
+      "synonyms": "system update",
+      "example": "allow for a software upgrade",
+      "wordFamily": "upgrade → upgraded",
+      "source": "Part 6 Q143–146",
+      "parts": [
+        "6"
+      ],
+      "priority": "Rất cao"
+    },
+    {
+      "id": "t3-v-55",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S03",
+      "group": "Công nghệ / dữ liệu",
+      "term": "direct deposit",
+      "meaning": "chuyển lương trực tiếp vào tài khoản",
+      "wordType": "Cụm",
+      "cefr": "B2",
+      "synonyms": "electronic deposit",
+      "example": "manage direct deposit preferences",
+      "wordFamily": "",
+      "source": "Part 6 Q143–146",
+      "parts": [
+        "6"
+      ],
+      "priority": "Rất cao"
+    },
+    {
+      "id": "t3-v-56",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S03",
+      "group": "Công nghệ / dữ liệu",
+      "term": "live-chat function",
+      "meaning": "chức năng trò chuyện trực tiếp",
+      "wordType": "Cụm",
+      "cefr": "B1",
+      "synonyms": "live support",
+      "example": "feature a live-chat function",
+      "wordFamily": "",
+      "source": "Part 6 Q143–146",
+      "parts": [
+        "6"
+      ],
+      "priority": "Cao"
+    },
+    {
+      "id": "t3-v-57",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S03",
+      "group": "Công nghệ / dữ liệu",
+      "term": "optimize",
+      "meaning": "tối ưu hóa",
+      "wordType": "V",
+      "cefr": "B2",
+      "synonyms": "improve; enhance",
+      "example": "optimize department services",
+      "wordFamily": "optimal → optimize → optimization",
+      "source": "Part 6 Q143–146",
+      "parts": [
+        "6"
+      ],
+      "priority": "Rất cao"
+    },
+    {
+      "id": "t3-v-58",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S03",
+      "group": "Công nghệ / dữ liệu",
+      "term": "mobile app",
+      "meaning": "ứng dụng di động",
+      "wordType": "Cụm",
+      "cefr": "B1",
+      "synonyms": "smartphone application",
+      "example": "use a mobile app",
+      "wordFamily": "",
+      "source": "Part 7 Q153–154",
+      "parts": [
+        "7"
+      ],
+      "priority": "Cao"
+    },
+    {
+      "id": "t3-v-59",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S03",
+      "group": "Công nghệ / dữ liệu",
+      "term": "storage location",
+      "meaning": "địa điểm lưu trữ",
+      "wordType": "Cụm",
+      "cefr": "B1",
+      "synonyms": "warehouse space",
+      "example": "find available storage locations",
+      "wordFamily": "",
+      "source": "Part 7 Q153–154",
+      "parts": [
+        "7"
+      ],
+      "priority": "Cao"
+    },
+    {
+      "id": "t3-v-60",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S03",
+      "group": "Công nghệ / dữ liệu",
+      "term": "inventory work",
+      "meaning": "công việc kiểm kê",
+      "wordType": "Cụm",
+      "cefr": "B1",
+      "synonyms": "stocktaking",
+      "example": "complete inventory work",
+      "wordFamily": "inventory → inventoried",
+      "source": "Part 7 Q153–154",
+      "parts": [
+        "7"
+      ],
+      "priority": "Cao"
+    },
+    {
+      "id": "t3-v-61",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S03",
+      "group": "Công nghệ / dữ liệu",
+      "term": "ergonomic",
+      "meaning": "thuộc công thái học",
+      "wordType": "Adj",
+      "cefr": "C1",
+      "synonyms": "user-friendly; body-supporting",
+      "example": "ergonomic laptop stands",
+      "wordFamily": "ergonomics → ergonomic",
+      "source": "Part 7 Q155–157",
+      "parts": [
+        "7"
+      ],
+      "priority": "Rất cao"
+    },
+    {
+      "id": "t3-v-62",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S03",
+      "group": "Công nghệ / dữ liệu",
+      "term": "laptop stand",
+      "meaning": "giá đỡ máy tính xách tay",
+      "wordType": "Cụm",
+      "cefr": "B1",
+      "synonyms": "notebook stand",
+      "example": "manufacture laptop stands",
+      "wordFamily": "",
+      "source": "Part 7 Q155–157",
+      "parts": [
+        "7"
+      ],
+      "priority": "Cao"
+    },
+    {
+      "id": "t3-v-63",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S03",
+      "group": "Công nghệ / dữ liệu",
+      "term": "adjustable standing desk",
+      "meaning": "bàn đứng điều chỉnh được",
+      "wordType": "Cụm",
+      "cefr": "B2",
+      "synonyms": "height-adjustable desk",
+      "example": "adjustable standing desks",
+      "wordFamily": "adjust → adjustable",
+      "source": "Part 7 Q155–157",
+      "parts": [
+        "7"
+      ],
+      "priority": "Cao"
+    },
+    {
+      "id": "t3-v-64",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S03",
+      "group": "Công nghệ / dữ liệu",
+      "term": "product assessment",
+      "meaning": "đánh giá sản phẩm",
+      "wordType": "Cụm",
+      "cefr": "B2",
+      "synonyms": "product review",
+      "example": "independent assessments",
+      "wordFamily": "assess → assessment",
+      "source": "Part 7 Q155–157",
+      "parts": [
+        "7"
+      ],
+      "priority": "Cao"
+    },
+    {
+      "id": "t3-v-65",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S03",
+      "group": "Công nghệ / dữ liệu",
+      "term": "data security training",
+      "meaning": "đào tạo bảo mật dữ liệu",
+      "wordType": "Cụm",
+      "cefr": "B2",
+      "synonyms": "information-security training",
+      "example": "attend data security training",
+      "wordFamily": "",
+      "source": "Part 7 Q191–195",
+      "parts": [
+        "7"
+      ],
+      "priority": "Rất cao"
+    },
+    {
+      "id": "t3-v-66",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S03",
+      "group": "Công nghệ / dữ liệu",
+      "term": "technology update",
+      "meaning": "bản cập nhật công nghệ",
+      "wordType": "Cụm",
+      "cefr": "B1",
+      "synonyms": "technical update",
+      "example": "meeting about technology updates",
+      "wordFamily": "",
+      "source": "Part 7 Q191–195",
+      "parts": [
+        "7"
+      ],
+      "priority": "Cao"
+    },
+    {
+      "id": "t3-v-67",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S03",
+      "group": "Công nghệ / dữ liệu",
+      "term": "video recording",
+      "meaning": "bản ghi hình",
+      "wordType": "Cụm",
+      "cefr": "B1",
+      "synonyms": "video sample",
+      "example": "upload a video recording",
+      "wordFamily": "record → recording",
+      "source": "Part 7 Q196–200",
+      "parts": [
+        "7"
+      ],
+      "priority": "Rất cao"
+    },
+    {
+      "id": "t3-v-68",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S04",
+      "group": "Thời gian / lịch trình",
+      "term": "monthly basis",
+      "meaning": "hằng tháng",
+      "wordType": "Cụm",
+      "cefr": "B1",
+      "synonyms": "every month",
+      "example": "booked on a monthly basis",
+      "wordFamily": "",
+      "source": "Part 5 Q109",
+      "parts": [
+        "5"
+      ],
+      "priority": "Cao"
+    },
+    {
+      "id": "t3-v-69",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S04",
+      "group": "Thời gian / lịch trình",
+      "term": "over the past ten years",
+      "meaning": "trong mười năm qua",
+      "wordType": "Cụm",
+      "cefr": "B1",
+      "synonyms": "during the last decade",
+      "example": "changes over the past ten years",
+      "wordFamily": "",
+      "source": "Part 5 Q126",
+      "parts": [
+        "5"
+      ],
+      "priority": "Cao"
+    },
+    {
+      "id": "t3-v-70",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S04",
+      "group": "Thời gian / lịch trình",
+      "term": "long before",
+      "meaning": "rất lâu trước khi",
+      "wordType": "Cụm",
+      "cefr": "B1",
+      "synonyms": "well before",
+      "example": "long before the program began",
+      "wordFamily": "",
+      "source": "Part 5 Q129",
+      "parts": [
+        "5"
+      ],
+      "priority": "Cao"
+    },
+    {
+      "id": "t3-v-71",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S04",
+      "group": "Thời gian / lịch trình",
+      "term": "limited time",
+      "meaning": "thời gian có hạn",
+      "wordType": "Cụm",
+      "cefr": "B1",
+      "synonyms": "short period",
+      "example": "double rewards for a limited time",
+      "wordFamily": "",
+      "source": "Part 6 Q131–134",
+      "parts": [
+        "6"
+      ],
+      "priority": "Cao"
+    },
+    {
+      "id": "t3-v-72",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S04",
+      "group": "Thời gian / lịch trình",
+      "term": "final day",
+      "meaning": "ngày cuối cùng",
+      "wordType": "Cụm",
+      "cefr": "B1",
+      "synonyms": "last day",
+      "example": "her final day with the team",
+      "wordFamily": "",
+      "source": "Part 6 Q135–138",
+      "parts": [
+        "6"
+      ],
+      "priority": "Cao"
+    },
+    {
+      "id": "t3-v-73",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S04",
+      "group": "Thời gian / lịch trình",
+      "term": "from the outset",
+      "meaning": "ngay từ đầu",
+      "wordType": "Cụm",
+      "cefr": "B2",
+      "synonyms": "from the beginning",
+      "example": "reveal the strength from the outset",
+      "wordFamily": "",
+      "source": "Part 6 Q139–142",
+      "parts": [
+        "6"
+      ],
+      "priority": "Rất cao"
+    },
+    {
+      "id": "t3-v-74",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S04",
+      "group": "Thời gian / lịch trình",
+      "term": "temporary rental terms",
+      "meaning": "điều khoản thuê tạm thời",
+      "wordType": "Cụm",
+      "cefr": "B2",
+      "synonyms": "short-term lease",
+      "example": "offer temporary rental terms",
+      "wordFamily": "",
+      "source": "Part 7 Q153–154",
+      "parts": [
+        "7"
+      ],
+      "priority": "Cao"
+    },
+    {
+      "id": "t3-v-75",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S04",
+      "group": "Thời gian / lịch trình",
+      "term": "within 24 hours",
+      "meaning": "trong vòng 24 giờ",
+      "wordType": "Cụm",
+      "cefr": "B1",
+      "synonyms": "by the next day",
+      "example": "respond within 24 hours",
+      "wordFamily": "",
+      "source": "Part 7 Q155–157",
+      "parts": [
+        "7"
+      ],
+      "priority": "Rất cao"
+    },
+    {
+      "id": "t3-v-76",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S04",
+      "group": "Thời gian / lịch trình",
+      "term": "no later than",
+      "meaning": "không muộn hơn",
+      "wordType": "Cụm",
+      "cefr": "B1",
+      "synonyms": "by; before the deadline",
+      "example": "respond no later than October 20",
+      "wordFamily": "",
+      "source": "Part 7 Q151–152",
+      "parts": [
+        "7"
+      ],
+      "priority": "Rất cao"
+    },
+    {
+      "id": "t3-v-77",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S04",
+      "group": "Thời gian / lịch trình",
+      "term": "short notice",
+      "meaning": "thời gian báo trước rất ngắn",
+      "wordType": "Cụm",
+      "cefr": "B2",
+      "synonyms": "little advance warning",
+      "example": "hire singers at short notice",
+      "wordFamily": "",
+      "source": "Part 7 Q196–200",
+      "parts": [
+        "7"
+      ],
+      "priority": "Rất cao"
+    },
+    {
+      "id": "t3-v-78",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S04",
+      "group": "Thời gian / lịch trình",
+      "term": "time constraint",
+      "meaning": "hạn chế về thời gian",
+      "wordType": "Cụm",
+      "cefr": "B2",
+      "synonyms": "deadline pressure",
+      "example": "given our time constraints",
+      "wordFamily": "",
+      "source": "Part 7 Q196–200",
+      "parts": [
+        "7"
+      ],
+      "priority": "Rất cao"
+    },
+    {
+      "id": "t3-v-79",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S04",
+      "group": "Thời gian / lịch trình",
+      "term": "annual",
+      "meaning": "hằng năm",
+      "wordType": "Adj",
+      "cefr": "B1",
+      "synonyms": "yearly",
+      "example": "be charged annually",
+      "wordFamily": "annually → annual",
+      "source": "Part 6 Q131–134 / Part 7 Q196–200",
+      "parts": [
+        "6",
+        "7"
+      ],
+      "priority": "Cao"
+    },
+    {
+      "id": "t3-v-80",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S05",
+      "group": "Marketing / truyền thông",
+      "term": "newsletter",
+      "meaning": "bản tin định kỳ",
+      "wordType": "N",
+      "cefr": "B1",
+      "synonyms": "bulletin",
+      "example": "a monthly newsletter",
+      "wordFamily": "news + letter",
+      "source": "Part 5 Q123",
+      "parts": [
+        "5"
+      ],
+      "priority": "Rất cao"
+    },
+    {
+      "id": "t3-v-81",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S05",
+      "group": "Marketing / truyền thông",
+      "term": "promote",
+      "meaning": "quảng bá / thúc đẩy",
+      "wordType": "V",
+      "cefr": "B1",
+      "synonyms": "advertise; publicize",
+      "example": "promote activities and events",
+      "wordFamily": "promotion → promotional",
+      "source": "Part 5 Q123",
+      "parts": [
+        "5"
+      ],
+      "priority": "Rất cao"
+    },
+    {
+      "id": "t3-v-82",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S05",
+      "group": "Marketing / truyền thông",
+      "term": "pitch",
+      "meaning": "bài chào bán / thuyết trình gọi vốn",
+      "wordType": "N/V",
+      "cefr": "B2",
+      "synonyms": "proposal; presentation",
+      "example": "pitch a start-up to investors",
+      "wordFamily": "",
+      "source": "Part 6 Q139–142",
+      "parts": [
+        "6"
+      ],
+      "priority": "Rất cao"
+    },
+    {
+      "id": "t3-v-83",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S05",
+      "group": "Marketing / truyền thông",
+      "term": "start-up",
+      "meaning": "công ty khởi nghiệp",
+      "wordType": "N",
+      "cefr": "B2",
+      "synonyms": "new venture",
+      "example": "pitch your start-up",
+      "wordFamily": "",
+      "source": "Part 6 Q139–142",
+      "parts": [
+        "6"
+      ],
+      "priority": "Cao"
+    },
+    {
+      "id": "t3-v-84",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S05",
+      "group": "Marketing / truyền thông",
+      "term": "keep someone in suspense",
+      "meaning": "để ai đó chờ đợi trong hồi hộp",
+      "wordType": "Cụm",
+      "cefr": "B2",
+      "synonyms": "delay the key point",
+      "example": "do not keep investors in suspense",
+      "wordFamily": "",
+      "source": "Part 6 Q139–142",
+      "parts": [
+        "6"
+      ],
+      "priority": "Cao"
+    },
+    {
+      "id": "t3-v-85",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S05",
+      "group": "Marketing / truyền thông",
+      "term": "grab attention",
+      "meaning": "thu hút sự chú ý",
+      "wordType": "Cụm",
+      "cefr": "B1",
+      "synonyms": "capture attention",
+      "example": "grab investors' attention",
+      "wordFamily": "",
+      "source": "Part 6 Q139–142",
+      "parts": [
+        "6"
+      ],
+      "priority": "Rất cao"
+    },
+    {
+      "id": "t3-v-86",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S05",
+      "group": "Marketing / truyền thông",
+      "term": "greatest asset",
+      "meaning": "tài sản / lợi thế lớn nhất",
+      "wordType": "Cụm",
+      "cefr": "B2",
+      "synonyms": "strongest advantage",
+      "example": "the team is the greatest asset",
+      "wordFamily": "",
+      "source": "Part 6 Q139–142",
+      "parts": [
+        "6"
+      ],
+      "priority": "Cao"
+    },
+    {
+      "id": "t3-v-87",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S05",
+      "group": "Marketing / truyền thông",
+      "term": "set apart",
+      "meaning": "làm nổi bật / tạo khác biệt",
+      "wordType": "Phrasal V",
+      "cefr": "B2",
+      "synonyms": "distinguish",
+      "example": "what sets the company apart",
+      "wordFamily": "",
+      "source": "Part 6 Q139–142",
+      "parts": [
+        "6"
+      ],
+      "priority": "Rất cao"
+    },
+    {
+      "id": "t3-v-88",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S05",
+      "group": "Marketing / truyền thông",
+      "term": "leading statement",
+      "meaning": "phát biểu mở đầu chủ đạo",
+      "wordType": "Cụm",
+      "cefr": "B2",
+      "synonyms": "opening statement",
+      "example": "make it the leading statement",
+      "wordFamily": "",
+      "source": "Part 6 Q139–142",
+      "parts": [
+        "6"
+      ],
+      "priority": "Cao"
+    },
+    {
+      "id": "t3-v-89",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S05",
+      "group": "Marketing / truyền thông",
+      "term": "social media",
+      "meaning": "mạng xã hội",
+      "wordType": "Cụm",
+      "cefr": "B1",
+      "synonyms": "social network",
+      "example": "focus on social media advertising",
+      "wordFamily": "",
+      "source": "Part 5 Q101 / Part 7 Q172–175",
+      "parts": [
+        "5",
+        "7"
+      ],
+      "priority": "Cao"
+    },
+    {
+      "id": "t3-v-90",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S05",
+      "group": "Marketing / truyền thông",
+      "term": "advertising strategy",
+      "meaning": "chiến lược quảng cáo",
+      "wordType": "Cụm",
+      "cefr": "B1",
+      "synonyms": "marketing approach",
+      "example": "discuss advertising strategies",
+      "wordFamily": "",
+      "source": "Part 7 Q172–175",
+      "parts": [
+        "7"
+      ],
+      "priority": "Rất cao"
+    },
+    {
+      "id": "t3-v-91",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S05",
+      "group": "Marketing / truyền thông",
+      "term": "public relations",
+      "meaning": "quan hệ công chúng",
+      "wordType": "Cụm",
+      "cefr": "B2",
+      "synonyms": "PR; communications",
+      "example": "public relations staff",
+      "wordFamily": "",
+      "source": "Part 7 Q161–163",
+      "parts": [
+        "7"
+      ],
+      "priority": "Rất cao"
+    },
+    {
+      "id": "t3-v-92",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S05",
+      "group": "Marketing / truyền thông",
+      "term": "cross-cultural communication",
+      "meaning": "giao tiếp xuyên văn hóa",
+      "wordType": "Cụm",
+      "cefr": "B2",
+      "synonyms": "intercultural communication",
+      "example": "effective cross-cultural communication",
+      "wordFamily": "",
+      "source": "Part 7 Q161–163",
+      "parts": [
+        "7"
+      ],
+      "priority": "Rất cao"
+    },
+    {
+      "id": "t3-v-93",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S05",
+      "group": "Marketing / truyền thông",
+      "term": "word choice",
+      "meaning": "lựa chọn từ ngữ",
+      "wordType": "Cụm",
+      "cefr": "B1",
+      "synonyms": "wording",
+      "example": "importance of word choice",
+      "wordFamily": "",
+      "source": "Part 7 Q161–163",
+      "parts": [
+        "7"
+      ],
+      "priority": "Cao"
+    },
+    {
+      "id": "t3-v-94",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S05",
+      "group": "Marketing / truyền thông",
+      "term": "featured artist",
+      "meaning": "nghệ sĩ nổi bật / khách mời chính",
+      "wordType": "Cụm",
+      "cefr": "B1",
+      "synonyms": "highlighted artist",
+      "example": "the first featured artist",
+      "wordFamily": "",
+      "source": "Part 7 Q151–152",
+      "parts": [
+        "7"
+      ],
+      "priority": "Cao"
+    },
+    {
+      "id": "t3-v-95",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S05",
+      "group": "Marketing / truyền thông",
+      "term": "mingle with the crowd",
+      "meaning": "giao lưu với đám đông",
+      "wordType": "Cụm",
+      "cefr": "B2",
+      "synonyms": "socialize with attendees",
+      "example": "be on hand to mingle",
+      "wordFamily": "",
+      "source": "Part 7 Q151–152",
+      "parts": [
+        "7"
+      ],
+      "priority": "Cao"
+    },
+    {
+      "id": "t3-v-96",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S05",
+      "group": "Marketing / truyền thông",
+      "term": "proposal",
+      "meaning": "đề xuất",
+      "wordType": "N",
+      "cefr": "B1",
+      "synonyms": "plan; submission",
+      "example": "submit mural proposals",
+      "wordFamily": "propose → proposal",
+      "source": "Part 7 Q149–150",
+      "parts": [
+        "7"
+      ],
+      "priority": "Rất cao"
+    },
+    {
+      "id": "t3-v-97",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S05",
+      "group": "Marketing / truyền thông",
+      "term": "commission an artist",
+      "meaning": "đặt hàng / thuê nghệ sĩ sáng tác",
+      "wordType": "Cụm",
+      "cefr": "B2",
+      "synonyms": "hire an artist",
+      "example": "artists were commissioned",
+      "wordFamily": "",
+      "source": "Part 7 Q149–150",
+      "parts": [
+        "7"
+      ],
+      "priority": "Cao"
+    },
+    {
+      "id": "t3-v-98",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S05",
+      "group": "Marketing / truyền thông",
+      "term": "testimonial",
+      "meaning": "lời chứng thực / đánh giá khách hàng",
+      "wordType": "N",
+      "cefr": "B2",
+      "synonyms": "endorsement; review",
+      "example": "visit the Testimonials page",
+      "wordFamily": "testify → testimonial",
+      "source": "Part 7 Q155–157",
+      "parts": [
+        "7"
+      ],
+      "priority": "Cao"
+    },
+    {
+      "id": "t3-v-99",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S05",
+      "group": "Marketing / truyền thông",
+      "term": "inquiry",
+      "meaning": "yêu cầu thông tin",
+      "wordType": "N",
+      "cefr": "B1",
+      "synonyms": "query; request",
+      "example": "respond to an inquiry",
+      "wordFamily": "inquire → inquiry",
+      "source": "Part 7 Q155–157",
+      "parts": [
+        "7"
+      ],
+      "priority": "Rất cao"
+    },
+    {
+      "id": "t3-v-100",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S06",
+      "group": "Vận hành / logistics",
+      "term": "repair",
+      "meaning": "sửa chữa",
+      "wordType": "N/V",
+      "cefr": "B1",
+      "synonyms": "fix; maintenance",
+      "example": "machines need repairs",
+      "wordFamily": "repairable → repair",
+      "source": "Part 5 Q106",
+      "parts": [
+        "5"
+      ],
+      "priority": "Cao"
+    },
+    {
+      "id": "t3-v-101",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S06",
+      "group": "Vận hành / logistics",
+      "term": "shipping team",
+      "meaning": "đội vận chuyển",
+      "wordType": "Cụm",
+      "cefr": "B1",
+      "synonyms": "delivery team",
+      "example": "e-mail to the shipping team",
+      "wordFamily": "",
+      "source": "Part 6 Q135–138",
+      "parts": [
+        "6"
+      ],
+      "priority": "Cao"
+    },
+    {
+      "id": "t3-v-102",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S06",
+      "group": "Vận hành / logistics",
+      "term": "distribution manager",
+      "meaning": "quản lý phân phối",
+      "wordType": "Cụm",
+      "cefr": "B2",
+      "synonyms": "logistics manager",
+      "example": "regional distribution manager",
+      "wordFamily": "",
+      "source": "Part 6 Q135–138",
+      "parts": [
+        "6"
+      ],
+      "priority": "Rất cao"
+    },
+    {
+      "id": "t3-v-103",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S06",
+      "group": "Vận hành / logistics",
+      "term": "warehouse",
+      "meaning": "nhà kho",
+      "wordType": "N",
+      "cefr": "B1",
+      "synonyms": "storage facility",
+      "example": "on the way to the warehouse",
+      "wordFamily": "",
+      "source": "Part 7 Q153–154",
+      "parts": [
+        "7"
+      ],
+      "priority": "Cao"
+    },
+    {
+      "id": "t3-v-104",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S06",
+      "group": "Vận hành / logistics",
+      "term": "overstocked item",
+      "meaning": "hàng tồn kho dư thừa",
+      "wordType": "Cụm",
+      "cefr": "B2",
+      "synonyms": "excess inventory",
+      "example": "a van loaded with overstocked items",
+      "wordFamily": "overstock → overstocked",
+      "source": "Part 7 Q153–154",
+      "parts": [
+        "7"
+      ],
+      "priority": "Rất cao"
+    },
+    {
+      "id": "t3-v-105",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S06",
+      "group": "Vận hành / logistics",
+      "term": "unload",
+      "meaning": "dỡ hàng",
+      "wordType": "V",
+      "cefr": "B1",
+      "synonyms": "take cargo out",
+      "example": "unload the van",
+      "wordFamily": "load → unload",
+      "source": "Part 7 Q153–154",
+      "parts": [
+        "7"
+      ],
+      "priority": "Cao"
+    },
+    {
+      "id": "t3-v-106",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S06",
+      "group": "Vận hành / logistics",
+      "term": "production facility",
+      "meaning": "cơ sở sản xuất",
+      "wordType": "Cụm",
+      "cefr": "B1",
+      "synonyms": "factory; plant",
+      "example": "made in a production facility",
+      "wordFamily": "",
+      "source": "Part 7 Q176–180",
+      "parts": [
+        "7"
+      ],
+      "priority": "Rất cao"
+    },
+    {
+      "id": "t3-v-107",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S06",
+      "group": "Vận hành / logistics",
+      "term": "locally sourced part",
+      "meaning": "linh kiện có nguồn gốc địa phương",
+      "wordType": "Cụm",
+      "cefr": "B2",
+      "synonyms": "local component",
+      "example": "products with locally sourced parts",
+      "wordFamily": "source → sourced",
+      "source": "Part 7 Q176–180",
+      "parts": [
+        "7"
+      ],
+      "priority": "Rất cao"
+    },
+    {
+      "id": "t3-v-108",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S06",
+      "group": "Vận hành / logistics",
+      "term": "surge in orders",
+      "meaning": "sự tăng vọt đơn hàng",
+      "wordType": "Cụm",
+      "cefr": "B2",
+      "synonyms": "spike in demand",
+      "example": "a dramatic surge in orders",
+      "wordFamily": "",
+      "source": "Part 7 Q176–180",
+      "parts": [
+        "7"
+      ],
+      "priority": "Rất cao"
+    },
+    {
+      "id": "t3-v-109",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S06",
+      "group": "Vận hành / logistics",
+      "term": "work overtime",
+      "meaning": "làm thêm giờ",
+      "wordType": "Cụm",
+      "cefr": "B1",
+      "synonyms": "work extra hours",
+      "example": "staff working overtime",
+      "wordFamily": "",
+      "source": "Part 7 Q176–180",
+      "parts": [
+        "7"
+      ],
+      "priority": "Cao"
+    },
+    {
+      "id": "t3-v-110",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S06",
+      "group": "Vận hành / logistics",
+      "term": "catch up",
+      "meaning": "bắt kịp tiến độ",
+      "wordType": "Phrasal V",
+      "cefr": "B1",
+      "synonyms": "recover lost time",
+      "example": "work overtime to catch up",
+      "wordFamily": "",
+      "source": "Part 7 Q176–180",
+      "parts": [
+        "7"
+      ],
+      "priority": "Rất cao"
+    },
+    {
+      "id": "t3-v-111",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S06",
+      "group": "Vận hành / logistics",
+      "term": "delivery time",
+      "meaning": "thời gian giao hàng",
+      "wordType": "Cụm",
+      "cefr": "B1",
+      "synonyms": "lead time",
+      "example": "expect a 10-to-12-week delivery time",
+      "wordFamily": "",
+      "source": "Part 7 Q176–180",
+      "parts": [
+        "7"
+      ],
+      "priority": "Cao"
+    },
+    {
+      "id": "t3-v-112",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S06",
+      "group": "Vận hành / logistics",
+      "term": "meet demand",
+      "meaning": "đáp ứng nhu cầu",
+      "wordType": "Cụm",
+      "cefr": "B2",
+      "synonyms": "satisfy demand",
+      "example": "manage to meet the demand",
+      "wordFamily": "",
+      "source": "Part 7 Q176–180",
+      "parts": [
+        "7"
+      ],
+      "priority": "Rất cao"
+    },
+    {
+      "id": "t3-v-113",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S06",
+      "group": "Vận hành / logistics",
+      "term": "standard shipping",
+      "meaning": "vận chuyển tiêu chuẩn",
+      "wordType": "Cụm",
+      "cefr": "B1",
+      "synonyms": "regular delivery",
+      "example": "free standard shipping",
+      "wordFamily": "",
+      "source": "Part 7 Q155–157",
+      "parts": [
+        "7"
+      ],
+      "priority": "Cao"
+    },
+    {
+      "id": "t3-v-114",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S06",
+      "group": "Vận hành / logistics",
+      "term": "expedited delivery",
+      "meaning": "giao hàng nhanh",
+      "wordType": "Cụm",
+      "cefr": "B2",
+      "synonyms": "express shipping",
+      "example": "expedited delivery for an extra fee",
+      "wordFamily": "expedite → expedited",
+      "source": "Part 7 Q155–157",
+      "parts": [
+        "7"
+      ],
+      "priority": "Rất cao"
+    },
+    {
+      "id": "t3-v-115",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S07",
+      "group": "Nghệ thuật / sự kiện / âm nhạc",
+      "term": "exhibit",
+      "meaning": "triển lãm / vật trưng bày",
+      "wordType": "N/V",
+      "cefr": "B1",
+      "synonyms": "display; exhibition",
+      "example": "discuss an exhibit",
+      "wordFamily": "exhibit → exhibition",
+      "source": "Part 7 Q151–152",
+      "parts": [
+        "7"
+      ],
+      "priority": "Cao"
+    },
+    {
+      "id": "t3-v-116",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S07",
+      "group": "Nghệ thuật / sự kiện / âm nhạc",
+      "term": "museum wing",
+      "meaning": "khu nhà / cánh mới của bảo tàng",
+      "wordType": "Cụm",
+      "cefr": "B1",
+      "synonyms": "museum extension",
+      "example": "official opening of a museum wing",
+      "wordFamily": "",
+      "source": "Part 7 Q151–152",
+      "parts": [
+        "7"
+      ],
+      "priority": "Cao"
+    },
+    {
+      "id": "t3-v-117",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S07",
+      "group": "Nghệ thuật / sự kiện / âm nhạc",
+      "term": "opening ceremony",
+      "meaning": "lễ khai mạc",
+      "wordType": "Cụm",
+      "cefr": "B1",
+      "synonyms": "inauguration",
+      "example": "an opening ceremony is planned",
+      "wordFamily": "",
+      "source": "Part 7 Q168–171",
+      "parts": [
+        "7"
+      ],
+      "priority": "Cao"
+    },
+    {
+      "id": "t3-v-118",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S07",
+      "group": "Nghệ thuật / sự kiện / âm nhạc",
+      "term": "private celebration",
+      "meaning": "buổi lễ riêng tư",
+      "wordType": "Cụm",
+      "cefr": "B2",
+      "synonyms": "private event",
+      "example": "limited to museum members",
+      "wordFamily": "",
+      "source": "Part 7 Q151–152",
+      "parts": [
+        "7"
+      ],
+      "priority": "Cao"
+    },
+    {
+      "id": "t3-v-119",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S07",
+      "group": "Nghệ thuật / sự kiện / âm nhạc",
+      "term": "accurate count",
+      "meaning": "số lượng chính xác",
+      "wordType": "Cụm",
+      "cefr": "B1",
+      "synonyms": "exact attendance figure",
+      "example": "ensure an accurate count",
+      "wordFamily": "",
+      "source": "Part 7 Q151–152",
+      "parts": [
+        "7"
+      ],
+      "priority": "Cao"
+    },
+    {
+      "id": "t3-v-120",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S07",
+      "group": "Nghệ thuật / sự kiện / âm nhạc",
+      "term": "appetizer",
+      "meaning": "món khai vị",
+      "wordType": "N",
+      "cefr": "B1",
+      "synonyms": "starter",
+      "example": "appetizers and drinks will be served",
+      "wordFamily": "",
+      "source": "Part 7 Q151–152",
+      "parts": [
+        "7"
+      ],
+      "priority": "Cao"
+    },
+    {
+      "id": "t3-v-121",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S07",
+      "group": "Nghệ thuật / sự kiện / âm nhạc",
+      "term": "theatre seat",
+      "meaning": "ghế nhà hát",
+      "wordType": "Cụm",
+      "cefr": "B1",
+      "synonyms": "auditorium seating",
+      "example": "design and supply theatre seats",
+      "wordFamily": "",
+      "source": "Part 7 Q181–185",
+      "parts": [
+        "7"
+      ],
+      "priority": "Cao"
+    },
+    {
+      "id": "t3-v-122",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S07",
+      "group": "Nghệ thuật / sự kiện / âm nhạc",
+      "term": "packed house",
+      "meaning": "khán phòng kín chỗ",
+      "wordType": "Cụm",
+      "cefr": "B2",
+      "synonyms": "sold-out audience",
+      "example": "play to packed houses",
+      "wordFamily": "",
+      "source": "Part 7 Q181–185",
+      "parts": [
+        "7"
+      ],
+      "priority": "Rất cao"
+    },
+    {
+      "id": "t3-v-123",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S07",
+      "group": "Nghệ thuật / sự kiện / âm nhạc",
+      "term": "guided tour",
+      "meaning": "chuyến tham quan có hướng dẫn",
+      "wordType": "Cụm",
+      "cefr": "B1",
+      "synonyms": "guided visit",
+      "example": "take a guided tour",
+      "wordFamily": "",
+      "source": "Part 7 Q168–171 / Q181–185",
+      "parts": [
+        "7"
+      ],
+      "priority": "Cao"
+    },
+    {
+      "id": "t3-v-124",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S07",
+      "group": "Nghệ thuật / sự kiện / âm nhạc",
+      "term": "lecture series",
+      "meaning": "chuỗi bài giảng",
+      "wordType": "Cụm",
+      "cefr": "B1",
+      "synonyms": "talk series",
+      "example": "monthly lecture series",
+      "wordFamily": "",
+      "source": "Part 7 Q186–190",
+      "parts": [
+        "7"
+      ],
+      "priority": "Rất cao"
+    },
+    {
+      "id": "t3-v-125",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S07",
+      "group": "Nghệ thuật / sự kiện / âm nhạc",
+      "term": "choir",
+      "meaning": "dàn hợp xướng",
+      "wordType": "N",
+      "cefr": "B1",
+      "synonyms": "chorus",
+      "example": "Gradey City Choir",
+      "wordFamily": "",
+      "source": "Part 7 Q196–200",
+      "parts": [
+        "7"
+      ],
+      "priority": "Cao"
+    },
+    {
+      "id": "t3-v-126",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S07",
+      "group": "Nghệ thuật / sự kiện / âm nhạc",
+      "term": "vocalist",
+      "meaning": "ca sĩ",
+      "wordType": "N",
+      "cefr": "B2",
+      "synonyms": "singer",
+      "example": "vocalist positions",
+      "wordFamily": "vocal → vocalist",
+      "source": "Part 7 Q196–200",
+      "parts": [
+        "7"
+      ],
+      "priority": "Cao"
+    },
+    {
+      "id": "t3-v-127",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S07",
+      "group": "Nghệ thuật / sự kiện / âm nhạc",
+      "term": "alto",
+      "meaning": "giọng nữ trầm",
+      "wordType": "N",
+      "cefr": "C1",
+      "synonyms": "low female voice",
+      "example": "seek an alto and a tenor",
+      "wordFamily": "",
+      "source": "Part 7 Q196–200",
+      "parts": [
+        "7"
+      ],
+      "priority": "Trung bình"
+    },
+    {
+      "id": "t3-v-128",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S07",
+      "group": "Nghệ thuật / sự kiện / âm nhạc",
+      "term": "tenor",
+      "meaning": "giọng nam cao",
+      "wordType": "N",
+      "cefr": "C1",
+      "synonyms": "high male voice",
+      "example": "seek an alto and a tenor",
+      "wordFamily": "",
+      "source": "Part 7 Q196–200",
+      "parts": [
+        "7"
+      ],
+      "priority": "Trung bình"
+    },
+    {
+      "id": "t3-v-129",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S07",
+      "group": "Nghệ thuật / sự kiện / âm nhạc",
+      "term": "oratorio",
+      "meaning": "thanh xướng kịch",
+      "wordType": "N",
+      "cefr": "C1",
+      "synonyms": "large-scale choral work",
+      "example": "debut a special oratorio",
+      "wordFamily": "",
+      "source": "Part 7 Q196–200",
+      "parts": [
+        "7"
+      ],
+      "priority": "Trung bình"
+    },
+    {
+      "id": "t3-v-130",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S07",
+      "group": "Nghệ thuật / sự kiện / âm nhạc",
+      "term": "composition",
+      "meaning": "tác phẩm âm nhạc / sự sáng tác",
+      "wordType": "N",
+      "cefr": "B2",
+      "synonyms": "musical work",
+      "example": "perform this composition",
+      "wordFamily": "compose → composition",
+      "source": "Part 7 Q196–200",
+      "parts": [
+        "7"
+      ],
+      "priority": "Cao"
+    },
+    {
+      "id": "t3-v-131",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S07",
+      "group": "Nghệ thuật / sự kiện / âm nhạc",
+      "term": "autumn lineup",
+      "meaning": "chương trình mùa thu",
+      "wordType": "Cụm",
+      "cefr": "B2",
+      "synonyms": "season schedule",
+      "example": "complete the autumn lineup",
+      "wordFamily": "",
+      "source": "Part 7 Q196–200",
+      "parts": [
+        "7"
+      ],
+      "priority": "Cao"
+    },
+    {
+      "id": "t3-v-132",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S07",
+      "group": "Nghệ thuật / sự kiện / âm nhạc",
+      "term": "sheet music",
+      "meaning": "bản nhạc",
+      "wordType": "Cụm",
+      "cefr": "B1",
+      "synonyms": "musical score",
+      "example": "provide sheet music",
+      "wordFamily": "",
+      "source": "Part 7 Q196–200",
+      "parts": [
+        "7"
+      ],
+      "priority": "Cao"
+    },
+    {
+      "id": "t3-v-133",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S07",
+      "group": "Nghệ thuật / sự kiện / âm nhạc",
+      "term": "audition",
+      "meaning": "buổi thử giọng / thử vai",
+      "wordType": "N/V",
+      "cefr": "B1",
+      "synonyms": "tryout",
+      "example": "prepare for an audition",
+      "wordFamily": "audition → auditionee",
+      "source": "Part 5 Q127 / Part 7 Q196–200",
+      "parts": [
+        "5",
+        "7"
+      ],
+      "priority": "Rất cao"
+    },
+    {
+      "id": "t3-v-134",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S07",
+      "group": "Nghệ thuật / sự kiện / âm nhạc",
+      "term": "rehearsal",
+      "meaning": "buổi diễn tập",
+      "wordType": "N",
+      "cefr": "B1",
+      "synonyms": "practice session",
+      "example": "report for rehearsals",
+      "wordFamily": "rehearse → rehearsal",
+      "source": "Part 7 Q196–200",
+      "parts": [
+        "7"
+      ],
+      "priority": "Rất cao"
+    },
+    {
+      "id": "t3-v-135",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S08",
+      "group": "Giáo dục / nghiên cứu",
+      "term": "institute",
+      "meaning": "viện / học viện",
+      "wordType": "N",
+      "cefr": "B1",
+      "synonyms": "institution",
+      "example": "the Whitetail Institute",
+      "wordFamily": "",
+      "source": "Part 5 Q115",
+      "parts": [
+        "5"
+      ],
+      "priority": "Cao"
+    },
+    {
+      "id": "t3-v-136",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S08",
+      "group": "Giáo dục / nghiên cứu",
+      "term": "study result",
+      "meaning": "kết quả nghiên cứu",
+      "wordType": "Cụm",
+      "cefr": "B1",
+      "synonyms": "research finding",
+      "example": "results of the study",
+      "wordFamily": "",
+      "source": "Part 5 Q118",
+      "parts": [
+        "5"
+      ],
+      "priority": "Cao"
+    },
+    {
+      "id": "t3-v-137",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S08",
+      "group": "Giáo dục / nghiên cứu",
+      "term": "professional development seminar",
+      "meaning": "hội thảo phát triển chuyên môn",
+      "wordType": "Cụm",
+      "cefr": "B2",
+      "synonyms": "training seminar",
+      "example": "lead a professional development seminar",
+      "wordFamily": "",
+      "source": "Part 7 Q161–163",
+      "parts": [
+        "7"
+      ],
+      "priority": "Rất cao"
+    },
+    {
+      "id": "t3-v-138",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S08",
+      "group": "Giáo dục / nghiên cứu",
+      "term": "academia",
+      "meaning": "giới học thuật",
+      "wordType": "N",
+      "cefr": "C1",
+      "synonyms": "academic world",
+      "example": "individuals who work in academia",
+      "wordFamily": "academic → academia",
+      "source": "Part 7 Q161–163",
+      "parts": [
+        "7"
+      ],
+      "priority": "Cao"
+    },
+    {
+      "id": "t3-v-139",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S08",
+      "group": "Giáo dục / nghiên cứu",
+      "term": "research report",
+      "meaning": "báo cáo nghiên cứu",
+      "wordType": "Cụm",
+      "cefr": "B1",
+      "synonyms": "study report",
+      "example": "read the complete research report",
+      "wordFamily": "",
+      "source": "Part 7 Q161–163",
+      "parts": [
+        "7"
+      ],
+      "priority": "Cao"
+    },
+    {
+      "id": "t3-v-140",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S08",
+      "group": "Giáo dục / nghiên cứu",
+      "term": "bachelor's degree",
+      "meaning": "bằng cử nhân",
+      "wordType": "Cụm",
+      "cefr": "B1",
+      "synonyms": "undergraduate degree",
+      "example": "have a bachelor's degree",
+      "wordFamily": "",
+      "source": "Part 7 Q164–167",
+      "parts": [
+        "7"
+      ],
+      "priority": "Rất cao"
+    },
+    {
+      "id": "t3-v-141",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S08",
+      "group": "Giáo dục / nghiên cứu",
+      "term": "technical writing",
+      "meaning": "viết kỹ thuật",
+      "wordType": "Cụm",
+      "cefr": "B2",
+      "synonyms": "professional technical communication",
+      "example": "formal training in technical writing",
+      "wordFamily": "",
+      "source": "Part 7 Q164–167",
+      "parts": [
+        "7"
+      ],
+      "priority": "Rất cao"
+    },
+    {
+      "id": "t3-v-142",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S08",
+      "group": "Giáo dục / nghiên cứu",
+      "term": "archaeologist",
+      "meaning": "nhà khảo cổ học",
+      "wordType": "N",
+      "cefr": "B2",
+      "synonyms": "archaeology researcher",
+      "example": "resident archaeologist",
+      "wordFamily": "archaeology → archaeologist",
+      "source": "Part 7 Q186–190",
+      "parts": [
+        "7"
+      ],
+      "priority": "Rất cao"
+    },
+    {
+      "id": "t3-v-143",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S08",
+      "group": "Giáo dục / nghiên cứu",
+      "term": "earthenware relic",
+      "meaning": "di vật bằng đất nung",
+      "wordType": "Cụm",
+      "cefr": "C1",
+      "synonyms": "pottery artifact",
+      "example": "earthenware relics",
+      "wordFamily": "",
+      "source": "Part 7 Q186–190",
+      "parts": [
+        "7"
+      ],
+      "priority": "Cao"
+    },
+    {
+      "id": "t3-v-144",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S08",
+      "group": "Giáo dục / nghiên cứu",
+      "term": "unearthing",
+      "meaning": "sự khai quật / phát hiện",
+      "wordType": "N",
+      "cefr": "C1",
+      "synonyms": "excavation; discovery",
+      "example": "the unearthing of pottery pieces",
+      "wordFamily": "unearth → unearthing",
+      "source": "Part 7 Q186–190",
+      "parts": [
+        "7"
+      ],
+      "priority": "Cao"
+    },
+    {
+      "id": "t3-v-145",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S08",
+      "group": "Giáo dục / nghiên cứu",
+      "term": "historical artifact",
+      "meaning": "hiện vật lịch sử",
+      "wordType": "Cụm",
+      "cefr": "B2",
+      "synonyms": "relic",
+      "example": "identify and analyze artifacts",
+      "wordFamily": "",
+      "source": "Part 7 Q186–190",
+      "parts": [
+        "7"
+      ],
+      "priority": "Rất cao"
+    },
+    {
+      "id": "t3-v-146",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S08",
+      "group": "Giáo dục / nghiên cứu",
+      "term": "research colleague",
+      "meaning": "đồng nghiệp nghiên cứu",
+      "wordType": "Cụm",
+      "cefr": "B2",
+      "synonyms": "fellow researcher",
+      "example": "a former research colleague",
+      "wordFamily": "",
+      "source": "Part 7 Q186–190",
+      "parts": [
+        "7"
+      ],
+      "priority": "Cao"
+    },
+    {
+      "id": "t3-v-147",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S08",
+      "group": "Giáo dục / nghiên cứu",
+      "term": "collaborate",
+      "meaning": "hợp tác",
+      "wordType": "V",
+      "cefr": "B2",
+      "synonyms": "work together; partner",
+      "example": "collaborate on research projects",
+      "wordFamily": "collaboration → collaborative",
+      "source": "Part 7 Q161–163 / Q186–190",
+      "parts": [
+        "7"
+      ],
+      "priority": "Rất cao"
+    },
+    {
+      "id": "t3-v-148",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S08",
+      "group": "Giáo dục / nghiên cứu",
+      "term": "informative lecture",
+      "meaning": "bài giảng giàu thông tin",
+      "wordType": "Cụm",
+      "cefr": "B2",
+      "synonyms": "educational talk",
+      "example": "an informative lecture",
+      "wordFamily": "inform → information → informative",
+      "source": "Part 7 Q186–190",
+      "parts": [
+        "7"
+      ],
+      "priority": "Cao"
+    },
+    {
+      "id": "t3-v-149",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S08",
+      "group": "Giáo dục / nghiên cứu",
+      "term": "contemplate",
+      "meaning": "suy ngẫm",
+      "wordType": "V",
+      "cefr": "C1",
+      "synonyms": "consider deeply",
+      "example": "amazing to contemplate",
+      "wordFamily": "contemplation → contemplative",
+      "source": "Part 7 Q186–190",
+      "parts": [
+        "7"
+      ],
+      "priority": "Cao"
+    },
+    {
+      "id": "t3-v-150",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S09",
+      "group": "Môi trường / cộng đồng",
+      "term": "deer population",
+      "meaning": "quần thể hươu",
+      "wordType": "Cụm",
+      "cefr": "B2",
+      "synonyms": "deer numbers",
+      "example": "track deer populations",
+      "wordFamily": "",
+      "source": "Part 5 Q115",
+      "parts": [
+        "5"
+      ],
+      "priority": "Cao"
+    },
+    {
+      "id": "t3-v-151",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S09",
+      "group": "Môi trường / cộng đồng",
+      "term": "suburban area",
+      "meaning": "khu vực ngoại ô",
+      "wordType": "Cụm",
+      "cefr": "B1",
+      "synonyms": "residential outskirts",
+      "example": "rapidly expanding suburban areas",
+      "wordFamily": "",
+      "source": "Part 5 Q115",
+      "parts": [
+        "5"
+      ],
+      "priority": "Cao"
+    },
+    {
+      "id": "t3-v-152",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S09",
+      "group": "Môi trường / cộng đồng",
+      "term": "community group",
+      "meaning": "nhóm cộng đồng",
+      "wordType": "Cụm",
+      "cefr": "B1",
+      "synonyms": "local association",
+      "example": "local community group",
+      "wordFamily": "",
+      "source": "Part 7 Q168–171",
+      "parts": [
+        "7"
+      ],
+      "priority": "Cao"
+    },
+    {
+      "id": "t3-v-153",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S09",
+      "group": "Môi trường / cộng đồng",
+      "term": "raise funds",
+      "meaning": "gây quỹ",
+      "wordType": "Cụm",
+      "cefr": "B1",
+      "synonyms": "collect donations",
+      "example": "raise funds to build a garden",
+      "wordFamily": "",
+      "source": "Part 7 Q168–171",
+      "parts": [
+        "7"
+      ],
+      "priority": "Rất cao"
+    },
+    {
+      "id": "t3-v-154",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S09",
+      "group": "Môi trường / cộng đồng",
+      "term": "rely on donations",
+      "meaning": "phụ thuộc vào khoản quyên góp",
+      "wordType": "Cụm",
+      "cefr": "B2",
+      "synonyms": "be donation-funded",
+      "example": "rely entirely on donations",
+      "wordFamily": "",
+      "source": "Part 7 Q168–171",
+      "parts": [
+        "7"
+      ],
+      "priority": "Rất cao"
+    },
+    {
+      "id": "t3-v-155",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S09",
+      "group": "Môi trường / cộng đồng",
+      "term": "restoration",
+      "meaning": "sự phục hồi / trùng tu",
+      "wordType": "N",
+      "cefr": "B2",
+      "synonyms": "rehabilitation; renewal",
+      "example": "park restoration",
+      "wordFamily": "restore → restoration",
+      "source": "Part 7 Q168–171",
+      "parts": [
+        "7"
+      ],
+      "priority": "Cao"
+    },
+    {
+      "id": "t3-v-156",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S09",
+      "group": "Môi trường / cộng đồng",
+      "term": "enhancement",
+      "meaning": "sự cải thiện / nâng cấp",
+      "wordType": "N",
+      "cefr": "B2",
+      "synonyms": "improvement",
+      "example": "restoration and enhancement",
+      "wordFamily": "enhance → enhancement",
+      "source": "Part 7 Q168–171",
+      "parts": [
+        "7"
+      ],
+      "priority": "Cao"
+    },
+    {
+      "id": "t3-v-157",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S09",
+      "group": "Môi trường / cộng đồng",
+      "term": "abundant birdlife",
+      "meaning": "đời sống chim muông phong phú",
+      "wordType": "Cụm",
+      "cefr": "B2",
+      "synonyms": "rich bird population",
+      "example": "attract abundant birdlife",
+      "wordFamily": "abundance → abundant",
+      "source": "Part 7 Q168–171",
+      "parts": [
+        "7"
+      ],
+      "priority": "Rất cao"
+    },
+    {
+      "id": "t3-v-158",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S09",
+      "group": "Môi trường / cộng đồng",
+      "term": "lifelong resident",
+      "meaning": "cư dân lâu năm / suốt đời",
+      "wordType": "Cụm",
+      "cefr": "B2",
+      "synonyms": "long-term local resident",
+      "example": "a lifelong resident of the city",
+      "wordFamily": "",
+      "source": "Part 7 Q168–171",
+      "parts": [
+        "7"
+      ],
+      "priority": "Cao"
+    },
+    {
+      "id": "t3-v-159",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S09",
+      "group": "Môi trường / cộng đồng",
+      "term": "border the park",
+      "meaning": "giáp công viên",
+      "wordType": "Cụm",
+      "cefr": "B1",
+      "synonyms": "be adjacent to the park",
+      "example": "the school borders the park",
+      "wordFamily": "",
+      "source": "Part 7 Q168–171",
+      "parts": [
+        "7"
+      ],
+      "priority": "Cao"
+    },
+    {
+      "id": "t3-v-160",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S09",
+      "group": "Môi trường / cộng đồng",
+      "term": "secure funds",
+      "meaning": "đảm bảo nguồn vốn",
+      "wordType": "Cụm",
+      "cefr": "B2",
+      "synonyms": "obtain funding",
+      "example": "enough funds have been secured",
+      "wordFamily": "secure → security",
+      "source": "Part 7 Q168–171",
+      "parts": [
+        "7"
+      ],
+      "priority": "Rất cao"
+    },
+    {
+      "id": "t3-v-161",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S09",
+      "group": "Môi trường / cộng đồng",
+      "term": "topsoil",
+      "meaning": "lớp đất mặt",
+      "wordType": "N",
+      "cefr": "B2",
+      "synonyms": "surface soil",
+      "example": "lay fresh topsoil",
+      "wordFamily": "",
+      "source": "Part 7 Q168–171",
+      "parts": [
+        "7"
+      ],
+      "priority": "Cao"
+    },
+    {
+      "id": "t3-v-162",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S09",
+      "group": "Môi trường / cộng đồng",
+      "term": "designated area",
+      "meaning": "khu vực được chỉ định",
+      "wordType": "Cụm",
+      "cefr": "B2",
+      "synonyms": "assigned zone",
+      "example": "area designated for the garden",
+      "wordFamily": "designate → designation",
+      "source": "Part 7 Q168–171",
+      "parts": [
+        "7"
+      ],
+      "priority": "Cao"
+    },
+    {
+      "id": "t3-v-163",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S09",
+      "group": "Môi trường / cộng đồng",
+      "term": "eco-friendly",
+      "meaning": "thân thiện với môi trường",
+      "wordType": "Adj",
+      "cefr": "B1",
+      "synonyms": "environmentally friendly",
+      "example": "eco-friendly bicycles",
+      "wordFamily": "",
+      "source": "Part 7 Q176–180",
+      "parts": [
+        "7"
+      ],
+      "priority": "Rất cao"
+    },
+    {
+      "id": "t3-v-164",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S10",
+      "group": "Sản phẩm / sản xuất / bán lẻ",
+      "term": "boutique",
+      "meaning": "cửa hàng thời trang nhỏ",
+      "wordType": "N",
+      "cefr": "B1",
+      "synonyms": "specialty shop",
+      "example": "Frankie's Boutique",
+      "wordFamily": "",
+      "source": "Part 5 Q113",
+      "parts": [
+        "5"
+      ],
+      "priority": "Cao"
+    },
+    {
+      "id": "t3-v-165",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S10",
+      "group": "Sản phẩm / sản xuất / bán lẻ",
+      "term": "retail shop",
+      "meaning": "cửa hàng bán lẻ",
+      "wordType": "Cụm",
+      "cefr": "B1",
+      "synonyms": "retail store",
+      "example": "accessories retail shop",
+      "wordFamily": "",
+      "source": "Part 5 Q110",
+      "parts": [
+        "5"
+      ],
+      "priority": "Cao"
+    },
+    {
+      "id": "t3-v-166",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S10",
+      "group": "Sản phẩm / sản xuất / bán lẻ",
+      "term": "productivity",
+      "meaning": "năng suất",
+      "wordType": "N",
+      "cefr": "B1",
+      "synonyms": "efficiency; output",
+      "example": "maximize productivity",
+      "wordFamily": "productive → productivity",
+      "source": "Part 5 Q105 / Part 7 Q155–157",
+      "parts": [
+        "5",
+        "7"
+      ],
+      "priority": "Rất cao"
+    },
+    {
+      "id": "t3-v-167",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S10",
+      "group": "Sản phẩm / sản xuất / bán lẻ",
+      "term": "product designer",
+      "meaning": "nhà thiết kế sản phẩm",
+      "wordType": "Cụm",
+      "cefr": "B1",
+      "synonyms": "industrial designer",
+      "example": "product designer Lewis Sung",
+      "wordFamily": "",
+      "source": "Part 7 Q158–160",
+      "parts": [
+        "7"
+      ],
+      "priority": "Cao"
+    },
+    {
+      "id": "t3-v-168",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S10",
+      "group": "Sản phẩm / sản xuất / bán lẻ",
+      "term": "product launch",
+      "meaning": "sự ra mắt sản phẩm",
+      "wordType": "Cụm",
+      "cefr": "B1",
+      "synonyms": "product release",
+      "example": "launch of the newest products",
+      "wordFamily": "launch → launched",
+      "source": "Part 7 Q158–160",
+      "parts": [
+        "7"
+      ],
+      "priority": "Cao"
+    },
+    {
+      "id": "t3-v-169",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S10",
+      "group": "Sản phẩm / sản xuất / bán lẻ",
+      "term": "product design",
+      "meaning": "thiết kế sản phẩm",
+      "wordType": "Cụm",
+      "cefr": "B1",
+      "synonyms": "industrial design",
+      "example": "director of product design",
+      "wordFamily": "",
+      "source": "Part 7 Q158–160",
+      "parts": [
+        "7"
+      ],
+      "priority": "Cao"
+    },
+    {
+      "id": "t3-v-170",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S10",
+      "group": "Sản phẩm / sản xuất / bán lẻ",
+      "term": "construction and finish",
+      "meaning": "kết cấu và lớp hoàn thiện",
+      "wordType": "Cụm",
+      "cefr": "B2",
+      "synonyms": "build quality and surface finish",
+      "example": "guarantee on construction and finish",
+      "wordFamily": "",
+      "source": "Part 7 Q155–157",
+      "parts": [
+        "7"
+      ],
+      "priority": "Cao"
+    },
+    {
+      "id": "t3-v-171",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S10",
+      "group": "Sản phẩm / sản xuất / bán lẻ",
+      "term": "ten-year guarantee",
+      "meaning": "bảo hành mười năm",
+      "wordType": "Cụm",
+      "cefr": "B1",
+      "synonyms": "ten-year warranty",
+      "example": "backed by a ten-year guarantee",
+      "wordFamily": "guarantee → guaranteed",
+      "source": "Part 7 Q155–157",
+      "parts": [
+        "7"
+      ],
+      "priority": "Rất cao"
+    },
+    {
+      "id": "t3-v-172",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S10",
+      "group": "Sản phẩm / sản xuất / bán lẻ",
+      "term": "bulk purchase",
+      "meaning": "mua số lượng lớn",
+      "wordType": "Cụm",
+      "cefr": "B2",
+      "synonyms": "volume purchase",
+      "example": "price quote for a bulk order",
+      "wordFamily": "",
+      "source": "Part 7 Q155–157",
+      "parts": [
+        "7"
+      ],
+      "priority": "Cao"
+    },
+    {
+      "id": "t3-v-173",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S10",
+      "group": "Sản phẩm / sản xuất / bán lẻ",
+      "term": "three-wheeled cargo bicycle",
+      "meaning": "xe đạp chở hàng ba bánh",
+      "wordType": "Cụm",
+      "cefr": "B2",
+      "synonyms": "cargo tricycle",
+      "example": "make three-wheeled cargo bicycles",
+      "wordFamily": "",
+      "source": "Part 7 Q176–180",
+      "parts": [
+        "7"
+      ],
+      "priority": "Cao"
+    },
+    {
+      "id": "t3-v-174",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S10",
+      "group": "Sản phẩm / sản xuất / bán lẻ",
+      "term": "handmade",
+      "meaning": "làm thủ công",
+      "wordType": "Adj",
+      "cefr": "B1",
+      "synonyms": "handcrafted",
+      "example": "all bicycles are made by hand",
+      "wordFamily": "hand → handmade",
+      "source": "Part 7 Q176–180",
+      "parts": [
+        "7"
+      ],
+      "priority": "Cao"
+    },
+    {
+      "id": "t3-v-175",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S10",
+      "group": "Sản phẩm / sản xuất / bán lẻ",
+      "term": "local craftsperson",
+      "meaning": "thợ thủ công địa phương",
+      "wordType": "Cụm",
+      "cefr": "B2",
+      "synonyms": "local artisan",
+      "example": "parts made by local craftspeople",
+      "wordFamily": "craft → craftsperson",
+      "source": "Part 7 Q176–180",
+      "parts": [
+        "7"
+      ],
+      "priority": "Cao"
+    },
+    {
+      "id": "t3-v-176",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S10",
+      "group": "Sản phẩm / sản xuất / bán lẻ",
+      "term": "bulky item",
+      "meaning": "vật cồng kềnh",
+      "wordType": "Cụm",
+      "cefr": "B2",
+      "synonyms": "large item",
+      "example": "bring bulky items home",
+      "wordFamily": "",
+      "source": "Part 7 Q176–180",
+      "parts": [
+        "7"
+      ],
+      "priority": "Cao"
+    },
+    {
+      "id": "t3-v-177",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S10",
+      "group": "Sản phẩm / sản xuất / bán lẻ",
+      "term": "high-quality",
+      "meaning": "chất lượng cao",
+      "wordType": "Adj",
+      "cefr": "B1",
+      "synonyms": "premium; well-made",
+      "example": "high-quality bicycles",
+      "wordFamily": "quality → qualitative",
+      "source": "Part 7 Q176–180",
+      "parts": [
+        "7"
+      ],
+      "priority": "Cao"
+    },
+    {
+      "id": "t3-v-178",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S10",
+      "group": "Sản phẩm / sản xuất / bán lẻ",
+      "term": "functional",
+      "meaning": "thiết thực / có công năng tốt",
+      "wordType": "Adj",
+      "cefr": "B2",
+      "synonyms": "practical; usable",
+      "example": "create functional pieces",
+      "wordFamily": "function → functional",
+      "source": "Part 7 Q181–185",
+      "parts": [
+        "7"
+      ],
+      "priority": "Rất cao"
+    },
+    {
+      "id": "t3-v-179",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S10",
+      "group": "Sản phẩm / sản xuất / bán lẻ",
+      "term": "aesthetics",
+      "meaning": "tính thẩm mỹ",
+      "wordType": "N",
+      "cefr": "C1",
+      "synonyms": "visual appeal",
+      "example": "balance aesthetics and practicality",
+      "wordFamily": "aesthetic → aesthetically",
+      "source": "Part 7 Q181–185",
+      "parts": [
+        "7"
+      ],
+      "priority": "Rất cao"
+    },
+    {
+      "id": "t3-v-180",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S10",
+      "group": "Sản phẩm / sản xuất / bán lẻ",
+      "term": "practicality",
+      "meaning": "tính thực tiễn",
+      "wordType": "N",
+      "cefr": "B2",
+      "synonyms": "usefulness",
+      "example": "balance practicality and convenience",
+      "wordFamily": "practical → practicality",
+      "source": "Part 7 Q181–185",
+      "parts": [
+        "7"
+      ],
+      "priority": "Rất cao"
+    },
+    {
+      "id": "t3-v-181",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S10",
+      "group": "Sản phẩm / sản xuất / bán lẻ",
+      "term": "convenience",
+      "meaning": "sự tiện lợi",
+      "wordType": "N",
+      "cefr": "B1",
+      "synonyms": "ease; practicality",
+      "example": "balance convenience",
+      "wordFamily": "convenient → convenience",
+      "source": "Part 7 Q181–185",
+      "parts": [
+        "7"
+      ],
+      "priority": "Cao"
+    },
+    {
+      "id": "t3-v-182",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S10",
+      "group": "Sản phẩm / sản xuất / bán lẻ",
+      "term": "family business",
+      "meaning": "doanh nghiệp gia đình",
+      "wordType": "Cụm",
+      "cefr": "B1",
+      "synonyms": "family-owned company",
+      "example": "be part of a family business",
+      "wordFamily": "",
+      "source": "Part 7 Q181–185",
+      "parts": [
+        "7"
+      ],
+      "priority": "Cao"
+    },
+    {
+      "id": "t3-v-183",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S11",
+      "group": "Cơ sở vật chất / xây dựng",
+      "term": "renovation",
+      "meaning": "sự cải tạo / trùng tu",
+      "wordType": "N",
+      "cefr": "B2",
+      "synonyms": "refurbishment",
+      "example": "station renovation plans",
+      "wordFamily": "renovate → renovation",
+      "source": "Part 7 Q149–150",
+      "parts": [
+        "7"
+      ],
+      "priority": "Rất cao"
+    },
+    {
+      "id": "t3-v-184",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S11",
+      "group": "Cơ sở vật chất / xây dựng",
+      "term": "in desperate need of repair",
+      "meaning": "rất cần được sửa chữa",
+      "wordType": "Cụm",
+      "cefr": "B2",
+      "synonyms": "badly needs fixing",
+      "example": "station in desperate need of repair",
+      "wordFamily": "",
+      "source": "Part 7 Q149–150",
+      "parts": [
+        "7"
+      ],
+      "priority": "Rất cao"
+    },
+    {
+      "id": "t3-v-185",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S11",
+      "group": "Cơ sở vật chất / xây dựng",
+      "term": "municipal engineering department",
+      "meaning": "phòng kỹ thuật công trình đô thị",
+      "wordType": "Cụm",
+      "cefr": "B2",
+      "synonyms": "city engineering office",
+      "example": "plans submitted by the municipal engineering department",
+      "wordFamily": "",
+      "source": "Part 7 Q149–150",
+      "parts": [
+        "7"
+      ],
+      "priority": "Cao"
+    },
+    {
+      "id": "t3-v-186",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S11",
+      "group": "Cơ sở vật chất / xây dựng",
+      "term": "entrance",
+      "meaning": "lối vào",
+      "wordType": "N",
+      "cefr": "B1",
+      "synonyms": "entry; doorway",
+      "example": "a new entrance",
+      "wordFamily": "",
+      "source": "Part 7 Q149–150 / Q186–190",
+      "parts": [
+        "7"
+      ],
+      "priority": "Cao"
+    },
+    {
+      "id": "t3-v-187",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S11",
+      "group": "Cơ sở vật chất / xây dựng",
+      "term": "roof",
+      "meaning": "mái nhà",
+      "wordType": "N",
+      "cefr": "B1",
+      "synonyms": "covering",
+      "example": "replace the station roof",
+      "wordFamily": "",
+      "source": "Part 7 Q149–150",
+      "parts": [
+        "7"
+      ],
+      "priority": "Cao"
+    },
+    {
+      "id": "t3-v-188",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S11",
+      "group": "Cơ sở vật chất / xây dựng",
+      "term": "mural",
+      "meaning": "tranh tường",
+      "wordType": "N",
+      "cefr": "B2",
+      "synonyms": "wall painting",
+      "example": "murals for interior walls",
+      "wordFamily": "",
+      "source": "Part 7 Q149–150",
+      "parts": [
+        "7"
+      ],
+      "priority": "Cao"
+    },
+    {
+      "id": "t3-v-189",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S11",
+      "group": "Cơ sở vật chất / xây dựng",
+      "term": "interior wall",
+      "meaning": "tường bên trong",
+      "wordType": "Cụm",
+      "cefr": "B1",
+      "synonyms": "inside wall",
+      "example": "station interior walls",
+      "wordFamily": "",
+      "source": "Part 7 Q149–150",
+      "parts": [
+        "7"
+      ],
+      "priority": "Cao"
+    },
+    {
+      "id": "t3-v-190",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S11",
+      "group": "Cơ sở vật chất / xây dựng",
+      "term": "temporary space",
+      "meaning": "không gian tạm thời",
+      "wordType": "Cụm",
+      "cefr": "B1",
+      "synonyms": "short-term space",
+      "example": "rent a temporary space",
+      "wordFamily": "",
+      "source": "Part 7 Q153–154",
+      "parts": [
+        "7"
+      ],
+      "priority": "Cao"
+    },
+    {
+      "id": "t3-v-191",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S11",
+      "group": "Cơ sở vật chất / xây dựng",
+      "term": "adjustable furniture",
+      "meaning": "nội thất có thể điều chỉnh",
+      "wordType": "Cụm",
+      "cefr": "B2",
+      "synonyms": "adaptable furniture",
+      "example": "adjustable standing desks",
+      "wordFamily": "",
+      "source": "Part 7 Q155–157",
+      "parts": [
+        "7"
+      ],
+      "priority": "Cao"
+    },
+    {
+      "id": "t3-v-192",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S11",
+      "group": "Cơ sở vật chất / xây dựng",
+      "term": "factory floor",
+      "meaning": "khu vực sản xuất trong nhà máy",
+      "wordType": "Cụm",
+      "cefr": "B1",
+      "synonyms": "production area",
+      "example": "work on the factory floor",
+      "wordFamily": "",
+      "source": "Part 7 Q181–185",
+      "parts": [
+        "7"
+      ],
+      "priority": "Cao"
+    },
+    {
+      "id": "t3-v-193",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S11",
+      "group": "Cơ sở vật chất / xây dựng",
+      "term": "executive suite",
+      "meaning": "khu văn phòng điều hành",
+      "wordType": "Cụm",
+      "cefr": "B2",
+      "synonyms": "management offices",
+      "example": "from factory floor to executive suite",
+      "wordFamily": "",
+      "source": "Part 7 Q181–185",
+      "parts": [
+        "7"
+      ],
+      "priority": "Cao"
+    },
+    {
+      "id": "t3-v-194",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S11",
+      "group": "Cơ sở vật chất / xây dựng",
+      "term": "auditorium",
+      "meaning": "hội trường",
+      "wordType": "N",
+      "cefr": "B1",
+      "synonyms": "assembly hall",
+      "example": "report to the auditorium",
+      "wordFamily": "",
+      "source": "Part 7 Q196–200",
+      "parts": [
+        "7"
+      ],
+      "priority": "Cao"
+    },
+    {
+      "id": "t3-v-195",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S11",
+      "group": "Cơ sở vật chất / xây dựng",
+      "term": "facility",
+      "meaning": "cơ sở / nhà máy",
+      "wordType": "N",
+      "cefr": "B1",
+      "synonyms": "premises; plant",
+      "example": "schedule a tour of a facility",
+      "wordFamily": "",
+      "source": "Part 7 Q155–157 / Q176–180",
+      "parts": [
+        "7"
+      ],
+      "priority": "Cao"
+    },
+    {
+      "id": "t3-v-196",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S12",
+      "group": "Giao thông / đi lại",
+      "term": "commuter",
+      "meaning": "người đi làm hằng ngày",
+      "wordType": "N",
+      "cefr": "B1",
+      "synonyms": "daily traveler",
+      "example": "commuters are relieved",
+      "wordFamily": "commute → commuter",
+      "source": "Part 7 Q149–150",
+      "parts": [
+        "7"
+      ],
+      "priority": "Cao"
+    },
+    {
+      "id": "t3-v-197",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S12",
+      "group": "Giao thông / đi lại",
+      "term": "railway station",
+      "meaning": "ga đường sắt",
+      "wordType": "Cụm",
+      "cefr": "B1",
+      "synonyms": "train station",
+      "example": "River Avenue Railway Station",
+      "wordFamily": "",
+      "source": "Part 7 Q149–150",
+      "parts": [
+        "7"
+      ],
+      "priority": "Cao"
+    },
+    {
+      "id": "t3-v-198",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S12",
+      "group": "Giao thông / đi lại",
+      "term": "warehouse van",
+      "meaning": "xe tải nhỏ chở hàng",
+      "wordType": "Cụm",
+      "cefr": "B1",
+      "synonyms": "delivery van",
+      "example": "drive the van to the location",
+      "wordFamily": "",
+      "source": "Part 7 Q153–154",
+      "parts": [
+        "7"
+      ],
+      "priority": "Cao"
+    },
+    {
+      "id": "t3-v-199",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S12",
+      "group": "Giao thông / đi lại",
+      "term": "cancelled flight",
+      "meaning": "chuyến bay bị hủy",
+      "wordType": "Cụm",
+      "cefr": "B1",
+      "synonyms": "scrapped flight",
+      "example": "return flight has been canceled",
+      "wordFamily": "",
+      "source": "Part 7 Q191–195",
+      "parts": [
+        "7"
+      ],
+      "priority": "Cao"
+    },
+    {
+      "id": "t3-v-200",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S12",
+      "group": "Giao thông / đi lại",
+      "term": "delayed return",
+      "meaning": "việc trở về bị trì hoãn",
+      "wordType": "Cụm",
+      "cefr": "B1",
+      "synonyms": "late return",
+      "example": "subject: delayed return",
+      "wordFamily": "",
+      "source": "Part 7 Q191–195",
+      "parts": [
+        "7"
+      ],
+      "priority": "Cao"
+    },
+    {
+      "id": "t3-v-201",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S12",
+      "group": "Giao thông / đi lại",
+      "term": "rearrange a calendar",
+      "meaning": "sắp xếp lại lịch",
+      "wordType": "Cụm",
+      "cefr": "B1",
+      "synonyms": "reschedule appointments",
+      "example": "help rearrange the calendar",
+      "wordFamily": "",
+      "source": "Part 7 Q191–195",
+      "parts": [
+        "7"
+      ],
+      "priority": "Rất cao"
+    },
+    {
+      "id": "t3-v-202",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S12",
+      "group": "Giao thông / đi lại",
+      "term": "reschedule",
+      "meaning": "đổi lịch",
+      "wordType": "V",
+      "cefr": "B1",
+      "synonyms": "rearrange; postpone",
+      "example": "reschedule a meeting",
+      "wordFamily": "schedule → reschedule",
+      "source": "Part 7 Q191–195",
+      "parts": [
+        "7"
+      ],
+      "priority": "Rất cao"
+    },
+    {
+      "id": "t3-v-203",
+      "type": "vocabulary",
+      "test": 3,
+      "groupCode": "S12",
+      "group": "Giao thông / đi lại",
+      "term": "available flight",
+      "meaning": "chuyến bay còn chỗ",
+      "wordType": "Cụm",
+      "cefr": "B1",
+      "synonyms": "open flight",
+      "example": "the next available flight",
+      "wordFamily": "",
+      "source": "Part 7 Q191–195",
+      "parts": [
+        "7"
+      ],
+      "priority": "Cao"
     }
   ],
   "grammar": [
@@ -8091,6 +11956,697 @@
       ],
       "cefr": "B1",
       "priority": "Tiêu chuẩn"
+    },
+    {
+      "id": "t3-g-1",
+      "type": "grammar",
+      "test": 3,
+      "groupCode": "G01",
+      "group": "Từ loại",
+      "term": "despite + N / possessive adjective + N",
+      "meaning": "mặc dù / bất chấp",
+      "trap": "Despite đi với cụm danh từ, không đi trực tiếp với mệnh đề.",
+      "source": "Part 5 Q101/Q125",
+      "parts": [
+        "5"
+      ],
+      "cefr": "B1",
+      "priority": "Tiêu chuẩn"
+    },
+    {
+      "id": "t3-g-2",
+      "type": "grammar",
+      "test": 3,
+      "groupCode": "G01",
+      "group": "Từ loại",
+      "term": "be + adverb + adjective",
+      "meaning": "trạng từ bổ nghĩa tính từ",
+      "trap": "financially profitable / specifically designed.",
+      "source": "Part 5 Q113/Q117",
+      "parts": [
+        "5"
+      ],
+      "cefr": "B1",
+      "priority": "Tiêu chuẩn"
+    },
+    {
+      "id": "t3-g-3",
+      "type": "grammar",
+      "test": 3,
+      "groupCode": "G01",
+      "group": "Từ loại",
+      "term": "adverb + past participle",
+      "meaning": "trạng từ bổ nghĩa phân từ",
+      "trap": "consistently shown / automatically deposited.",
+      "source": "Part 5 Q120; Part 6 Q132",
+      "parts": [
+        "5",
+        "6"
+      ],
+      "cefr": "B1",
+      "priority": "Tiêu chuẩn"
+    },
+    {
+      "id": "t3-g-4",
+      "type": "grammar",
+      "test": 3,
+      "groupCode": "G01",
+      "group": "Từ loại",
+      "term": "so + adverb + that + S + V",
+      "meaning": "quá ... đến mức ...",
+      "trap": "so hastily that he forgot.",
+      "source": "Part 5 Q128",
+      "parts": [
+        "5"
+      ],
+      "cefr": "B1",
+      "priority": "Tiêu chuẩn"
+    },
+    {
+      "id": "t3-g-5",
+      "type": "grammar",
+      "test": 3,
+      "groupCode": "G02",
+      "group": "Bị động",
+      "term": "be promoted to + position",
+      "meaning": "được thăng chức lên vị trí",
+      "trap": "Promote someone to a role; passive be promoted to.",
+      "source": "Part 5 Q104 / Part 6 Q135–138",
+      "parts": [
+        "5",
+        "6"
+      ],
+      "cefr": "B1",
+      "priority": "Cao"
+    },
+    {
+      "id": "t3-g-6",
+      "type": "grammar",
+      "test": 3,
+      "groupCode": "G02",
+      "group": "Bị động",
+      "term": "be chosen as + N",
+      "meaning": "được chọn làm",
+      "trap": "as + vai trò sau chose/appoint.",
+      "source": "Part 5 Q114",
+      "parts": [
+        "5"
+      ],
+      "cefr": "B1",
+      "priority": "Cao"
+    },
+    {
+      "id": "t3-g-7",
+      "type": "grammar",
+      "test": 3,
+      "groupCode": "G02",
+      "group": "Bị động",
+      "term": "be shown to + V",
+      "meaning": "được chứng minh là / làm",
+      "trap": "Sau shown dùng to-infinitive.",
+      "source": "Part 5 Q120",
+      "parts": [
+        "5"
+      ],
+      "cefr": "B2",
+      "priority": "Cao"
+    },
+    {
+      "id": "t3-g-8",
+      "type": "grammar",
+      "test": 3,
+      "groupCode": "G02",
+      "group": "Bị động",
+      "term": "be appointed to + organization/position",
+      "meaning": "được bổ nhiệm vào",
+      "trap": "Phân biệt appoint someone as/to.",
+      "source": "Part 5 Q121",
+      "parts": [
+        "5"
+      ],
+      "cefr": "B2",
+      "priority": "Cao"
+    },
+    {
+      "id": "t3-g-9",
+      "type": "grammar",
+      "test": 3,
+      "groupCode": "G02",
+      "group": "Bị động",
+      "term": "be commissioned to + V",
+      "meaning": "được thuê / giao nhiệm vụ làm",
+      "trap": "Thường dùng với nghệ sĩ, dự án.",
+      "source": "Part 7 Q149–150",
+      "parts": [
+        "7"
+      ],
+      "cefr": "B2",
+      "priority": "Cao"
+    },
+    {
+      "id": "t3-g-10",
+      "type": "grammar",
+      "test": 3,
+      "groupCode": "G02",
+      "group": "Bị động",
+      "term": "be backed by + guarantee",
+      "meaning": "được bảo đảm bởi",
+      "trap": "backed by = supported/guaranteed by.",
+      "source": "Part 7 Q155–157",
+      "parts": [
+        "7"
+      ],
+      "cefr": "B2",
+      "priority": "Cao"
+    },
+    {
+      "id": "t3-g-11",
+      "type": "grammar",
+      "test": 3,
+      "groupCode": "G03",
+      "group": "So sánh / số lượng",
+      "term": "more + adjective + than",
+      "meaning": "... hơn ...",
+      "trap": "more productive than.",
+      "source": "Part 5 Q105",
+      "parts": [
+        "5"
+      ],
+      "cefr": "B1",
+      "priority": "Tiêu chuẩn"
+    },
+    {
+      "id": "t3-g-12",
+      "type": "grammar",
+      "test": 3,
+      "groupCode": "G03",
+      "group": "So sánh / số lượng",
+      "term": "up to + number",
+      "meaning": "lên đến",
+      "trap": "Giới hạn tối đa, không phải bắt buộc đạt đủ.",
+      "source": "Part 5 Q122",
+      "parts": [
+        "5"
+      ],
+      "cefr": "B1",
+      "priority": "Tiêu chuẩn"
+    },
+    {
+      "id": "t3-g-13",
+      "type": "grammar",
+      "test": 3,
+      "groupCode": "G03",
+      "group": "So sánh / số lượng",
+      "term": "at least + number/time",
+      "meaning": "ít nhất",
+      "trap": "at least two years of experience.",
+      "source": "Part 7 Q164–167",
+      "parts": [
+        "7"
+      ],
+      "cefr": "B1",
+      "priority": "Tiêu chuẩn"
+    },
+    {
+      "id": "t3-g-14",
+      "type": "grammar",
+      "test": 3,
+      "groupCode": "G03",
+      "group": "So sánh / số lượng",
+      "term": "enough + N + to + V",
+      "meaning": "đủ ... để ...",
+      "trap": "enough funds to begin construction.",
+      "source": "Part 7 Q168–171",
+      "parts": [
+        "7"
+      ],
+      "cefr": "B1",
+      "priority": "Tiêu chuẩn"
+    },
+    {
+      "id": "t3-g-15",
+      "type": "grammar",
+      "test": 3,
+      "groupCode": "G04",
+      "group": "Mệnh đề quan hệ",
+      "term": "person + who + V",
+      "meaning": "người mà ...",
+      "trap": "who thay cho chủ ngữ chỉ người.",
+      "source": "Part 5 Q116",
+      "parts": [
+        "5"
+      ],
+      "cefr": "B1",
+      "priority": "Tiêu chuẩn"
+    },
+    {
+      "id": "t3-g-16",
+      "type": "grammar",
+      "test": 3,
+      "groupCode": "G04",
+      "group": "Mệnh đề danh từ",
+      "term": "suggest that + S + V",
+      "meaning": "cho thấy / đề xuất rằng",
+      "trap": "Sau suggest là mệnh đề, không dùng object + to V.",
+      "source": "Part 5 Q108/Q118",
+      "parts": [
+        "5"
+      ],
+      "cefr": "B2",
+      "priority": "Tiêu chuẩn"
+    },
+    {
+      "id": "t3-g-17",
+      "type": "grammar",
+      "test": 3,
+      "groupCode": "G04",
+      "group": "Mệnh đề danh từ",
+      "term": "what + S + V",
+      "meaning": "điều mà ...",
+      "trap": "what sets your company apart.",
+      "source": "Part 6 Q141",
+      "parts": [
+        "6"
+      ],
+      "cefr": "B2",
+      "priority": "Tiêu chuẩn"
+    },
+    {
+      "id": "t3-g-18",
+      "type": "grammar",
+      "test": 3,
+      "groupCode": "G04",
+      "group": "Mệnh đề danh từ",
+      "term": "no matter where + S + V",
+      "meaning": "dù ở bất cứ đâu",
+      "trap": "wherever tương đương no matter where.",
+      "source": "Part 7 Q155–157",
+      "parts": [
+        "7"
+      ],
+      "cefr": "B1+",
+      "priority": "Tiêu chuẩn"
+    },
+    {
+      "id": "t3-g-19",
+      "type": "grammar",
+      "test": 3,
+      "groupCode": "G05",
+      "group": "Thời gian",
+      "term": "over the past + period",
+      "meaning": "trong suốt khoảng thời gian vừa qua",
+      "trap": "Thường đi với hiện tại hoàn thành.",
+      "source": "Part 5 Q126",
+      "parts": [
+        "5"
+      ],
+      "cefr": "B1",
+      "priority": "Cao"
+    },
+    {
+      "id": "t3-g-20",
+      "type": "grammar",
+      "test": 3,
+      "groupCode": "G05",
+      "group": "Thời gian",
+      "term": "long before + past clause",
+      "meaning": "rất lâu trước khi",
+      "trap": "Hành động trước dùng past perfect.",
+      "source": "Part 5 Q129",
+      "parts": [
+        "5"
+      ],
+      "cefr": "B2",
+      "priority": "Cao"
+    },
+    {
+      "id": "t3-g-21",
+      "type": "grammar",
+      "test": 3,
+      "groupCode": "G05",
+      "group": "Thời gian",
+      "term": "once + present, future clause",
+      "meaning": "một khi / khi",
+      "trap": "Mệnh đề thời gian không dùng will.",
+      "source": "Part 5 Q130",
+      "parts": [
+        "5"
+      ],
+      "cefr": "B1",
+      "priority": "Cao"
+    },
+    {
+      "id": "t3-g-22",
+      "type": "grammar",
+      "test": 3,
+      "groupCode": "G05",
+      "group": "Thời gian",
+      "term": "no later than + date/time",
+      "meaning": "không muộn hơn",
+      "trap": "Cụm chỉ hạn chót.",
+      "source": "Part 7 Q151–152",
+      "parts": [
+        "7"
+      ],
+      "cefr": "B1",
+      "priority": "Cao"
+    },
+    {
+      "id": "t3-g-23",
+      "type": "grammar",
+      "test": 3,
+      "groupCode": "G05",
+      "group": "Thời gian",
+      "term": "within + period",
+      "meaning": "trong vòng",
+      "trap": "within 24 hours = trước khi hết 24 giờ.",
+      "source": "Part 7 Q155–157",
+      "parts": [
+        "7"
+      ],
+      "cefr": "B1",
+      "priority": "Cao"
+    },
+    {
+      "id": "t3-g-24",
+      "type": "grammar",
+      "test": 3,
+      "groupCode": "G05",
+      "group": "Thời gian",
+      "term": "valid through + date",
+      "meaning": "có hiệu lực đến hết ngày",
+      "trap": "Through thường bao gồm ngày được nêu.",
+      "source": "Part 7 Q147–148",
+      "parts": [
+        "7"
+      ],
+      "cefr": "B1",
+      "priority": "Cao"
+    },
+    {
+      "id": "t3-g-25",
+      "type": "grammar",
+      "test": 3,
+      "groupCode": "G06",
+      "group": "Liên từ / chuyển ý",
+      "term": "While + S + V, S + V",
+      "meaning": "mặc dù / trong khi",
+      "trap": "Ở Q124, While mang nghĩa nhượng bộ.",
+      "source": "Part 5 Q124",
+      "parts": [
+        "5"
+      ],
+      "cefr": "B1",
+      "priority": "Tiêu chuẩn"
+    },
+    {
+      "id": "t3-g-26",
+      "type": "grammar",
+      "test": 3,
+      "groupCode": "G06",
+      "group": "Liên từ / chuyển ý",
+      "term": "Alternatively, S + V",
+      "meaning": "theo phương án khác",
+      "trap": "Dùng đưa ra lựa chọn thay thế.",
+      "source": "Part 6 Q133",
+      "parts": [
+        "6"
+      ],
+      "cefr": "B2",
+      "priority": "Tiêu chuẩn"
+    },
+    {
+      "id": "t3-g-27",
+      "type": "grammar",
+      "test": 3,
+      "groupCode": "G06",
+      "group": "Liên từ / chuyển ý",
+      "term": "Moreover, S + V",
+      "meaning": "hơn nữa",
+      "trap": "Bổ sung thông tin cùng chiều.",
+      "source": "Part 6 Q135–138",
+      "parts": [
+        "6"
+      ],
+      "cefr": "B2",
+      "priority": "Tiêu chuẩn"
+    },
+    {
+      "id": "t3-g-28",
+      "type": "grammar",
+      "test": 3,
+      "groupCode": "G06",
+      "group": "Liên từ / chuyển ý",
+      "term": "on the other hand",
+      "meaning": "mặt khác",
+      "trap": "Đối chiếu hai khả năng.",
+      "source": "Part 6 Q139–142",
+      "parts": [
+        "6"
+      ],
+      "cefr": "B2",
+      "priority": "Tiêu chuẩn"
+    },
+    {
+      "id": "t3-g-29",
+      "type": "grammar",
+      "test": 3,
+      "groupCode": "G07",
+      "group": "Động từ nguyên mẫu",
+      "term": "be encouraged to + V",
+      "meaning": "được khuyến khích làm gì",
+      "trap": "Sau encouraged dùng to-infinitive.",
+      "source": "Part 5 Q106",
+      "parts": [
+        "5"
+      ],
+      "cefr": "B1",
+      "priority": "Tiêu chuẩn"
+    },
+    {
+      "id": "t3-g-30",
+      "type": "grammar",
+      "test": 3,
+      "groupCode": "G07",
+      "group": "Động từ nguyên mẫu",
+      "term": "be designed to + V",
+      "meaning": "được thiết kế để",
+      "trap": "Mục đích/chức năng của sản phẩm.",
+      "source": "Part 5 Q117",
+      "parts": [
+        "5"
+      ],
+      "cefr": "B1",
+      "priority": "Tiêu chuẩn"
+    },
+    {
+      "id": "t3-g-31",
+      "type": "grammar",
+      "test": 3,
+      "groupCode": "G07",
+      "group": "Động từ nguyên mẫu",
+      "term": "allow/enable + object + to V",
+      "meaning": "cho phép ai làm gì",
+      "trap": "enable users to perform operations.",
+      "source": "Part 5 Q122; Part 6 Q144",
+      "parts": [
+        "5",
+        "6"
+      ],
+      "cefr": "B1",
+      "priority": "Tiêu chuẩn"
+    },
+    {
+      "id": "t3-g-32",
+      "type": "grammar",
+      "test": 3,
+      "groupCode": "G07",
+      "group": "Động từ nguyên mẫu",
+      "term": "plan/decide to + V",
+      "meaning": "dự định / quyết định làm gì",
+      "trap": "plan to settle / decide to retire.",
+      "source": "Part 7 Q158–160",
+      "parts": [
+        "7"
+      ],
+      "cefr": "B1",
+      "priority": "Tiêu chuẩn"
+    },
+    {
+      "id": "t3-g-33",
+      "type": "grammar",
+      "test": 3,
+      "groupCode": "G07",
+      "group": "Động từ nguyên mẫu",
+      "term": "be expected to + V",
+      "meaning": "được kỳ vọng / yêu cầu làm",
+      "trap": "expected to report for rehearsals.",
+      "source": "Part 7 Q196–200",
+      "parts": [
+        "7"
+      ],
+      "cefr": "B1",
+      "priority": "Tiêu chuẩn"
+    },
+    {
+      "id": "t3-g-34",
+      "type": "grammar",
+      "test": 3,
+      "groupCode": "G08",
+      "group": "V-ing / giới từ",
+      "term": "refrain from + V-ing",
+      "meaning": "tránh / kiềm chế làm gì",
+      "trap": "from là giới từ nên theo sau là V-ing.",
+      "source": "Part 6 Q143–146",
+      "parts": [
+        "6"
+      ],
+      "cefr": "B2",
+      "priority": "Cao"
+    },
+    {
+      "id": "t3-g-35",
+      "type": "grammar",
+      "test": 3,
+      "groupCode": "G08",
+      "group": "V-ing / giới từ",
+      "term": "look forward to + V-ing",
+      "meaning": "mong chờ làm gì",
+      "trap": "to là giới từ.",
+      "source": "Part 6 Q135–138",
+      "parts": [
+        "6"
+      ],
+      "cefr": "B1",
+      "priority": "Cao"
+    },
+    {
+      "id": "t3-g-36",
+      "type": "grammar",
+      "test": 3,
+      "groupCode": "G08",
+      "group": "V-ing / giới từ",
+      "term": "Would you mind + V-ing?",
+      "meaning": "bạn có phiền ... không?",
+      "trap": "Không dùng to V sau mind.",
+      "source": "Part 7 Q161–163",
+      "parts": [
+        "7"
+      ],
+      "cefr": "B1",
+      "priority": "Cao"
+    },
+    {
+      "id": "t3-g-37",
+      "type": "grammar",
+      "test": 3,
+      "groupCode": "G08",
+      "group": "V-ing / giới từ",
+      "term": "by + V-ing",
+      "meaning": "bằng cách làm gì",
+      "trap": "work from anywhere / improve by doing.",
+      "source": "Part 7 xuyên suốt",
+      "parts": [
+        "7"
+      ],
+      "cefr": "B1",
+      "priority": "Cao"
+    },
+    {
+      "id": "t3-g-38",
+      "type": "grammar",
+      "test": 3,
+      "groupCode": "G09",
+      "group": "Cụm động từ",
+      "term": "set A apart",
+      "meaning": "làm A khác biệt / nổi bật",
+      "trap": "A đứng giữa set và apart.",
+      "source": "Part 6 Q139–142",
+      "parts": [
+        "6"
+      ],
+      "cefr": "B2",
+      "priority": "Tiêu chuẩn"
+    },
+    {
+      "id": "t3-g-39",
+      "type": "grammar",
+      "test": 3,
+      "groupCode": "G09",
+      "group": "Cụm động từ",
+      "term": "move forward with + N",
+      "meaning": "tiếp tục triển khai",
+      "trap": "move forward with an expansion plan.",
+      "source": "Part 5 Q125",
+      "parts": [
+        "5"
+      ],
+      "cefr": "B2",
+      "priority": "Tiêu chuẩn"
+    },
+    {
+      "id": "t3-g-40",
+      "type": "grammar",
+      "test": 3,
+      "groupCode": "G09",
+      "group": "Cụm động từ",
+      "term": "catch up (on/with)",
+      "meaning": "bắt kịp",
+      "trap": "catch up after a backlog.",
+      "source": "Part 7 Q176–180",
+      "parts": [
+        "7"
+      ],
+      "cefr": "B1",
+      "priority": "Tiêu chuẩn"
+    },
+    {
+      "id": "t3-g-41",
+      "type": "grammar",
+      "test": 3,
+      "groupCode": "G09",
+      "group": "Cụm động từ",
+      "term": "make the most of + N",
+      "meaning": "tận dụng tối đa",
+      "trap": "make the most of screen time.",
+      "source": "Part 7 Q155–157",
+      "parts": [
+        "7"
+      ],
+      "cefr": "B1",
+      "priority": "Tiêu chuẩn"
+    },
+    {
+      "id": "t3-g-42",
+      "type": "grammar",
+      "test": 3,
+      "groupCode": "G10",
+      "group": "Business collocations",
+      "term": "in response to + N",
+      "meaning": "để đáp lại / ứng phó với",
+      "trap": "develop a plan in response to cuts.",
+      "source": "Part 5 Q119",
+      "parts": [
+        "5"
+      ],
+      "cefr": "B2",
+      "priority": "Cao"
+    },
+    {
+      "id": "t3-g-43",
+      "type": "grammar",
+      "test": 3,
+      "groupCode": "G10",
+      "group": "Business collocations",
+      "term": "salary is commensurate with + N",
+      "meaning": "lương tương xứng với",
+      "trap": "commensurate đi với with.",
+      "source": "Part 7 Q164–167",
+      "parts": [
+        "7"
+      ],
+      "cefr": "C1",
+      "priority": "Cao"
     }
   ],
   "quickReview": [
@@ -8457,6 +13013,214 @@
       "meaning": "thị phần",
       "priority": "Rất cao",
       "test": 2
+    },
+    {
+      "type": "grammar",
+      "term": "despite + N / possessive adjective + N",
+      "meaning": "mặc dù / bất chấp",
+      "priority": "Rất cao",
+      "test": 3,
+      "id": "t3-q-1"
+    },
+    {
+      "type": "grammar",
+      "term": "be promoted to + position",
+      "meaning": "được thăng chức lên vị trí",
+      "priority": "Rất cao",
+      "test": 3,
+      "id": "t3-q-2"
+    },
+    {
+      "type": "grammar",
+      "term": "suggest that + S + V",
+      "meaning": "cho thấy / đề xuất rằng",
+      "priority": "Rất cao",
+      "test": 3,
+      "id": "t3-q-3"
+    },
+    {
+      "type": "grammar",
+      "term": "long before + past clause",
+      "meaning": "rất lâu trước khi",
+      "priority": "Cao",
+      "test": 3,
+      "id": "t3-q-4"
+    },
+    {
+      "type": "grammar",
+      "term": "once + present, future clause",
+      "meaning": "một khi / khi",
+      "priority": "Cao",
+      "test": 3,
+      "id": "t3-q-5"
+    },
+    {
+      "type": "grammar",
+      "term": "refrain from + V-ing",
+      "meaning": "tránh làm gì",
+      "priority": "Rất cao",
+      "test": 3,
+      "id": "t3-q-6"
+    },
+    {
+      "type": "grammar",
+      "term": "set A apart",
+      "meaning": "làm A khác biệt",
+      "priority": "Rất cao",
+      "test": 3,
+      "id": "t3-q-7"
+    },
+    {
+      "type": "grammar",
+      "term": "look forward to + V-ing",
+      "meaning": "mong chờ làm gì",
+      "priority": "Cao",
+      "test": 3,
+      "id": "t3-q-8"
+    },
+    {
+      "type": "grammar",
+      "term": "be expected to + V",
+      "meaning": "được kỳ vọng / yêu cầu",
+      "priority": "Rất cao",
+      "test": 3,
+      "id": "t3-q-9"
+    },
+    {
+      "type": "grammar",
+      "term": "salary is commensurate with + N",
+      "meaning": "lương tương xứng với",
+      "priority": "Cao",
+      "test": 3,
+      "id": "t3-q-10"
+    },
+    {
+      "type": "vocabulary",
+      "term": "interpersonal skills",
+      "meaning": "kỹ năng giao tiếp giữa người với người",
+      "priority": "Rất cao",
+      "test": 3,
+      "id": "t3-q-11"
+    },
+    {
+      "type": "vocabulary",
+      "term": "cash back",
+      "meaning": "tiền hoàn lại",
+      "priority": "Rất cao",
+      "test": 3,
+      "id": "t3-q-12"
+    },
+    {
+      "type": "vocabulary",
+      "term": "annual interest rate",
+      "meaning": "lãi suất hằng năm",
+      "priority": "Cao",
+      "test": 3,
+      "id": "t3-q-13"
+    },
+    {
+      "type": "vocabulary",
+      "term": "market share",
+      "meaning": "thị phần",
+      "priority": "Rất cao",
+      "test": 3,
+      "id": "t3-q-14"
+    },
+    {
+      "type": "vocabulary",
+      "term": "volume discount",
+      "meaning": "chiết khấu theo số lượng",
+      "priority": "Rất cao",
+      "test": 3,
+      "id": "t3-q-15"
+    },
+    {
+      "type": "vocabulary",
+      "term": "price quote",
+      "meaning": "báo giá",
+      "priority": "Rất cao",
+      "test": 3,
+      "id": "t3-q-16"
+    },
+    {
+      "type": "vocabulary",
+      "term": "data-driven",
+      "meaning": "dựa trên dữ liệu",
+      "priority": "Rất cao",
+      "test": 3,
+      "id": "t3-q-17"
+    },
+    {
+      "type": "vocabulary",
+      "term": "direct deposit",
+      "meaning": "chuyển lương trực tiếp",
+      "priority": "Rất cao",
+      "test": 3,
+      "id": "t3-q-18"
+    },
+    {
+      "type": "vocabulary",
+      "term": "ergonomic",
+      "meaning": "thuộc công thái học",
+      "priority": "Rất cao",
+      "test": 3,
+      "id": "t3-q-19"
+    },
+    {
+      "type": "vocabulary",
+      "term": "from the outset",
+      "meaning": "ngay từ đầu",
+      "priority": "Rất cao",
+      "test": 3,
+      "id": "t3-q-20"
+    },
+    {
+      "type": "vocabulary",
+      "term": "expedited delivery",
+      "meaning": "giao hàng nhanh",
+      "priority": "Rất cao",
+      "test": 3,
+      "id": "t3-q-21"
+    },
+    {
+      "type": "vocabulary",
+      "term": "packed house",
+      "meaning": "khán phòng kín chỗ",
+      "priority": "Rất cao",
+      "test": 3,
+      "id": "t3-q-22"
+    },
+    {
+      "type": "vocabulary",
+      "term": "historical artifact",
+      "meaning": "hiện vật lịch sử",
+      "priority": "Rất cao",
+      "test": 3,
+      "id": "t3-q-23"
+    },
+    {
+      "type": "vocabulary",
+      "term": "surge in orders",
+      "meaning": "sự tăng vọt đơn hàng",
+      "priority": "Rất cao",
+      "test": 3,
+      "id": "t3-q-24"
+    },
+    {
+      "type": "vocabulary",
+      "term": "aesthetics",
+      "meaning": "tính thẩm mỹ",
+      "priority": "Rất cao",
+      "test": 3,
+      "id": "t3-q-25"
+    },
+    {
+      "type": "vocabulary",
+      "term": "rearrange a calendar",
+      "meaning": "sắp xếp lại lịch",
+      "priority": "Rất cao",
+      "test": 3,
+      "id": "t3-q-26"
     }
   ]
 }

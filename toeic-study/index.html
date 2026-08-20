@@ -6,7 +6,7 @@
     <meta name="theme-color" content="#162f2b" />
     <meta
       name="description"
-      content="Ứng dụng ôn ETS 2026 TOEIC Reading Test 1–2: từ vựng, ngữ pháp, flashcards, quiz và theo dõi tiến độ."
+      content="Ứng dụng ôn ETS 2026 TOEIC Reading Test 1–3: từ vựng, ngữ pháp, flashcards, quiz và theo dõi tiến độ."
     />
     <title>TOEIC Reading Lab</title>
     <link rel="manifest" href="manifest.webmanifest" />
@@ -68,7 +68,7 @@
           </div>
         </div>
 
-        <p class="sidebar-note">Dữ liệu ETS 2026 · Test 1–2</p>
+        <p class="sidebar-note">Dữ liệu ETS 2026 · Test 1–3</p>
       </aside>
 
       <main class="main-content">
@@ -101,6 +101,11 @@
               <div class="hero-actions">
                 <button class="primary-button" data-jump="flashcards">Bắt đầu ôn</button>
                 <button class="text-button" data-jump="vocabulary">Xem thư viện</button>
+                <a
+                  class="text-button"
+                  href="downloads/ETS_2026_Test3_Reading_Study_3Tabs.xlsx"
+                  download
+                >Tải Excel Test 3</a>
               </div>
             </div>
             <div class="hero-score" aria-label="Tiến độ học">
@@ -175,6 +180,7 @@
                 <option value="all">Tất cả</option>
                 <option value="1">Test 1</option>
                 <option value="2">Test 2</option>
+                <option value="3">Test 3</option>
               </select>
             </label>
             <label>
@@ -239,9 +245,10 @@
                 <option value="grammar">Chỉ ngữ pháp</option>
               </select>
               <select id="flashTest" aria-label="Test flashcard">
-                <option value="all">Cả 2 Test</option>
+                <option value="all">Cả 3 Test</option>
                 <option value="1">Test 1</option>
                 <option value="2">Test 2</option>
+                <option value="3">Test 3</option>
               </select>
               <label class="check-control">
                 <input id="flashPriority" type="checkbox" />
@@ -316,9 +323,10 @@
                 <label>
                   <span>Phạm vi</span>
                   <select id="quizTest">
-                    <option value="all">Test 1 + 2</option>
+                    <option value="all">Test 1 + 2 + 3</option>
                     <option value="1">Test 1</option>
                     <option value="2">Test 2</option>
+                    <option value="3">Test 3</option>
                   </select>
                 </label>
                 <label>
