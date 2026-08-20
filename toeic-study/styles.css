@@ -1168,7 +1168,7 @@ svg {
 
 .quiz-options {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 12px;
   margin: 30px 0 20px;
   text-align: left;
@@ -1197,6 +1197,13 @@ svg {
 .check-card small { display: block; }
 .check-card strong { font-size: 11px; }
 .check-card small { margin-top: 2px; color: var(--ink-soft); font-size: 9px; }
+.quiz-filter-summary { margin: 0 0 8px; }
+.quiz-filter-note {
+  min-height: 18px;
+  margin: 0 0 14px !important;
+  color: var(--ink-soft);
+  font-size: 10px !important;
+}
 .wide-button { width: 100%; }
 
 .quiz-header {

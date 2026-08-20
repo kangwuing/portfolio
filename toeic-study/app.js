@@ -436,45 +436,97 @@ function resetQuizView() {
   $("#quizQuestion").hidden = true;
   $("#quizResult").hidden = true;
   state.quiz = null;
+  renderQuizFilterSummary();
 }
 
-function startQuiz() {
-  const type = $("#quizType").value;
-  const test = $("#quizTest").value;
-  const weakOnly = $("#quizWeakOnly").checked;
-  const preferredPool = state.allItems.filter(
+function currentQuizFilters() {
+  return {
+    type: $("#quizType").value,
+    test: $("#quizTest").value,
+    part: $("#quizPart").value,
+    cefr: $("#quizCefr").value,
+    priority: $("#quizPriority").value,
+    status: $("#quizStatus").value,
+  };
+}
+
+function filteredQuizItems(filters, ignoredFilters = []) {
+  const ignored = new Set(ignoredFilters);
+  return state.allItems.filter(
     (item) =>
-      (type === "mixed" || item.type === type) &&
-      (test === "all" || item.test === Number(test)) &&
-      (!weakOnly || statusOf(item.id) !== "mastered"),
+      (filters.type === "mixed" || item.type === filters.type) &&
+      (ignored.has("test") || filters.test === "all" || item.test === Number(filters.test)) &&
+      (ignored.has("part") || filters.part === "all" || item.parts.includes(filters.part)) &&
+      (ignored.has("cefr") || filters.cefr === "all" || item.cefr === filters.cefr) &&
+      (ignored.has("priority") || filters.priority === "all" || item.priority === filters.priority) &&
+      (ignored.has("status") || filters.status === "all" || statusOf(item.id) === filters.status),
   );
-  const tiers = [
-    preferredPool,
-    state.allItems.filter(
-      (item) =>
-        (type === "mixed" || item.type === type) &&
-        (test === "all" || item.test === Number(test)),
-    ),
-    state.allItems.filter((item) => type === "mixed" || item.type === type),
-  ];
+}
+
+function buildQuizPool(filters, fillToSize) {
+  const preferredPool = filteredQuizItems(filters);
+  if (!preferredPool.length) return { pool: [], preferredCount: 0, expanded: false };
+
+  const relaxations = fillToSize
+    ? [
+        [],
+        ["status"],
+        ["status", "priority"],
+        ["status", "priority", "cefr"],
+        ["status", "priority", "cefr", "part"],
+        ["status", "priority", "cefr", "part", "test"],
+      ]
+    : [[]];
   const pool = [];
   const includedIds = new Set();
-  tiers.forEach((tier) => {
-    shuffle(tier).forEach((item) => {
+  relaxations.forEach((ignoredFilters) => {
+    shuffle(filteredQuizItems(filters, ignoredFilters)).forEach((item) => {
       if (pool.length < QUIZ_SIZE && !includedIds.has(item.id)) {
         pool.push(item);
         includedIds.add(item.id);
       }
     });
   });
+  return {
+    pool,
+    preferredCount: preferredPool.length,
+    expanded: pool.some((item) => !preferredPool.some((preferred) => preferred.id === item.id)),
+  };
+}
+
+function renderQuizFilterSummary() {
+  if (!state.data || !$("#quizFilterForm")) return;
+  const filters = currentQuizFilters();
+  const matchedCount = filteredQuizItems(filters).length;
+  const fillToSize = $("#quizFillToSize").checked;
+  const questionCount = matchedCount ? (fillToSize ? QUIZ_SIZE : Math.min(QUIZ_SIZE, matchedCount)) : 0;
+  $("#quizMatchCount").textContent = matchedCount;
+  $("#quizFilterNote").textContent =
+    matchedCount === 0
+      ? "Không có mục nào khớp. Hãy xóa bớt bộ lọc."
+      : fillToSize && matchedCount < QUIZ_SIZE
+        ? `Sẽ ưu tiên ${matchedCount} mục này rồi bổ sung cùng loại để đủ ${QUIZ_SIZE} câu.`
+        : `${questionCount} câu sẽ được chọn ngẫu nhiên từ các mục phù hợp.`;
+  $("#startQuiz").textContent = questionCount ? `Bắt đầu ${questionCount} câu` : "Không có câu phù hợp";
+  $("#startQuiz").disabled = questionCount === 0;
+}
+
+function startQuiz() {
+  const filters = currentQuizFilters();
+  const fillToSize = $("#quizFillToSize").checked;
+  const { pool, preferredCount, expanded } = buildQuizPool(filters, fillToSize);
+  if (!pool.length) {
+    showToast("Không có mục nào khớp bộ lọc hiện tại.");
+    return;
+  }
   const questions = pool.map((item) => buildQuestion(item, pool));
-  state.quiz = { questions, index: 0, score: 0, answered: false };
+  state.quiz = { questions, index: 0, score: 0, answered: false, filters };
   $("#quizSetup").hidden = true;
   $("#quizQuestion").hidden = false;
   $("#quizResult").hidden = true;
   renderQuestion();
-  if (preferredPool.length < QUIZ_SIZE) {
-    showToast(`Bộ lọc có ${preferredPool.length} mục; đã bổ sung cùng loại để đủ ${questions.length} câu.`);
+  if (expanded) {
+    showToast(`Đã ưu tiên ${preferredCount} mục khớp và bổ sung cùng loại để đủ ${questions.length} câu.`);
   }
 }
 
@@ -613,6 +665,11 @@ function bindEvents() {
   $$("[data-recall]").forEach((button) => button.addEventListener("click", () => recallCurrent(button.dataset.recall)));
 
   $("#startQuiz").addEventListener("click", startQuiz);
+  $("#quizFilterForm").addEventListener("input", renderQuizFilterSummary);
+  $("#clearQuizFilters").addEventListener("click", () => {
+    $("#quizFilterForm").reset();
+    renderQuizFilterSummary();
+  });
   $("#answerOptions").addEventListener("click", (event) => {
     const button = event.target.closest("[data-answer-index]");
     if (button) answerQuestion(Number(button.dataset.answerIndex));
