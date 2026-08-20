@@ -1,0 +1,409 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#162f2b" />
+    <meta
+      name="description"
+      content="Ứng dụng ôn ETS 2026 TOEIC Reading Test 1–2: từ vựng, ngữ pháp, flashcards, quiz và theo dõi tiến độ."
+    />
+    <title>TOEIC Reading Lab</title>
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="loadingScreen" class="loading-screen" role="status" aria-live="polite">
+      <div class="loading-mark">TR</div>
+      <p>Đang chuẩn bị phiên học…</p>
+    </div>
+
+    <div id="app" class="app-shell" hidden>
+      <aside class="sidebar" aria-label="Điều hướng chính">
+        <a class="brand" href="#dashboard" aria-label="TOEIC Reading Lab">
+          <span class="brand-mark">TR</span>
+          <span>
+            <strong>TOEIC</strong>
+            <small>READING LAB</small>
+          </span>
+        </a>
+
+        <nav class="side-nav">
+          <button class="nav-item is-active" data-view="dashboard">
+            <svg aria-hidden="true"><use href="#icon-grid"></use></svg>
+            <span>Tổng quan</span>
+          </button>
+          <button class="nav-item" data-view="vocabulary">
+            <svg aria-hidden="true"><use href="#icon-book"></use></svg>
+            <span>Từ vựng</span>
+          </button>
+          <button class="nav-item" data-view="grammar">
+            <svg aria-hidden="true"><use href="#icon-brackets"></use></svg>
+            <span>Ngữ pháp</span>
+          </button>
+          <button class="nav-item" data-view="flashcards">
+            <svg aria-hidden="true"><use href="#icon-cards"></use></svg>
+            <span>Flashcards</span>
+          </button>
+          <button class="nav-item" data-view="quiz">
+            <svg aria-hidden="true"><use href="#icon-spark"></use></svg>
+            <span>Kiểm tra</span>
+          </button>
+        </nav>
+
+        <div class="sidebar-progress">
+          <div class="ring" id="sidebarRing" style="--progress: 0">
+            <span id="sidebarPercent">0%</span>
+          </div>
+          <div>
+            <strong>Tiến độ tổng</strong>
+            <small id="sidebarMastered">0 / 435 đã thuộc</small>
+          </div>
+        </div>
+
+        <p class="sidebar-note">Dữ liệu ETS 2026 · Test 1–2</p>
+      </aside>
+
+      <main class="main-content">
+        <header class="topbar">
+          <div>
+            <p class="eyebrow" id="todayLabel"></p>
+            <h1 id="viewTitle">Tổng quan học tập</h1>
+          </div>
+          <div class="topbar-actions">
+            <button class="icon-button" id="resetButton" type="button" title="Đặt lại tiến độ">
+              <svg aria-hidden="true"><use href="#icon-reset"></use></svg>
+              <span class="sr-only">Đặt lại tiến độ</span>
+            </button>
+            <div class="streak-chip" title="Chuỗi ngày học liên tiếp">
+              <span aria-hidden="true">🔥</span>
+              <strong id="streakCount">1</strong>
+              <span>ngày</span>
+            </div>
+          </div>
+        </header>
+
+        <section id="dashboardView" class="view is-active" data-view-panel="dashboard">
+          <div class="hero-card">
+            <div class="hero-copy">
+              <span class="hero-kicker">PHIÊN HỌC HÔM NAY</span>
+              <h2>Học đúng nhóm.<br />Nhớ bằng chủ động.</h2>
+              <p>
+                Bắt đầu từ các mục ưu tiên, sau đó củng cố bằng flashcards và một bài kiểm tra ngắn.
+              </p>
+              <div class="hero-actions">
+                <button class="primary-button" data-jump="flashcards">Bắt đầu ôn</button>
+                <button class="text-button" data-jump="vocabulary">Xem thư viện</button>
+              </div>
+            </div>
+            <div class="hero-score" aria-label="Tiến độ học">
+              <div class="large-ring" id="heroRing" style="--progress: 0">
+                <div>
+                  <strong id="heroPercent">0%</strong>
+                  <span>đã thuộc</span>
+                </div>
+              </div>
+              <p><strong id="heroRemaining">435</strong> mục còn lại</p>
+            </div>
+          </div>
+
+          <div class="stats-grid" id="statsGrid"></div>
+
+          <div class="dashboard-grid">
+            <section class="panel priority-panel">
+              <div class="panel-heading">
+                <div>
+                  <span class="section-kicker">NÊN HỌC TRƯỚC</span>
+                  <h3>Danh sách ưu tiên</h3>
+                </div>
+                <button class="text-button" data-jump="flashcards" data-priority-only="true">Ôn ngay</button>
+              </div>
+              <div class="priority-list" id="priorityList"></div>
+            </section>
+
+            <section class="panel study-path-panel">
+              <div class="panel-heading">
+                <div>
+                  <span class="section-kicker">HỆ THỐNG 4 BƯỚC</span>
+                  <h3>Lộ trình ghi nhớ</h3>
+                </div>
+              </div>
+              <ol class="study-path">
+                <li>
+                  <span>01</span>
+                  <div><strong>Làm nóng</strong><small>26 mục ưu tiên mỗi Test</small></div>
+                </li>
+                <li>
+                  <span>02</span>
+                  <div><strong>Học theo nhóm</strong><small>Đồng nghĩa và cùng chức năng</small></div>
+                </li>
+                <li>
+                  <span>03</span>
+                  <div><strong>Gợi nhớ chủ động</strong><small>Lật thẻ trước khi xem đáp án</small></div>
+                </li>
+                <li>
+                  <span>04</span>
+                  <div><strong>Kiểm tra nhanh</strong><small>10 câu, phản hồi tức thì</small></div>
+                </li>
+              </ol>
+            </section>
+          </div>
+          <p class="data-notice" id="cefrNotice"></p>
+        </section>
+
+        <section id="libraryView" class="view" data-view-panel="vocabulary grammar">
+          <div class="library-tabs" role="tablist" aria-label="Loại nội dung">
+            <button class="library-tab is-active" data-library="vocabulary" role="tab">Từ vựng</button>
+            <button class="library-tab" data-library="grammar" role="tab">Ngữ pháp</button>
+          </div>
+          <form class="filter-bar" id="filterForm">
+            <label class="search-field">
+              <svg aria-hidden="true"><use href="#icon-search"></use></svg>
+              <span class="sr-only">Tìm kiếm</span>
+              <input id="searchInput" type="search" placeholder="Tìm từ, nghĩa, nhóm…" autocomplete="off" />
+            </label>
+            <label>
+              <span>Test</span>
+              <select id="testFilter">
+                <option value="all">Tất cả</option>
+                <option value="1">Test 1</option>
+                <option value="2">Test 2</option>
+              </select>
+            </label>
+            <label>
+              <span>Part</span>
+              <select id="partFilter">
+                <option value="all">Tất cả</option>
+                <option value="5">Part 5</option>
+                <option value="6">Part 6</option>
+                <option value="7">Part 7</option>
+              </select>
+            </label>
+            <label>
+              <span>CEFR</span>
+              <select id="cefrFilter">
+                <option value="all">Tất cả</option>
+                <option value="B1">B1</option>
+                <option value="B2">B2</option>
+                <option value="C1">C1</option>
+              </select>
+            </label>
+            <label>
+              <span>Ưu tiên</span>
+              <select id="priorityFilter">
+                <option value="all">Tất cả</option>
+                <option value="Rất cao">Rất cao</option>
+                <option value="Cao">Cao</option>
+                <option value="Trung bình">Trung bình</option>
+                <option value="Tiêu chuẩn">Tiêu chuẩn</option>
+              </select>
+            </label>
+            <label>
+              <span>Trạng thái</span>
+              <select id="statusFilter">
+                <option value="all">Tất cả</option>
+                <option value="new">Chưa học</option>
+                <option value="learning">Đang học</option>
+                <option value="mastered">Đã thuộc</option>
+              </select>
+            </label>
+          </form>
+
+          <div class="results-summary">
+            <p><strong id="resultCount">0</strong> mục phù hợp</p>
+            <button id="clearFilters" class="text-button" type="button">Xóa bộ lọc</button>
+          </div>
+          <div id="libraryGroups" class="library-groups"></div>
+          <button id="loadMoreButton" class="secondary-button load-more" type="button">Xem thêm</button>
+        </section>
+
+        <section id="flashcardsView" class="view" data-view-panel="flashcards">
+          <div class="mode-toolbar">
+            <div>
+              <span class="section-kicker">GỢI NHỚ CHỦ ĐỘNG</span>
+              <h2>Flashcards</h2>
+              <p>Đọc mặt trước, tự trả lời, rồi mới lật thẻ.</p>
+            </div>
+            <div class="compact-filters">
+              <select id="flashType" aria-label="Loại flashcard">
+                <option value="all">Từ vựng + Ngữ pháp</option>
+                <option value="vocabulary">Chỉ từ vựng</option>
+                <option value="grammar">Chỉ ngữ pháp</option>
+              </select>
+              <select id="flashTest" aria-label="Test flashcard">
+                <option value="all">Cả 2 Test</option>
+                <option value="1">Test 1</option>
+                <option value="2">Test 2</option>
+              </select>
+              <label class="check-control">
+                <input id="flashPriority" type="checkbox" />
+                <span>Chỉ mục ưu tiên</span>
+              </label>
+              <button id="shuffleCards" class="icon-button" title="Trộn thẻ" type="button">
+                <svg aria-hidden="true"><use href="#icon-shuffle"></use></svg>
+                <span class="sr-only">Trộn thẻ</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="flash-progress">
+            <span id="flashCounter">1 / 1</span>
+            <div><i id="flashProgressBar"></i></div>
+          </div>
+
+          <div class="flashcard-stage">
+            <button id="previousCard" class="round-button" type="button" aria-label="Thẻ trước">
+              <svg aria-hidden="true"><use href="#icon-arrow-left"></use></svg>
+            </button>
+            <button id="flashcard" class="flashcard" type="button" aria-label="Lật flashcard">
+              <div class="flashcard-inner">
+                <article class="flashcard-face flashcard-front">
+                  <div class="card-meta" id="flashMeta"></div>
+                  <div class="flashcard-content">
+                    <span class="card-label">TỪ / CẤU TRÚC</span>
+                    <h3 id="flashTerm"></h3>
+                    <p id="flashPrompt">Bạn nhớ nghĩa và cách dùng không?</p>
+                  </div>
+                  <span class="flip-hint">Nhấn để xem đáp án</span>
+                </article>
+                <article class="flashcard-face flashcard-back">
+                  <div class="card-meta" id="flashBackMeta"></div>
+                  <div class="flashcard-content answer-content">
+                    <span class="card-label">ĐÁP ÁN</span>
+                    <h3 id="flashMeaning"></h3>
+                    <p id="flashDetail"></p>
+                    <small id="flashSource"></small>
+                  </div>
+                  <span class="flip-hint">Nhấn để quay lại</span>
+                </article>
+              </div>
+            </button>
+            <button id="nextCard" class="round-button" type="button" aria-label="Thẻ tiếp theo">
+              <svg aria-hidden="true"><use href="#icon-arrow-right"></use></svg>
+            </button>
+          </div>
+
+          <div class="recall-actions" aria-label="Đánh giá mức độ nhớ">
+            <button data-recall="new" type="button"><span>1</span> Chưa nhớ</button>
+            <button data-recall="learning" type="button"><span>2</span> Cần ôn lại</button>
+            <button data-recall="mastered" type="button"><span>3</span> Đã thuộc</button>
+          </div>
+        </section>
+
+        <section id="quizView" class="view" data-view-panel="quiz">
+          <div class="quiz-shell">
+            <div id="quizSetup" class="quiz-setup">
+              <span class="section-kicker">KIỂM TRA 5 PHÚT</span>
+              <h2>Chọn một phiên kiểm tra</h2>
+              <p>Mỗi lượt gồm 10 câu trắc nghiệm. Kết quả được lưu vào tiến độ học.</p>
+              <div class="quiz-options">
+                <label>
+                  <span>Nội dung</span>
+                  <select id="quizType">
+                    <option value="mixed">Kết hợp</option>
+                    <option value="vocabulary">Từ vựng</option>
+                    <option value="grammar">Ngữ pháp</option>
+                  </select>
+                </label>
+                <label>
+                  <span>Phạm vi</span>
+                  <select id="quizTest">
+                    <option value="all">Test 1 + 2</option>
+                    <option value="1">Test 1</option>
+                    <option value="2">Test 2</option>
+                  </select>
+                </label>
+                <label class="check-card">
+                  <input id="quizWeakOnly" type="checkbox" />
+                  <span>
+                    <strong>Ưu tiên mục chưa thuộc</strong>
+                    <small>Giảm câu hỏi từ các mục đã nhớ tốt</small>
+                  </span>
+                </label>
+              </div>
+              <button id="startQuiz" class="primary-button wide-button" type="button">Bắt đầu 10 câu</button>
+            </div>
+
+            <div id="quizQuestion" class="quiz-question" hidden>
+              <div class="quiz-header">
+                <span id="quizCounter">Câu 1 / 10</span>
+                <span>Điểm: <strong id="quizScore">0</strong></span>
+              </div>
+              <div class="quiz-track"><i id="quizProgress"></i></div>
+              <span class="question-label" id="questionLabel">CHỌN NGHĨA ĐÚNG</span>
+              <h2 id="questionTerm"></h2>
+              <div id="answerOptions" class="answer-options"></div>
+              <div id="answerFeedback" class="answer-feedback" aria-live="polite"></div>
+              <button id="nextQuestion" class="primary-button" type="button" hidden>Câu tiếp theo</button>
+            </div>
+
+            <div id="quizResult" class="quiz-result" hidden>
+              <div class="result-ring"><strong id="resultScore">0/10</strong></div>
+              <span class="section-kicker">HOÀN THÀNH</span>
+              <h2 id="resultTitle">Một bước tiến tốt.</h2>
+              <p id="resultMessage"></p>
+              <div class="result-actions">
+                <button id="retryQuiz" class="primary-button" type="button">Làm lại</button>
+                <button class="secondary-button" data-jump="dashboard" type="button">Về tổng quan</button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <nav class="mobile-nav" aria-label="Điều hướng di động">
+        <button class="nav-item is-active" data-view="dashboard">
+          <svg aria-hidden="true"><use href="#icon-grid"></use></svg><span>Tổng quan</span>
+        </button>
+        <button class="nav-item" data-view="vocabulary">
+          <svg aria-hidden="true"><use href="#icon-book"></use></svg><span>Từ vựng</span>
+        </button>
+        <button class="nav-item" data-view="grammar">
+          <svg aria-hidden="true"><use href="#icon-brackets"></use></svg><span>Ngữ pháp</span>
+        </button>
+        <button class="nav-item" data-view="flashcards">
+          <svg aria-hidden="true"><use href="#icon-cards"></use></svg><span>Thẻ</span>
+        </button>
+        <button class="nav-item" data-view="quiz">
+          <svg aria-hidden="true"><use href="#icon-spark"></use></svg><span>Kiểm tra</span>
+        </button>
+      </nav>
+    </div>
+
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+    <dialog id="resetDialog" class="confirm-dialog">
+      <form method="dialog">
+        <span class="dialog-icon"><svg aria-hidden="true"><use href="#icon-reset"></use></svg></span>
+        <h2>Đặt lại toàn bộ tiến độ?</h2>
+        <p>Trạng thái đã học và lịch sử quiz trên thiết bị này sẽ bị xóa.</p>
+        <div>
+          <button value="cancel" class="secondary-button">Hủy</button>
+          <button id="confirmReset" value="confirm" class="danger-button">Đặt lại</button>
+        </div>
+      </form>
+    </dialog>
+
+    <svg class="svg-sprite" aria-hidden="true">
+      <symbol id="icon-grid" viewBox="0 0 24 24"><path d="M4 4h6v6H4zM14 4h6v6h-6zM4 14h6v6H4zM14 14h6v6h-6z" /></symbol>
+      <symbol id="icon-book" viewBox="0 0 24 24"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H11v17H6.5A2.5 2.5 0 0 0 4 22zM20 5.5A2.5 2.5 0 0 0 17.5 3H13v17h4.5A2.5 2.5 0 0 1 20 22z" /></symbol>
+      <symbol id="icon-brackets" viewBox="0 0 24 24"><path d="M9 4H6a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h3M15 4h3a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2h-3" /></symbol>
+      <symbol id="icon-cards" viewBox="0 0 24 24"><path d="m5 7 11-3 3 12-11 3zM5 8H3v12h12v-2" /></symbol>
+      <symbol id="icon-spark" viewBox="0 0 24 24"><path d="m12 2 1.7 5.3L19 9l-5.3 1.7L12 16l-1.7-5.3L5 9l5.3-1.7zM19 15l.8 2.2L22 18l-2.2.8L19 21l-.8-2.2L16 18l2.2-.8z" /></symbol>
+      <symbol id="icon-reset" viewBox="0 0 24 24"><path d="M4 4v6h6M5.5 15a7 7 0 1 0 .5-7l-2 2" /></symbol>
+      <symbol id="icon-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7" /><path d="m20 20-4-4" /></symbol>
+      <symbol id="icon-shuffle" viewBox="0 0 24 24"><path d="M4 7h3c5 0 5 10 10 10h3M17 4l3 3-3 3M4 17h3c2.5 0 3.8-2.5 5-5M17 14l3 3-3 3" /></symbol>
+      <symbol id="icon-arrow-left" viewBox="0 0 24 24"><path d="m15 18-6-6 6-6" /></symbol>
+      <symbol id="icon-arrow-right" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6" /></symbol>
+    </svg>
+
+    <script src="app.js" type="module"></script>
+  </body>
+</html>

@@ -1,0 +1,15 @@
+{
+  "name": "TOEIC Reading Lab",
+  "short_name": "TOEIC Lab",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#f5f3ed",
+  "theme_color": "#162f2b",
+  "icons": [
+    {
+      "src": "assets/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
