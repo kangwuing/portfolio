@@ -1,6 +1,18 @@
 {
-  "lastVerifiedAt": "2026-08-20",
+  "lastVerifiedAt": "2026-08-25",
   "certifications": [
+    {
+      "id": "solidworks-cswp",
+      "title": "SOLIDWORKS Design Professional (CSWP)",
+      "issuer": "Dassault Systèmes",
+      "issued": "August 24, 2026",
+      "credentialId": "C-YPMZK3DHS7",
+      "credentialUrl": "https://cv.virtualtester.com/qr/?b=SLDWRKS&i=C-YPMZK3DHS7",
+      "pdfPath": "certificates/pdfs/solidworks-cswp.pdf",
+      "thumbnailPath": "certificates/thumbnails/solidworks-cswp-official.jpg",
+      "skills": ["SOLIDWORKS", "Mechanical Design"],
+      "source": "Dassault Systèmes · VirtualTester"
+    },
     {
       "id": "solidworks-cswa",
       "title": "SOLIDWORKS Design Associate (CSWA)",

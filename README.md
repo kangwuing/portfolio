@@ -21,7 +21,7 @@ of replacing the section with an empty result.
 
 ## Licenses and certifications
 
-The portfolio includes four credentials verified against LinkedIn and the
+The portfolio includes five credentials verified against LinkedIn and the
 issuers' public credential pages. The certificate PDF files supplied by the
 portfolio owner are stored under `certificates/pdfs/` and linked from each
 credential card.
