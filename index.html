@@ -1,12 +1,34 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en" class="scroll-smooth" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ngo Minh Khang | Research Portfolio</title>
+    <meta name="color-scheme" content="light dark">
+    <meta id="theme-color" name="theme-color" content="#edf4ff">
+    <script>
+        (() => {
+            let storedTheme = null;
+            try { storedTheme = localStorage.getItem("portfolio-theme"); } catch { /* Use system preference. */ }
+            const preferredTheme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+            const captureTheme = new URLSearchParams(location.search).get("theme");
+            const isFigmaCapture = location.hash.includes("figmacapture=");
+            document.documentElement.dataset.theme = isFigmaCapture && ["light", "dark"].includes(captureTheme)
+                ? captureTheme
+                : storedTheme || preferredTheme;
+            if (isFigmaCapture) {
+                document.documentElement.classList.add("figma-capture");
+                const captureScript = document.createElement("script");
+                captureScript.src = "https://mcp.figma.com/mcp/html-to-design/capture.js";
+                captureScript.async = true;
+                document.head.append(captureScript);
+            }
+        })();
+    </script>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <style>
         html, body { overflow-x: hidden; }
         .tooltip { position: relative; display: inline-block; cursor: help; }
@@ -21,12 +43,13 @@
         .tooltip:hover .tooltiptext { visibility: visible; opacity: 1; }
     </style>
 </head>
-<body class="bg-slate-50 text-slate-900 font-sans selection:bg-blue-100 selection:text-blue-700">
+<body class="portfolio-page bg-slate-50 text-slate-900 font-sans selection:bg-blue-100 selection:text-blue-700">
 
-    <nav class="fixed w-full z-50 bg-white/80 backdrop-blur-md border-b border-slate-200">
+    <nav class="portfolio-nav fixed w-full z-50 border-b border-slate-200">
+        <div id="scroll-progress" class="scroll-progress" aria-hidden="true"></div>
         <div class="max-w-6xl mx-auto px-6 h-16 flex justify-between items-center">
             <a href="#" class="font-bold text-xl tracking-tighter text-blue-600 italic">KHANG.NGO</a>
-            <div class="hidden lg:flex gap-5 font-medium text-[11px] uppercase tracking-wider">
+            <div class="nav-links hidden lg:grid font-medium text-[11px] uppercase tracking-wider">
                 <a href="#about" class="hover:text-blue-600 transition text-slate-600">About</a>
                 <a href="#experience" class="hover:text-blue-600 transition text-slate-600">Experience</a>
                 <a href="#education" class="hover:text-blue-600 transition text-slate-600">Education</a>
@@ -34,17 +57,24 @@
                 <a href="#projects" class="hover:text-blue-600 transition text-slate-600">Projects</a>
                 <a href="#publications" class="hover:text-blue-600 transition text-slate-600">Publications</a>
             </div>
-            <a href="CV.pdf" target="_blank" class="bg-blue-600 text-white px-5 py-2 rounded-full text-sm font-semibold hover:bg-blue-700 transition shadow-md">
-                View CV
-            </a>
+            <div class="nav-actions">
+                <button id="theme-toggle" class="theme-toggle liquid-control" type="button" aria-label="Switch to dark mode" aria-pressed="false">
+                    <i class="fa-solid fa-moon" data-theme-icon="dark" aria-hidden="true"></i>
+                    <i class="fa-solid fa-sun" data-theme-icon="light" aria-hidden="true" hidden></i>
+                    <span class="theme-toggle__label">Dark</span>
+                </button>
+                <a href="CV.pdf" target="_blank" class="primary-button px-5 py-2 rounded-full text-sm font-semibold transition shadow-md">
+                    View CV
+                </a>
+            </div>
         </div>
     </nav>
 
-    <section id="about" class="pt-32 pb-20 px-6 bg-gradient-to-b from-blue-50 to-white">
-        <div class="max-w-4xl mx-auto text-center" data-aos="fade-up">
+    <section id="about" class="hero-section pt-32 pb-20 px-6">
+        <div class="hero-content max-w-4xl mx-auto text-center" data-aos="fade-up">
             <h1 class="text-5xl md:text-6xl font-extrabold mb-6 text-slate-900 italic tracking-tight">Ngo Minh Khang</h1>
             <p class="text-xl text-slate-600 leading-relaxed mb-8">
-                Ph.D. Candidate @ 
+                Master Candidate @
                 <a href="https://www.hanyang.ac.kr" target="_blank" class="font-bold text-blue-600 hover:underline decoration-2 underline-offset-4">Hanyang University</a>
             </p>
             <div class="flex justify-center gap-6 text-2xl text-slate-400">
@@ -55,69 +85,68 @@
         </div>
     </section>
 
-    <section id="experience" class="py-24 max-w-6xl mx-auto px-6">
+    <section id="experience" class="section-block py-24 max-w-6xl mx-auto px-6">
         <h2 class="text-3xl font-bold mb-16 text-center" data-aos="fade-up">Research Experience</h2>
         <div class="space-y-12">
-            <div class="relative pl-8 border-l-2 border-blue-600" data-aos="fade-left">
-                <div class="absolute -left-[9px] top-0 w-4 h-4 bg-blue-600 rounded-full shadow-[0_0_10px_rgba(37,99,235,0.5)]"></div>
-                <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-4">
-                    <div>
-                        <h3 class="text-2xl font-bold">CHAMP's lab</h3>
-                        <p class="text-blue-600 font-semibold text-sm uppercase tracking-wider">Full-time Researcher | Mar 2025 – Present</p>
-                    </div>
-                    <a href="http://champ.hanyang.ac.kr" target="_blank" class="mt-2 md:mt-0 text-xs font-bold text-slate-500 hover:text-blue-600 flex items-center gap-1 border border-slate-200 px-3 py-1 rounded-full bg-white transition shadow-sm">
-                        <i class="fa-solid fa-house-signal"></i> Lab Homepage
-                    </a>
+            <div class="timeline-card liquid-glass status-card" data-aos="fade-left">
+                <div class="experience-period font-bold text-blue-600">Mar 2025 — Present</div>
+                <span class="experience-status card-status card-status--active"><span class="status-dot" aria-hidden="true"></span>Active</span>
+                <div class="experience-copy">
+                    <h3 class="text-2xl font-bold">CHAMP's lab</h3>
+                    <p class="experience-role text-blue-600 font-semibold text-sm uppercase tracking-wider">Full-time Researcher</p>
                 </div>
-                <ul class="list-disc list-outside ml-4 space-y-3 text-slate-600 text-sm">
+                <a href="http://champ.hanyang.ac.kr" target="_blank" class="experience-link text-xs font-bold text-slate-500 hover:text-blue-600 flex items-center gap-1 border border-slate-200 px-3 py-1 rounded-full bg-white transition shadow-sm">
+                    <i class="fa-solid fa-house-signal"></i> Lab Homepage
+                </a>
+                <ul class="experience-details list-disc list-outside ml-4 space-y-3 text-slate-600 text-sm">
                     <li>Developed vision-guided robotic gripping systems for fabric materials using FEM and sequential optimization with <strong>KITECH</strong>.</li>
                     <li>Engineered AI-driven segmentation models and GUIs for automated powder particle analysis for <strong>POSCO</strong>.</li>
                     <li>Implemented hand gesture and facial recognition for the <strong>SoulCube</strong> interaction platform.</li>
                 </ul>
             </div>
-            <div class="relative pl-8 border-l-2 border-slate-200" data-aos="fade-left" data-aos-delay="100">
-                <div class="absolute -left-[9px] top-0 w-4 h-4 bg-slate-300 rounded-full"></div>
-                <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-4">
-                    <div>
-                        <h3 class="text-2xl font-bold italic text-slate-800 uppercase">IDEA Technology Corp.</h3>
-                        <p class="text-slate-500 font-semibold text-sm uppercase tracking-wider">Mechanical Design Intern | Jun 2023 – Aug 2023</p>
-                    </div>
-                    <a href="https://ideagroupvn.com/vi/" target="_blank" class="mt-2 md:mt-0 text-xs font-bold text-slate-500 hover:text-blue-600 flex items-center gap-1 border border-slate-200 px-3 py-1 rounded-full bg-white transition shadow-sm">
-                        <i class="fa-solid fa-building"></i> Company Website
-                    </a>
+            <div class="timeline-card liquid-glass status-card" data-aos="fade-left" data-aos-delay="100">
+                <div class="experience-period font-bold text-slate-400">Jun 2023 — Aug 2023</div>
+                <span class="experience-status card-status card-status--complete"><span class="status-dot" aria-hidden="true"></span>Completed</span>
+                <div class="experience-copy">
+                    <h3 class="text-2xl font-bold italic text-slate-800 uppercase">IDEA Technology Corp.</h3>
+                    <p class="experience-role text-slate-500 font-semibold text-sm uppercase tracking-wider">Mechanical Design Intern</p>
                 </div>
-                <p class="text-slate-600 text-sm italic">Designed a 174-component sheet forming machine based on MISUMI standards. Internship score: <strong>9/10</strong>.</p>
+                <a href="https://ideagroupvn.com/vi/" target="_blank" class="experience-link text-xs font-bold text-slate-500 hover:text-blue-600 flex items-center gap-1 border border-slate-200 px-3 py-1 rounded-full bg-white transition shadow-sm">
+                    <i class="fa-solid fa-building"></i> Company Website
+                </a>
+                <p class="experience-details text-slate-600 text-sm italic">Designed a 174-component sheet forming machine based on MISUMI standards. Internship score: <strong>9/10</strong>.</p>
             </div>
         </div>
     </section>
 
-    <section id="education" class="py-20 bg-white border-y border-slate-100 px-6">
-        <div class="max-w-5xl mx-auto">
+    <section id="education" class="surface-band py-20 border-y border-slate-100 px-6">
+        <div class="content-shell">
             <h2 class="text-3xl font-bold mb-12 text-center" data-aos="fade-up">Education</h2>
             <div class="space-y-6">
-                <div class="p-8 bg-slate-50 rounded-3xl border border-slate-100 flex flex-col md:flex-row gap-4 hover:shadow-md transition" data-aos="fade-up">
-                    <div class="md:w-1/4 font-bold text-blue-600">2025 — Present</div>
-                    <div class="md:w-3/4">
-                        <h3 class="text-xl font-bold">Ph.D. Candidate in Mechanical Engineering</h3>
+                <div class="education-card liquid-glass status-card rounded-3xl border border-slate-100 hover:shadow-md transition" data-aos="fade-up">
+                    <div class="education-period font-bold text-blue-600">2025 — Present</div>
+                    <div class="education-copy">
+                        <h3 class="text-xl font-bold">Master Candidate in Mechanical Engineering</h3>
                         <p class="text-slate-600 italic">Hanyang University, Korea</p>
                         <p class="text-xs text-slate-400 mt-2 uppercase font-bold tracking-tighter">GPA: 4.31 / 4.5</p>
                     </div>
+                    <span class="education-status card-status card-status--active"><span class="status-dot" aria-hidden="true"></span>In progress</span>
                 </div>
-                <div class="p-8 bg-slate-50 rounded-3xl border border-slate-100 flex flex-col md:flex-row gap-4" data-aos="fade-up">
-                    <div class="md:w-1/4 font-bold text-slate-400">2020 — 2024</div>
-                    <div class="md:w-3/4">
+                <div class="education-card liquid-glass status-card rounded-3xl border border-slate-100" data-aos="fade-up">
+                    <div class="education-period font-bold text-slate-400">2020 — 2024</div>
+                    <div class="education-copy">
                         <h3 class="text-xl font-bold">Bachelor of Mechanical Engineering</h3>
                         <p class="text-slate-600 italic">HCMUT - Vietnam National University</p>
                     </div>
+                    <span class="education-status card-status card-status--complete"><span class="status-dot" aria-hidden="true"></span>Completed</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="certifications" class="py-24 bg-slate-50 px-6">
-        <div class="max-w-6xl mx-auto">
+    <section id="certifications" class="section-block py-24 px-6">
+        <div class="content-shell">
             <div class="mx-auto mb-12 max-w-3xl text-center" data-aos="fade-up">
-                <p class="mb-3 text-xs font-bold uppercase tracking-[0.25em] text-blue-600">Professional Credentials</p>
                 <h2 class="text-3xl font-bold">Licenses &amp; Certifications</h2>
                 <p class="mt-4 text-sm leading-relaxed text-slate-500">Verified against official credential pages. Certificate PDFs supplied by the portfolio owner are available for viewing and download.</p>
                 <p id="certification-status" class="mt-3 text-[10px] font-bold uppercase tracking-widest text-slate-400" aria-live="polite">Loading credentials…</p>
@@ -133,47 +162,50 @@
         </div>
     </section>
 
-    <section id="projects" class="py-24 bg-slate-900 text-white px-6">
-        <div class="max-w-5xl mx-auto">
+    <section id="projects" class="projects-section surface-band py-24 px-6">
+        <div class="content-shell">
             <div class="text-center mb-12" data-aos="fade-up">
-                <p class="text-xs font-bold text-blue-400 uppercase tracking-[0.25em] mb-3">Personal Projects &amp; Interests</p>
-                <h2 class="text-3xl font-bold">Learning Tools Beyond Research</h2>
+                <h2 class="text-3xl font-bold">Projects</h2>
+                <p class="section-intro">Independent builds that are ready to explore, ordered from the most recent start date.</p>
             </div>
 
-            <div class="group relative overflow-hidden rounded-3xl border border-slate-700 bg-slate-800 p-8 md:p-10 hover:border-blue-400 transition" data-aos="fade-up">
-                <div class="absolute -right-16 -top-16 h-56 w-56 rounded-full bg-blue-500/10 blur-2xl"></div>
-                <div class="relative flex flex-col md:flex-row md:items-center md:justify-between gap-8">
+            <div class="projects-grid">
+                <article class="project-card liquid-glass status-card group" data-aos="fade-up">
+                    <span class="card-status card-status--active"><span class="status-dot" aria-hidden="true"></span>In development</span>
                     <div class="max-w-2xl">
-                        <div class="flex flex-wrap gap-2 mb-5">
-                            <span class="rounded-full border border-amber-300/30 bg-amber-300/10 px-3 py-1 text-[10px] font-bold uppercase tracking-wider text-amber-300">Personal Project</span>
-                            <span class="rounded-full border border-blue-300/30 bg-blue-300/10 px-3 py-1 text-[10px] font-bold uppercase tracking-wider text-blue-300">English Learning</span>
+                        <div class="project-meta">
+                            <div class="flex flex-wrap gap-2">
+                                <span class="project-tag project-tag--personal">Personal</span>
+                                <span class="project-tag">English Learning</span>
+                            </div>
+                            <time class="project-date" datetime="2026-08">Aug 2026 — Present</time>
                         </div>
                         <h3 class="text-2xl md:text-3xl font-bold mb-3">TOEIC Reading Lab</h3>
-                        <p class="text-slate-300 text-sm leading-relaxed">
-                            A responsive study workspace built from ETS 2026 Reading Test 1–2 materials, featuring grouped vocabulary and grammar, flashcards, quizzes, filters, and local progress tracking.
+                        <p class="project-copy text-sm leading-relaxed">
+                            A responsive study workspace built from ETS vocabulary and Reading Tests 1–3, featuring structured lessons, flashcards, quizzes, filters, and local progress tracking.
                         </p>
-                        <div class="flex flex-wrap gap-4 mt-6 text-xs text-slate-400">
+                        <div class="project-facts flex flex-wrap gap-4 mt-6 text-xs">
                             <span><i class="fa-solid fa-layer-group mr-1 text-blue-400"></i> 435 study items</span>
                             <span><i class="fa-solid fa-mobile-screen-button mr-1 text-blue-400"></i> Responsive web app</span>
                             <span><i class="fa-solid fa-chart-line mr-1 text-blue-400"></i> Progress tracking</span>
                         </div>
                     </div>
-                    <a href="toeic-study/" class="shrink-0 inline-flex items-center justify-center gap-2 rounded-full bg-blue-600 px-6 py-3 text-sm font-bold text-white shadow-lg shadow-blue-950/30 hover:bg-blue-500 hover:-translate-y-0.5 transition">
+                    <a href="toeic-study/" class="primary-button project-action shrink-0 inline-flex items-center justify-center gap-2 rounded-full px-6 py-3 text-sm font-bold transition">
                         Open Study App <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
                     </a>
-                </div>
+                </article>
+
             </div>
         </div>
     </section>
 
-    <section id="publications" class="py-24 max-w-5xl mx-auto px-6 font-sans">
+    <section id="publications" class="section-block py-24 max-w-6xl mx-auto px-6 font-sans">
         <h2 class="text-3xl font-bold mb-4 text-center" data-aos="fade-up">Academic Publications</h2>
-        <div class="mb-12 text-center" data-aos="fade-up">
+        <div class="mb-10 text-center" data-aos="fade-up">
             <p class="text-sm text-slate-500">
-                Automatically synchronized from
+                Publication record linked to
                 <a href="https://scholar.google.com/citations?user=6227iqYAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer" class="font-bold text-blue-600 hover:text-blue-800 transition">Google Scholar <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i></a>
             </p>
-            <p id="publication-sync-status" class="mt-2 text-[10px] font-bold uppercase tracking-widest text-slate-400" aria-live="polite">Loading publications…</p>
         </div>
 
         <div id="publication-groups" aria-busy="true">
@@ -187,7 +219,7 @@
         </noscript>
     </section>
 
-    <footer class="py-12 border-t border-slate-200 text-center bg-white">
+    <footer class="portfolio-footer py-12 border-t border-slate-200 text-center">
         <p class="text-slate-600 text-sm font-bold">© 2026 - Ngo Minh Khang | Hanyang University</p>
         <div class="flex flex-wrap justify-center gap-4 mt-4">
             <a href="https://www.hanyang.ac.kr" target="_blank" class="text-[10px] text-slate-400 hover:text-blue-600 uppercase font-bold tracking-widest">University</a>
@@ -202,5 +234,6 @@
     <script>AOS.init({ duration: 1000, once: true });</script>
     <script src="certifications.js"></script>
     <script src="publications.js"></script>
+    <script type="module" src="app.js"></script>
 </body>
 </html>

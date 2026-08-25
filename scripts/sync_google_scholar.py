@@ -18,9 +18,11 @@ from urllib.request import Request, urlopen
 
 
 PROFILE_ID = "6227iqYAAAAJ"
-PROFILE_URL = (
+PROFILE_URLS = (
     "https://scholar.google.com/citations"
-    f"?user={PROFILE_ID}&hl=en&pagesize=100&sortby=pubdate"
+    f"?user={PROFILE_ID}&hl=en&pagesize=100&sortby=pubdate",
+    "https://scholar.google.co.kr/citations"
+    f"?user={PROFILE_ID}&hl=en&pagesize=100&sortby=pubdate",
 )
 
 
@@ -165,16 +167,19 @@ def fetch_profile(max_attempts: int = 3) -> str:
     last_error: Exception | None = None
 
     for attempt in range(1, max_attempts + 1):
-        try:
-            request = Request(PROFILE_URL, headers=headers)
-            with urlopen(request, timeout=30) as response:
-                if response.status != 200:
-                    raise RuntimeError(f"Google Scholar returned HTTP {response.status}")
-                return response.read().decode("utf-8", errors="replace")
-        except (HTTPError, URLError, TimeoutError, RuntimeError) as error:
-            last_error = error
-            if attempt < max_attempts:
-                time.sleep(attempt * 2)
+        for profile_url in PROFILE_URLS:
+            try:
+                request = Request(profile_url, headers=headers)
+                with urlopen(request, timeout=30) as response:
+                    if response.status != 200:
+                        raise RuntimeError(
+                            f"Google Scholar returned HTTP {response.status}"
+                        )
+                    return response.read().decode("utf-8", errors="replace")
+            except (HTTPError, URLError, TimeoutError, RuntimeError) as error:
+                last_error = error
+        if attempt < max_attempts:
+            time.sleep(attempt * 2)
 
     raise RuntimeError(f"Unable to fetch Google Scholar: {last_error}")
 

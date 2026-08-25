@@ -2,8 +2,7 @@
     "use strict";
 
     const list = document.querySelector("#publication-groups");
-    const status = document.querySelector("#publication-sync-status");
-    if (!list || !status) return;
+    if (!list) return;
 
     const element = (tag, className, text) => {
         const node = document.createElement(tag);
@@ -43,8 +42,8 @@
         const card = element(
             "article",
             dark
-                ? "group p-6 bg-slate-900 text-white rounded-2xl border border-slate-700 hover:border-indigo-400 transition"
-                : "group p-6 bg-white rounded-2xl border border-slate-200 shadow-sm hover:border-blue-300 transition"
+                ? "publication-card liquid-glass interactive-surface group p-6 rounded-2xl border transition"
+                : "publication-card liquid-glass interactive-surface group p-6 rounded-2xl border transition"
         );
         card.setAttribute("data-aos", "fade-up");
 
@@ -113,17 +112,6 @@
         return section;
     };
 
-    const formatSyncTime = (isoDate) => {
-        const date = new Date(isoDate);
-        if (Number.isNaN(date.getTime())) return "latest available Scholar data";
-        return new Intl.DateTimeFormat("en", {
-            year: "numeric",
-            month: "short",
-            day: "numeric",
-            timeZone: "UTC",
-        }).format(date);
-    };
-
     fetch("data/publications.json", { cache: "no-store" })
         .then((response) => {
             if (!response.ok) throw new Error(`HTTP ${response.status}`);
@@ -137,10 +125,9 @@
             const conferences = publications.filter((item) => item.kind === "conference");
             list.replaceChildren();
             if (journals.length) list.append(publicationSection("Journal Publications", journals, false));
-            if (conferences.length) list.append(publicationSection("Conference Proceedings", conferences, true));
+            if (conferences.length) list.append(publicationSection("Conference Proceedings", conferences, false));
 
             list.setAttribute("aria-busy", "false");
-            status.textContent = `${publications.length} publications · Synced ${formatSyncTime(data.lastSyncedAt)}`;
             window.AOS?.refreshHard();
         })
         .catch(() => {
@@ -152,6 +139,5 @@
                 )
             );
             list.setAttribute("aria-busy", "false");
-            status.textContent = "Google Scholar remains the source of record";
         });
 })();

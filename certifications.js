@@ -16,8 +16,8 @@
         const link = element(
             "a",
             primary
-                ? "inline-flex flex-1 items-center justify-center gap-2 rounded-xl bg-blue-600 px-4 py-2.5 text-xs font-bold text-white transition hover:bg-blue-700"
-                : "inline-flex flex-1 items-center justify-center gap-2 rounded-xl border border-slate-200 bg-white px-4 py-2.5 text-xs font-bold text-slate-700 transition hover:border-blue-300 hover:text-blue-700"
+                ? "primary-button inline-flex flex-1 items-center justify-center gap-2 rounded-xl px-4 py-2.5 text-xs font-bold text-white transition"
+                : "glass-action inline-flex flex-1 items-center justify-center gap-2 rounded-xl border px-4 py-2.5 text-xs font-bold transition"
         );
         link.href = href;
         link.target = download ? "_self" : "_blank";
@@ -30,11 +30,11 @@
     const certificateCard = (certificate) => {
         const card = element(
             "article",
-            "group flex h-full flex-col overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition hover:-translate-y-1 hover:border-blue-300 hover:shadow-xl"
+            "credential-card liquid-glass interactive-surface group flex h-full flex-col overflow-hidden rounded-3xl border transition"
         );
         card.setAttribute("data-aos", "fade-up");
 
-        const preview = element("a", "relative block aspect-[16/10] overflow-hidden border-b border-slate-100 bg-slate-100");
+        const preview = element("a", "credential-preview relative block aspect-[16/10] overflow-hidden border-b");
         preview.href = certificate.pdfPath || certificate.credentialUrl;
         preview.target = "_blank";
         preview.rel = "noopener noreferrer";
@@ -47,16 +47,16 @@
         image.decoding = "async";
 
         const previewShade = element("span", "absolute inset-0 flex items-end bg-gradient-to-t from-slate-950/45 via-transparent to-transparent p-4 opacity-0 transition group-hover:opacity-100");
-        previewShade.append(element("span", "rounded-full bg-white/95 px-3 py-1.5 text-[10px] font-bold uppercase tracking-wider text-slate-900", certificate.pdfPath ? "View original PDF" : "View official credential"));
-        preview.append(image, previewShade);
+        previewShade.append(element("span", "credential-preview-cta rounded-full px-3 py-1.5 text-[10px] font-bold uppercase tracking-wider", certificate.pdfPath ? "View original PDF" : "View official credential"));
+        const validity = element("span", "credential-validity");
+        validity.append(element("span", "status-dot"), document.createTextNode("Verified"));
+        preview.append(image, previewShade, validity);
 
         const body = element("div", "flex flex-1 flex-col p-6");
-        const meta = element("div", "mb-4 flex flex-wrap items-center justify-between gap-2");
-        const verified = element("span", "inline-flex items-center gap-1.5 rounded-full bg-emerald-50 px-2.5 py-1 text-[10px] font-bold uppercase tracking-wider text-emerald-700");
-        verified.append(element("i", "fa-solid fa-circle-check"), document.createTextNode("Verified"));
-        meta.append(verified, element("span", "text-[10px] font-bold uppercase tracking-wider text-slate-400", certificate.issued));
-
         const title = element("h3", "text-xl font-extrabold leading-snug text-slate-900", certificate.title);
+        const issued = element("time", "credential-issued", certificate.issued);
+        const heading = element("div", "credential-heading");
+        heading.append(title, issued);
         const issuer = element("p", "mt-2 text-sm font-semibold text-blue-600", certificate.issuer);
         const credential = element("p", "mt-3 break-all text-[11px] text-slate-400");
         credential.append(
@@ -69,7 +69,6 @@
             skills.append(element("span", "rounded-full border border-slate-200 bg-slate-50 px-2.5 py-1 text-[10px] font-semibold text-slate-600", skill));
         });
 
-        const source = element("p", "mt-4 text-[10px] uppercase tracking-widest text-slate-400", `Verified via ${certificate.source}`);
         const actions = element("div", "mt-6 flex flex-wrap gap-2");
         actions.append(actionLink({ href: certificate.credentialUrl, label: "Credential", icon: "fa-shield-halved", primary: true }));
         if (certificate.pdfPath) {
@@ -77,7 +76,7 @@
             actions.append(actionLink({ href: certificate.pdfPath, label: "Download", icon: "fa-download", download: true }));
         }
 
-        body.append(meta, title, issuer, credential, skills, source, actions);
+        body.append(heading, issuer, credential, skills, actions);
         card.append(preview, body);
         return card;
     };
