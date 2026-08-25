@@ -98,6 +98,43 @@ updateAmbientScroll();
 window.addEventListener("scroll", updateAmbientScroll, { passive: true });
 
 const navLinks = [...document.querySelectorAll('.nav-links a[href^="#"]')];
+const mobileMenuToggle = document.querySelector("#mobile-menu-toggle");
+const primaryNavigation = document.querySelector("#primary-navigation");
+const desktopNavigationQuery = window.matchMedia("(min-width: 1024px)");
+
+const setMobileMenu = (isOpen) => {
+    if (!mobileMenuToggle || !primaryNavigation) return;
+    const shouldOpen = !desktopNavigationQuery.matches && isOpen;
+    primaryNavigation.classList.toggle("is-open", shouldOpen);
+    primaryNavigation.setAttribute("aria-hidden", String(!desktopNavigationQuery.matches && !shouldOpen));
+    mobileMenuToggle.setAttribute("aria-expanded", String(shouldOpen));
+    mobileMenuToggle.setAttribute("aria-label", shouldOpen ? "Close navigation menu" : "Open navigation menu");
+    const icon = mobileMenuToggle.querySelector("i");
+    icon?.classList.toggle("fa-bars", !shouldOpen);
+    icon?.classList.toggle("fa-xmark", shouldOpen);
+};
+
+if (mobileMenuToggle && primaryNavigation) {
+    setMobileMenu(false);
+    mobileMenuToggle.addEventListener("click", (event) => {
+        event.stopPropagation();
+        setMobileMenu(mobileMenuToggle.getAttribute("aria-expanded") !== "true");
+    });
+    primaryNavigation.addEventListener("click", (event) => {
+        if (event.target.closest('a[href^="#"]')) setMobileMenu(false);
+    });
+    document.addEventListener("click", (event) => {
+        if (!primaryNavigation.contains(event.target)) setMobileMenu(false);
+    });
+    document.addEventListener("keydown", (event) => {
+        if (event.key === "Escape" && mobileMenuToggle.getAttribute("aria-expanded") === "true") {
+            setMobileMenu(false);
+            mobileMenuToggle.focus();
+        }
+    });
+    desktopNavigationQuery.addEventListener("change", () => setMobileMenu(false));
+}
+
 const sections = navLinks
     .map((link) => document.querySelector(link.getAttribute("href")))
     .filter(Boolean);
