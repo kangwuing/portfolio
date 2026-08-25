@@ -12,6 +12,7 @@
     --accent-soft: rgba(23, 105, 224, 0.11);
     --glass-fill: rgba(255, 255, 255, 0.64);
     --glass-fill-strong: rgba(255, 255, 255, 0.76);
+    --mobile-menu-fill: #f7faff;
     --glass-stroke: rgba(255, 255, 255, 0.64);
     --glass-highlight: rgba(255, 255, 255, 0.62);
     --glass-bottom: rgba(15, 23, 42, 0.14);
@@ -46,6 +47,7 @@ html[data-theme="dark"] {
     --accent-soft: rgba(117, 170, 255, 0.13);
     --glass-fill: rgba(255, 255, 255, 0.035);
     --glass-fill-strong: rgba(255, 255, 255, 0.065);
+    --mobile-menu-fill: #0b111b;
     --glass-stroke: rgba(255, 255, 255, 0.18);
     --glass-highlight: rgba(255, 255, 255, 0.40);
     --glass-bottom: rgba(0, 0, 0, 0.20);
@@ -788,7 +790,7 @@ html[data-theme="dark"] body .text-blue-400 {
         border-radius: 23px;
         background:
             linear-gradient(145deg, rgba(255, 255, 255, 0.055), transparent 44%),
-            color-mix(in srgb, var(--glass-fill-strong) 96%, transparent);
+            var(--mobile-menu-fill);
         backdrop-filter: blur(18px) saturate(160%);
         -webkit-backdrop-filter: blur(18px) saturate(160%);
         box-shadow:
